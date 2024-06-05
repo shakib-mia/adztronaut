@@ -70,8 +70,15 @@ module.exports = {
         muted: "#DAC5A70D", // Bg muted
         "muted-2": "#FFFFFF12", // Bg muted 2
       },
-
+      black: "#000000",
       transparent: "#00000000",
+    },
+
+    keyframes: {
+      marquee: {
+        "0%": { transform: "translateX(0%)" },
+        "100%": { transform: "translateX(-100%)" },
+      },
     },
   },
   plugins: [],

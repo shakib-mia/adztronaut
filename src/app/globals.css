@@ -8,5 +8,9 @@
 
 body {
   /* font-family: ; */
-  @apply bg-bg-secondary text-text container;
+  @apply bg-black container text-text;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
