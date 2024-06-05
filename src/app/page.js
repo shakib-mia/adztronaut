@@ -1,5 +1,6 @@
 import Image from "next/image";
+import Layout from "./components/Layout/Layout";
 
 export default function Home() {
-  return <>Chillax</>;
+  return <Layout></Layout>;
 }
