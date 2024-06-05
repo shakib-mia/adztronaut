@@ -11,6 +11,7 @@ const Header = () => {
           src={hero}
           alt="hero image"
           data-aos="fade-up"
+          data-aos-delay="250"
           data-aos-duration="900"
         />
         <h1
@@ -32,7 +33,7 @@ const Header = () => {
           className="mx-auto mt-4 w-full text-center font-chillax text-base text-text-muted sm:text-xl xl:w-1/2"
           data-aos="fade-up"
           // data-aos-duration="900"
-          data-aos-delay="800"
+          data-aos-delay="500"
         >
           Premium web design, development, and SEO services to help your
           business stand out.

@@ -11,7 +11,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed left-0 right-0 top-0 z-50 mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.25rem] lg:mt-12">
+      <nav
+        className="fixed left-0 right-0 top-0 z-50 mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.25rem] lg:mt-12"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <Link href="/" className="sm:w-auto">
           <Image src={logo} alt="Logo" className="w-14" />
         </Link>
@@ -26,7 +30,7 @@ const Navbar = () => {
         </label>
 
         <ul
-          className={`absolute left-0 top-16 z-10 hidden h-fit w-full flex-col items-end gap-5 overflow-hidden border-t-0 border-border px-3 text-meta uppercase text-text backdrop-blur transition-all duration-300 sm:static sm:flex sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent`}
+          className={`absolute left-0 top-16 z-10 hidden h-fit w-full flex-col items-end gap-5 overflow-hidden border-t-0 border-border px-3 text-meta uppercase text-text transition-all duration-300 sm:static sm:flex sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent`}
         >
           <li className="mt-3 sm:mt-0">
             <Link href="/Services">Services</Link>
