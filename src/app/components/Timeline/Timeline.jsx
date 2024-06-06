@@ -3,6 +3,61 @@ import TimelineItem from "../TimelineItem/TimelineItem";
 
 const Timeline = () => {
   //   const topValue = 4 * 6;
+
+  const items = [
+    {
+      subHeading: "Do we Match?",
+      tag: "2 Hours",
+      heading: "Discovery Call",
+      paragraph:
+        "Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?",
+      listItem: [
+        "We get to know each other better",
+        "Determine how I can best assist you",
+        "Understand the goals you have for your website",
+      ],
+    },
+
+    {
+      subHeading: "Do we Match?",
+      tag: "2 Hours",
+      heading: "Discovery Call",
+      paragraph:
+        "Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?",
+      listItem: [
+        "We get to know each other better",
+        "Determine how I can best assist you",
+        "Understand the goals you have for your website",
+      ],
+    },
+
+    {
+      subHeading: "Do we Match?",
+      tag: "2 Hours",
+      heading: "Discovery Call",
+      paragraph:
+        "Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?",
+      listItem: [
+        "We get to know each other better",
+        "Determine how I can best assist you",
+        "Understand the goals you have for your website",
+      ],
+    },
+
+    {
+      subHeading: "Do we Match?",
+      tag: "2 Hours",
+      heading: "Discovery Call",
+      paragraph:
+        "Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?",
+      listItem: [
+        "We get to know each other better",
+        "Determine how I can best assist you",
+        "Understand the goals you have for your website",
+      ],
+    },
+  ];
+
   return (
     <>
       {/* <div className="relative flex h-auto items-center justify-center gap-20">
@@ -30,8 +85,8 @@ const Timeline = () => {
         </div>
       </div> */}
 
-      {Array.from({ length: 4 }).map((_, key) => (
-        <TimelineItem id={key} key={key} />
+      {items.map((item, key) => (
+        <TimelineItem {...item} id={key + 1} key={key} />
       ))}
     </>
   );

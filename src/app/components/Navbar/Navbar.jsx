@@ -11,7 +11,7 @@ const Navbar = () => {
   const [navChecked, setNavChecked] = useState(false);
   const { scrollDirection, scrollY } = useScrollDirection();
 
-  console.log(scrollDirection, scrollY);
+  // console.log(scrollDirection, scrollY);
 
   return (
     <>
