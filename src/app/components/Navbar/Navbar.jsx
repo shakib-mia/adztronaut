@@ -5,14 +5,18 @@ import Image from "next/image";
 import { FaBars } from "react-icons/fa";
 import logo from "./../../../assets/images/logo.png";
 import Button from "../Button/Button";
+import useScrollDirection from "@/app/hooks/useScrollDirection";
 
 const Navbar = () => {
   const [navChecked, setNavChecked] = useState(false);
+  const { scrollDirection, scrollY } = useScrollDirection();
+
+  console.log(scrollDirection, scrollY);
 
   return (
     <>
       <nav
-        className="absolute left-0 right-0 z-50 mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.25rem] lg:mt-12"
+        className={`${scrollY > 160 ? "fixed top-0" : "absolute top-0"} left-0 right-0 z-50 mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.25rem] lg:mt-12`}
         data-aos="fade-up"
         data-aos-delay="100"
       >

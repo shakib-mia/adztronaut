@@ -7,6 +7,7 @@ import useAOS from "./hooks/useAos";
 import Clients from "./components/Clients/Clients";
 import Services from "./components/Services/Services";
 import SelectedWorks from "./components/SelectedWorks/SelectedWorks";
+import Steps from "./components/Steps/Steps";
 
 export default function Home() {
   useLenis();
@@ -18,6 +19,7 @@ export default function Home() {
       <Clients />
       <Services />
       <SelectedWorks />
+      <Steps />
     </Layout>
   );
 }
