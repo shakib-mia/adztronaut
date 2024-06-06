@@ -59,7 +59,7 @@ const Timeline = () => {
   ];
 
   return (
-    <>
+    <div className="mt-12">
       {/* <div className="relative flex h-auto items-center justify-center gap-20">
         <div className="w-5/12"></div>
         <div className="w-fit">
@@ -88,7 +88,7 @@ const Timeline = () => {
       {items.map((item, key) => (
         <TimelineItem {...item} id={key + 1} key={key} />
       ))}
-    </>
+    </div>
   );
 };
 
