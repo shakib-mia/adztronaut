@@ -8,10 +8,13 @@ import Clients from "./components/Clients/Clients";
 import Services from "./components/Services/Services";
 import SelectedWorks from "./components/SelectedWorks/SelectedWorks";
 import Steps from "./components/Steps/Steps";
+import { useEffect } from "react";
 
 export default function Home() {
+  // useEffect(() => {
   useLenis();
   useAOS(); // Initialize AOS
+  // }, []);
 
   return (
     <Layout>
