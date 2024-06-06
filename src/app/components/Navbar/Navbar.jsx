@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="fixed left-0 right-0 top-0 z-50 mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.25rem] lg:mt-12"
+        className="absolute left-0 right-0 z-50 mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.25rem] lg:mt-12"
         data-aos="fade-up"
         data-aos-delay="100"
       >

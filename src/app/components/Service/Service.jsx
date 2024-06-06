@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { PiArrowDownRightThin } from "react-icons/pi";
 
-const Service = ({ key, id, heading, text, link, linkText }) => {
-  console.log(id);
+const Service = ({ id, heading, text, link, linkText }) => {
+  // console.log(id);
   return (
     <article
       className="flex flex-col border border-border bg-bg-muted p-5 text-text md:p-8 xl:p-12"
