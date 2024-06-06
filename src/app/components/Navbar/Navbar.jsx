@@ -63,7 +63,7 @@ const Navbar = () => {
       </nav>
 
       <ul
-        className={`absolute left-0 top-16 z-10 ${navChecked ? "flex" : "hidden"} h-fit w-full flex-col items-end gap-5 overflow-hidden border-t-0 border-border px-3 text-meta uppercase text-text backdrop-blur transition-all duration-300 sm:static sm:hidden sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent sm:backdrop-blur-0`}
+        className={`fixed left-0 top-16 z-10 ${navChecked ? "h-72" : "h-0"} flex w-full flex-col items-end gap-5 overflow-hidden border-t-0 border-border px-3 text-meta uppercase text-text backdrop-blur transition-[height] duration-300 sm:static sm:hidden sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent sm:backdrop-blur-0`}
       >
         <li className="group relative mt-3 sm:mt-0">
           <Link href="/Services">Services</Link>

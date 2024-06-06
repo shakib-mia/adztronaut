@@ -44,11 +44,13 @@ const TimelineItem = ({
           data-aos={aosType}
           data-aos-duration="1000"
         >
-          <div className="absolute right-5 top-5 border border-border bg-bg-muted p-2 text-meta-sm text-text">
+          <div className="absolute right-5 top-5 border border-border bg-bg-muted p-2 text-meta-sm uppercase text-text">
             {tag}
           </div>
 
-          <p className="mb-1 text-meta">{subHeading}</p>
+          <p className="mb-1 text-meta uppercase text-text-muted">
+            {subHeading}
+          </p>
           <h4 className="mb-4 text-h5 uppercase sm:text-h4">{heading}</h4>
           <p className="mb-8 font-chillax text-sm text-text text-text-muted sm:text-base">
             {paragraph}
@@ -81,11 +83,13 @@ const TimelineItem = ({
           data-aos={aosType2}
           data-aos-duration="1000"
         >
-          <div className="absolute right-5 top-5 border border-border bg-bg-muted p-2 text-meta-sm text-text">
+          <div className="absolute right-5 top-5 border border-border bg-bg-muted p-2 text-meta-sm uppercase text-text">
             {tag}
           </div>
 
-          <p className="mb-1 text-meta">{subHeading}</p>
+          <p className="mb-1 text-meta uppercase text-text-muted">
+            {subHeading}
+          </p>
           <h4 className="mb-4 text-h5 uppercase sm:text-h4">{heading}</h4>
           <p className="mb-8 font-chillax text-sm text-text text-text-muted sm:text-base">
             {paragraph}

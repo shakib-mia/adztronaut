@@ -19,41 +19,49 @@ const Timeline = () => {
     },
 
     {
-      subHeading: "Do we Match?",
-      tag: "2 Hours",
-      heading: "Discovery Call",
+      subHeading: "lorem ipsum",
+      tag: "1 Week",
+      heading: "Concept & STrategy",
       paragraph:
-        "Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?",
+        "Together, we develop a strategy that successfully combines your goals with the needs of your target audience. Based on this concept, I create the first wireframes and an interactive prototype. This provides us with a very good impression of the website and the user interface.",
+      listItem: ["UX Design", "Wireframes", "Interactive Prototype"],
+    },
+
+    {
+      subHeading: "SOme MAgic",
+      tag: "1 week",
+      heading: "web Design",
+      paragraph:
+        "Now comes the magic. Based on the previously developed concept, I create a high-end screen design perfectly tailored to your brand. A web design that sets you apart from your competition, fits your target audience ideally, and provides an excellent user experience.",
       listItem: [
-        "We get to know each other better",
-        "Determine how I can best assist you",
-        "Understand the goals you have for your website",
+        "High-end web design tailored to your brand",
+        "Interactive prototype of the design",
       ],
     },
 
     {
-      subHeading: "Do we Match?",
-      tag: "2 Hours",
-      heading: "Discovery Call",
+      subHeading: "More Magic",
+      tag: "2 Weeks",
+      heading: "Development",
       paragraph:
-        "Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?",
+        "In this step, we breathe life into your new high-end design. You will receive a custom-built website using a modular web design system and CMS integration. Animations will add the necessary flair to your site and set you apart from the boring competition.",
       listItem: [
-        "We get to know each other better",
-        "Determine how I can best assist you",
-        "Understand the goals you have for your website",
+        "Custom framer website",
+        "Modular web design systems",
+        "CMS integration",
       ],
     },
 
     {
-      subHeading: "Do we Match?",
+      subHeading: "ready to go",
       tag: "2 Hours",
-      heading: "Discovery Call",
+      heading: "WEbsite onboarding",
       paragraph:
-        "Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?",
+        "In a personal Framer workshop, I will show you how to make changes to your new website quickly and easily. Additionally, you will receive personalized Framer video tutorials that you can access at any time. Edit your Framer website without a complicated backend or the need for an additional programmer. It's as simple as that.",
       listItem: [
-        "We get to know each other better",
-        "Determine how I can best assist you",
-        "Understand the goals you have for your website",
+        "Personal workshop",
+        "Personalized video tutorials",
+        "Edit text and images directly on your website",
       ],
     },
   ];
