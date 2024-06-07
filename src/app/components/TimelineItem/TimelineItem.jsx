@@ -8,17 +8,15 @@ const TimelineItem = ({
   tag,
   listItem,
 }) => {
-  const [topPosition, setTopPosition] = useState(0);
-  // const [aosType]
-  // alert(window.innerHeight);
+  // const [topPosition, setTopPosition] = useState(0);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const position = `${(window.innerWidth > 640 ? 2 : 1) * id}rem`;
-      // console.log(position);
-      setTopPosition(`-${position}`);
-    }
-  }, [id]);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const position = `${(window.innerWidth > 640 ? 2 : -4) * id}rem`;
+  //     // console.log(position);
+  //     setTopPosition(`${position}`);
+  //   }
+  // }, [id]);
 
   const [aosType, setAosType] = useState("");
   const [aosType2, setAosType2] = useState("");
@@ -35,8 +33,11 @@ const TimelineItem = ({
 
   return (
     <div
-      className={`relative ${id % 2 === 0 ? "flex-row-reverse xl:flex-row" : "flex-row"} flex h-auto items-center justify-center gap-4 xl:gap-20`}
-      style={{ top: topPosition }}
+      className={`relative ${id % 2 === 0 ? "left-0 flex-row-reverse xl:flex-row" : "left-[1.5px] flex-row"} flex h-auto items-center justify-center gap-4 xl:gap-20`}
+      style={{
+        top: id * -64 + "px",
+        left: id % 2 === 0 ? "-1px" : 0,
+      }}
     >
       {id % 2 === 0 ? (
         <div
@@ -44,7 +45,7 @@ const TimelineItem = ({
           data-aos={aosType}
           data-aos-duration="1000"
         >
-          <div className="absolute right-5 top-5 border border-border bg-bg-muted p-2 text-meta-sm uppercase text-text">
+          <div className="absolute right-5 top-5 border border-border bg-bg-muted p-1 text-center text-meta-sm uppercase text-text sm:p-2">
             {tag}
           </div>
 
@@ -70,11 +71,11 @@ const TimelineItem = ({
       )}
 
       <div className="w-fit" data-aos="fade-down">
-        <div className="mx-auto mb-2 h-48 w-px bg-border"></div>
+        <div className="relative -left-[0.2px] mx-auto mb-2 h-64 w-px bg-border md:h-48"></div>
         <div className="mx-auto flex aspect-square w-10 items-center justify-center rounded-full border border-border bg-bg-muted">
           0{id}
         </div>
-        <div className="mx-auto mt-2 h-48 w-px bg-border"></div>
+        <div className="relative -left-[0.2px] mx-auto mt-2 h-64 w-px bg-border"></div>
       </div>
 
       {id % 2 !== 0 ? (
@@ -83,7 +84,7 @@ const TimelineItem = ({
           data-aos={aosType2}
           data-aos-duration="1000"
         >
-          <div className="absolute right-5 top-5 border border-border bg-bg-muted p-2 text-meta-sm uppercase text-text">
+          <div className="absolute right-5 top-5 border border-border bg-bg-muted p-1 text-center text-meta-sm uppercase text-text sm:p-2">
             {tag}
           </div>
 

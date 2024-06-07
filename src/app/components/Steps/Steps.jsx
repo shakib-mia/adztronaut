@@ -7,7 +7,13 @@ const Steps = () => {
     window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
   };
   return (
-    <section className="py-10 xl:py-44">
+    <section className="pt-10 xl:pt-44">
+      <p
+        className="text-center text-xs uppercase text-text md:text-meta"
+        data-aos="fade-up"
+      >
+        THe PRocess
+      </p>
       <h2
         className="font mx-auto w-7/12 text-center font-satoshi text-h3 md:w-2/3 md:text-h1 xl:text-heading-lg"
         data-aos="fade-up"

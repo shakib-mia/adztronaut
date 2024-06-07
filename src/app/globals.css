@@ -8,9 +8,24 @@
 
 body {
   /* font-family: ; */
-  @apply container bg-black text-text;
+  @apply overflow-x-hidden bg-black text-text;
 }
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+.rfm-marquee {
+  @apply w-full justify-evenly;
+}
+
+.rfm-child {
+  @apply w-full;
+}
+.rfm-initial-child-container {
+  @apply w-full;
+}
+
+#contact .rfm-marquee-container {
+  @apply gap-[21rem] whitespace-nowrap;
 }
