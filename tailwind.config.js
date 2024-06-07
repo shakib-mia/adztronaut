@@ -64,6 +64,7 @@ module.exports = {
     },
 
     colors: {
+      white: "#FFFFFF",
       text: {
         DEFAULT: "#DAC5A7", // Text default 100%
         muted: "#DAC5A799", // Text muted

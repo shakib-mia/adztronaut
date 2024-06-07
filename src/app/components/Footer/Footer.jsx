@@ -61,7 +61,9 @@ const Footer = () => {
                 <aside className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg-muted text-text-muted transition duration-500 group-hover:bg-bg-secondary">
                   <FaInstagram />
                 </aside>
-                <p className="text-meta text-text-muted">INSTAGRAM</p>
+                <p className="text-meta text-text-muted transition duration-500 group-hover:text-text">
+                  INSTAGRAM
+                </p>
               </a>
             </li>
 
@@ -70,7 +72,9 @@ const Footer = () => {
                 <aside className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg-muted text-text-muted transition duration-500 group-hover:bg-bg-secondary">
                   <CiTwitter />
                 </aside>
-                <p className="text-meta text-text-muted">TWITTER</p>
+                <p className="text-meta text-text-muted transition duration-500 group-hover:text-text">
+                  TWITTER
+                </p>
               </a>
             </li>
 
@@ -79,7 +83,9 @@ const Footer = () => {
                 <aside className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg-muted text-text-muted transition duration-500 group-hover:bg-bg-secondary">
                   <AiOutlineDribbble />
                 </aside>
-                <p className="text-meta text-text-muted">DRIBBBLE</p>
+                <p className="text-meta text-text-muted transition duration-500 group-hover:text-text">
+                  DRIBBBLE
+                </p>
               </a>
             </li>
 
@@ -88,7 +94,9 @@ const Footer = () => {
                 <aside className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg-muted text-text-muted transition duration-500 group-hover:bg-bg-secondary">
                   <FaBehance />
                 </aside>
-                <p className="text-meta text-text-muted">BEHANCE</p>
+                <p className="text-meta text-text-muted transition duration-500 group-hover:text-text">
+                  BEHANCE
+                </p>
               </a>
             </li>
           </ul>
@@ -97,16 +105,36 @@ const Footer = () => {
           <h5 className="text-h6 text-text xl:text-h5">Pages</h5>
           <ul className="mt-8 flex flex-col gap-4">
             <li>
-              <Link href={"/Home"}>Home</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Home"}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link href={"/Services"}>Services</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Services"}
+              >
+                Services
+              </Link>
             </li>
             <li>
-              <Link href={"/About"}>About</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/About"}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link href={"/Contact"}>Contact</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Contact"}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
 
@@ -123,16 +151,36 @@ const Footer = () => {
           <h5 className="text-h6 text-text xl:text-h5">CMS</h5>
           <ul className="mt-8 flex flex-col gap-4">
             <li>
-              <Link href={"/Home"}>Home</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Home"}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link href={"/Services"}>Services</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Services"}
+              >
+                Services
+              </Link>
             </li>
             <li>
-              <Link href={"/About"}>About</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/About"}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link href={"/Contact"}>Contact</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Contact"}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </aside>
@@ -145,19 +193,44 @@ const Footer = () => {
           <h5 className="text-h6 text-text xl:text-h5">Utility Pages</h5>
           <ul className="mt-8 flex flex-col gap-4">
             <li>
-              <Link href={"/Home"}>404 Error Page</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Home"}
+              >
+                404 Error Page
+              </Link>
             </li>
             <li>
-              <Link href={"/Services"}>Password Protected</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Services"}
+              >
+                Password Protected
+              </Link>
             </li>
             <li>
-              <Link href={"/About"}>Styleguide</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/About"}
+              >
+                Styleguide
+              </Link>
             </li>
             <li>
-              <Link href={"/Contact"}>Licensing</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Contact"}
+              >
+                Licensing
+              </Link>
             </li>
             <li>
-              <Link href={"/Contact"}>Changelog</Link>
+              <Link
+                className="transition duration-500 hover:text-text"
+                href={"/Contact"}
+              >
+                Changelog
+              </Link>
             </li>
           </ul>
         </aside>
