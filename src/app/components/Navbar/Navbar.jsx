@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${scrollY > 160 ? "fixed top-0" : "absolute top-0"} left-0 right-0 z-[9999] mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.25rem] lg:mt-12`}
+        className={`${scrollY > 160 ? "fixed top-0" : "absolute top-0"} left-0 right-0 z-[99999] mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.25rem] lg:mt-12`}
         data-aos="fade-up"
         data-aos-delay="100"
       >

@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-bg-muted">
       <div className="mx-auto grid grid-cols-1 gap-10 p-4 uppercase text-text-muted md:grid-cols-2 xl:grid-cols-4 xl:gap-4 2xl:max-w-[1300px]">
-        <aside>
+        <aside data-aos="fade-up" data-aos-duration="1000">
           <Image src={logo} alt="logo" />
           <ul className="mt-6 flex flex-col gap-4 md:mt-8 xl:mt-11">
             <li>
@@ -52,7 +52,7 @@ const Footer = () => {
             </li>
           </ul>
         </aside>
-        <aside>
+        <aside data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <h5 className="text-h6 text-text xl:text-h5">Pages</h5>
           <ul className="mt-8 flex flex-col gap-4">
             <li>
@@ -74,7 +74,11 @@ const Footer = () => {
             <GoArrowUpRight />
           </Button>
         </aside>
-        <aside>
+        <aside
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+        >
           <h5 className="text-h6 text-text xl:text-h5">CMS</h5>
           <ul className="mt-8 flex flex-col gap-4">
             <li>
@@ -92,7 +96,11 @@ const Footer = () => {
           </ul>
         </aside>
 
-        <aside>
+        <aside
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1500"
+        >
           <h5 className="text-h6 text-text xl:text-h5">Utility Pages</h5>
           <ul className="mt-8 flex flex-col gap-4">
             <li>
