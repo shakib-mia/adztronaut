@@ -13,7 +13,7 @@ const Testimonial = ({
   const time = (id % 2 ? 800 : 400).toString();
   return (
     <div
-      className="bg-bg-muted p-4 backdrop-blur md:p-6 lg:p-12"
+      className="rounded-sm border border-border bg-bg-muted p-4 backdrop-blur transition duration-1000 hover:bg-bg-muted-2 md:p-6 lg:p-12"
       data-aos="fade-up"
       data-aos-duration="500"
       data-aos-delay={time}

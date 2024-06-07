@@ -8,7 +8,7 @@
 
 body {
   /* font-family: ; */
-  @apply overflow-x-hidden bg-black text-text;
+  @apply overflow-x-hidden scroll-smooth bg-black text-text;
 }
 
 ::-webkit-scrollbar {

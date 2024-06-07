@@ -66,7 +66,7 @@ const About = () => {
               <div>
                 <a
                   href="#"
-                  className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted"
+                  className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted transition duration-500 hover:bg-bg-secondary"
                   data-aos="zoom-in"
                   data-aos-duration="500"
                   data-aos-delay="1500"
@@ -79,7 +79,7 @@ const About = () => {
               <div>
                 <a
                   href="#"
-                  className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted"
+                  className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted transition duration-500 hover:bg-bg-secondary"
                   data-aos="zoom-in"
                   data-aos-duration="500"
                   data-aos-delay="1700"
@@ -92,7 +92,7 @@ const About = () => {
               <div>
                 <a
                   href="#"
-                  className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted"
+                  className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted transition duration-500 hover:bg-bg-secondary"
                   data-aos="zoom-in"
                   data-aos-duration="500"
                   data-aos-delay="1800"
@@ -105,7 +105,7 @@ const About = () => {
               <div>
                 <a
                   href="#"
-                  className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted"
+                  className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted transition duration-500 hover:bg-bg-secondary"
                   data-aos="zoom-in"
                   data-aos-duration="500"
                   data-aos-delay="2000"
