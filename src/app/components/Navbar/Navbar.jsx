@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import logo from "./../../../assets/images/logo.png";
 import Button from "../Button/Button";
 import useScrollDirection from "@/app/hooks/useScrollDirection";
+import { IoChevronDown } from "react-icons/io5";
 
 const Navbar = () => {
   const [navChecked, setNavChecked] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${scrollY > 160 ? "fixed top-0" : "absolute top-0"} left-0 right-0 z-[99999] mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.25rem] lg:mt-12`}
+        className={`${scrollY > 160 ? "fixed top-0" : "absolute top-0"} left-0 right-0 z-[99999] mx-auto mt-4 flex w-full max-w-[95%] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur md:mt-6 md:max-w-[41.75rem] lg:mt-12`}
         data-aos="fade-up"
         data-aos-delay="100"
       >
@@ -34,7 +35,7 @@ const Navbar = () => {
         </label>
 
         <ul
-          className={`absolute left-0 top-16 z-10 hidden h-fit w-full flex-col items-end gap-5 overflow-hidden border-t-0 border-border px-3 text-meta uppercase text-text transition-all duration-300 sm:static sm:flex sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent`}
+          className={`absolute left-0 top-16 z-10 hidden h-fit w-full flex-col items-end gap-5 overflow-visible border-t-0 border-border px-3 text-meta uppercase text-text transition-all duration-300 sm:static sm:flex sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent xl:overscroll-none`}
         >
           <li className="group relative mt-3 sm:mt-0">
             <Link href="/services">Services</Link>
@@ -45,17 +46,18 @@ const Navbar = () => {
             <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
           </li>
           <li className="group relative">
+            <Link href="/testimonials">Testimonials</Link>
+            <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
+          </li>
+          <li className="group relative">
             <Link href="/about">About</Link>
             <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
           </li>
           <li className="group relative">
-            <Link href="/blog">Blog</Link>
+            <Link href="/blogs">Blogs</Link>
             <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
           </li>
-          <li className="group relative">
-            <Link href="/pages">Pages</Link>
-            <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-          </li>
+
           <Button className="mb-3 uppercase sm:hidden">{"Let's"} Talk</Button>
         </ul>
 
@@ -81,17 +83,18 @@ const Navbar = () => {
           <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
         </li>
         <li className="group relative">
+          <Link href="/testimonials">Testimonials</Link>
+          <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
+        </li>
+        <li className="group relative">
           <Link href="/about">About</Link>
           <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
         </li>
         <li className="group relative">
-          <Link href="/blog">Blog</Link>
+          <Link href="/blogs">Blogs</Link>
           <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
         </li>
-        <li className="group relative">
-          <Link href="/pages">Pages</Link>
-          <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-        </li>
+
         <Button className="mb-3 p-0 sm:hidden">
           <Link
             href={"/contact"}
