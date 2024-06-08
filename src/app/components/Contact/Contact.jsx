@@ -2,6 +2,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Button from "../Button/Button";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -83,10 +84,24 @@ const Contact = () => {
             data-aos-duration="1000"
             data-aos-delay="1500"
           >
-            <Button className="mt-8 flex items-center justify-center gap-2 uppercase">
-              get in touch
-              <GoArrowUpRight />
+            <Button className="mt-8 !p-0">
+              <Link
+                href={"/contact"}
+                className="flex items-center gap-2 bg-bg-primary px-4 py-[0.625rem] uppercase text-black"
+              >
+                get in touch
+                <GoArrowUpRight />
+              </Link>
             </Button>
+            {/* <Button>
+              <Link
+                href={"/contact"}
+                className="mb-3 flex items-center justify-center gap-2 bg-bg-primary px-4 py-[0.625rem] sm:hidden"
+              >
+                get in touch
+                <GoArrowUpRight />
+              </Link>
+            </Button> */}
           </div>
         </div>
       </div>

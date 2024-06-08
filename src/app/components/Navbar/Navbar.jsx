@@ -56,10 +56,17 @@ const Navbar = () => {
             <Link href="/pages">Pages</Link>
             <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
           </li>
-          <Button className="mb-3 sm:hidden">{"Let's"} Talk</Button>
+          <Button className="mb-3 uppercase sm:hidden">{"Let's"} Talk</Button>
         </ul>
 
-        <Button className="hidden sm:block">{"Let's"} Talk</Button>
+        <Button className="hidden p-0 !px-0 py-0 sm:block">
+          <Link
+            href={"/contact"}
+            className="hidden bg-bg-primary px-4 py-[0.625rem] uppercase text-black sm:block"
+          >
+            {"Let's"} Talk
+          </Link>
+        </Button>
       </nav>
 
       <ul
@@ -85,7 +92,14 @@ const Navbar = () => {
           <Link href="/pages">Pages</Link>
           <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
         </li>
-        <Button className="mb-3 sm:hidden">{"Let's"} Talk</Button>
+        <Button className="mb-3 p-0 sm:hidden">
+          <Link
+            href={"/contact"}
+            className="mb-3 bg-bg-primary px-4 py-[0.625rem] sm:hidden"
+          >
+            {"Let's"} Talk
+          </Link>
+        </Button>
       </ul>
     </>
   );

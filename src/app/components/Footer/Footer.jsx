@@ -103,11 +103,11 @@ const Footer = () => {
         </aside>
         <aside data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <h5 className="text-h6 text-text xl:text-h5">Pages</h5>
-          <ul className="mt-8 flex flex-col gap-4">
+          <ul className="mb-4 mt-8 flex flex-col gap-4">
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/Home"}
+                href={"/"}
               >
                 Home
               </Link>
@@ -115,7 +115,7 @@ const Footer = () => {
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/Services"}
+                href={"/services"}
               >
                 Services
               </Link>
@@ -123,7 +123,7 @@ const Footer = () => {
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/About"}
+                href={"/about"}
               >
                 About
               </Link>
@@ -131,16 +131,21 @@ const Footer = () => {
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/Contact"}
+                href={"/contact"}
               >
                 Contact
               </Link>
             </li>
           </ul>
 
-          <Button className="my-8 flex items-center justify-center gap-2 uppercase">
-            get in touch
-            <GoArrowUpRight />
+          <Button className="!p-0">
+            <Link
+              href={"/contact"}
+              className="flex items-center gap-2 bg-bg-primary px-4 py-[0.625rem] uppercase text-black"
+            >
+              more templates
+              <GoArrowUpRight />
+            </Link>
           </Button>
         </aside>
         <aside

@@ -1,9 +1,11 @@
 import React from "react";
 
-const Button = ({ children, className }) => {
+const Button = (props) => {
+  const { children, className, ...rest } = props;
   return (
     <button
-      className={`hover:text-white rounded-sm bg-bg-primary px-4 py-[0.625rem] text-meta text-text-inverse transition duration-500 hover:bg-text-muted ${className}`}
+      className={`rounded-sm bg-bg-primary px-4 py-[0.625rem] text-meta uppercase text-text-inverse transition duration-500 hover:bg-text-muted hover:text-white ${className}`}
+      {...rest}
     >
       {children}
     </button>
