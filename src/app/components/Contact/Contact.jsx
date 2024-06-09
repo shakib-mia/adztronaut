@@ -52,7 +52,7 @@ const Contact = () => {
       <div className="flex flex-col items-center justify-center bg-bg-muted py-10 xl:h-screen">
         <div className="w-full lg:w-1/2 2xl:w-5/12">
           <p
-            className="mb-2 text-center text-meta uppercase text-text"
+            className="mb-2 text-center text-meta-sm uppercase text-text md:text-meta"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -69,7 +69,7 @@ const Contact = () => {
           </h2>
 
           <p
-            className="mx-auto w-9/12 text-center font-chillax text-md text-text-muted lg:text-lg"
+            className="mx-auto w-full text-center font-chillax text-md text-text-muted lg:w-9/12 lg:text-lg"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="1000"

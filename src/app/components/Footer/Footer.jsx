@@ -158,7 +158,7 @@ const Footer = () => {
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/Home"}
+                href={"/"}
               >
                 Home
               </Link>
@@ -166,7 +166,7 @@ const Footer = () => {
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/Services"}
+                href={"/services"}
               >
                 Services
               </Link>
@@ -174,7 +174,7 @@ const Footer = () => {
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/About"}
+                href={"/about"}
               >
                 About
               </Link>
@@ -182,7 +182,7 @@ const Footer = () => {
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/Contact"}
+                href={"/contact"}
               >
                 Contact
               </Link>
