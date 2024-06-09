@@ -10,7 +10,7 @@ import { IoChevronDown } from "react-icons/io5";
 
 const Navbar = () => {
   const [navChecked, setNavChecked] = useState(false);
-  const { scrollDirection, scrollY } = useScrollDirection();
+  const { scrollY } = useScrollDirection();
 
   // console.log(scrollDirection, scrollY);
 
