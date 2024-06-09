@@ -50,7 +50,7 @@ const Contact = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center bg-bg-muted py-10 xl:h-screen">
-        <div className="w-full xl:w-1/3">
+        <div className="w-full lg:w-1/2 2xl:w-5/12">
           <p
             className="mb-2 text-center text-meta uppercase text-text"
             data-aos="fade-right"

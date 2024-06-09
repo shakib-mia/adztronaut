@@ -14,6 +14,29 @@ const Navbar = () => {
 
   // console.log(scrollDirection, scrollY);
 
+  const navItem = [
+    {
+      path: "/services",
+      text: "Services",
+    },
+    {
+      path: "/work",
+      text: "Work",
+    },
+    {
+      path: "/testimonials",
+      text: "Testimonials",
+    },
+    {
+      path: "/about",
+      text: "About",
+    },
+    {
+      path: "/blogs",
+      text: "blogs",
+    },
+  ];
+
   return (
     <>
       <nav
@@ -37,31 +60,17 @@ const Navbar = () => {
         <ul
           className={`absolute left-0 top-16 z-10 hidden h-fit w-full flex-col items-end gap-5 overflow-visible border-t-0 border-border px-3 text-meta uppercase text-text transition-all duration-300 sm:static sm:flex sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent xl:overscroll-none`}
         >
-          <li className="group relative mt-3 sm:mt-0">
-            <Link href="/services">Services</Link>
-            <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-          </li>
-          <li className="group relative">
-            <Link href="/work">Work</Link>
-            <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-          </li>
-          <li className="group relative">
-            <Link href="/testimonials">Testimonials</Link>
-            <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-          </li>
-          <li className="group relative">
-            <Link href="/about">About</Link>
-            <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-          </li>
-          <li className="group relative">
-            <Link href="/blogs">Blogs</Link>
-            <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-          </li>
+          {navItem.map(({ path, text }, key) => (
+            <li className="group relative mt-3 sm:mt-0" key={key}>
+              <Link href={path}>{text}</Link>
+              <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
+            </li>
+          ))}
 
           <Button className="mb-3 uppercase sm:hidden">{"Let's"} Talk</Button>
         </ul>
 
-        <Button className="hidden p-0 !px-0 py-0 sm:block">
+        <Button className="hidden p-0 !px-0 !py-0 sm:block">
           <Link
             href={"/contact"}
             className="hidden bg-bg-primary px-4 py-[0.625rem] uppercase text-black sm:block"
@@ -74,32 +83,15 @@ const Navbar = () => {
       <ul
         className={`fixed left-0 top-16 z-10 ${navChecked ? "h-72" : "h-0"} flex w-full flex-col items-end gap-5 overflow-hidden border-t-0 border-border px-3 text-meta uppercase text-text backdrop-blur transition-[height] duration-300 sm:static sm:hidden sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent sm:backdrop-blur-0`}
       >
-        <li className="group relative mt-3 sm:mt-0">
-          <Link href="/services">Services</Link>
-          <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-        </li>
-        <li className="group relative">
-          <Link href="/work">Work</Link>
-          <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-        </li>
-        <li className="group relative">
-          <Link href="/testimonials">Testimonials</Link>
-          <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-        </li>
-        <li className="group relative">
-          <Link href="/about">About</Link>
-          <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-        </li>
-        <li className="group relative">
-          <Link href="/blogs">Blogs</Link>
-          <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
-        </li>
+        {navItem.map(({ path, text }, key) => (
+          <li className="group relative mt-3 sm:mt-0" key={key}>
+            <Link href={path}>{text}</Link>
+            <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
+          </li>
+        ))}
 
-        <Button className="mb-3 p-0 sm:hidden">
-          <Link
-            href={"/contact"}
-            className="mb-3 bg-bg-primary px-4 py-[0.625rem] sm:hidden"
-          >
+        <Button className="mb-3 !p-0 !py-0 sm:hidden">
+          <Link href={"/contact"} className="mb-3 bg-bg-primary px-4 py-2">
             {"Let's"} Talk
           </Link>
         </Button>

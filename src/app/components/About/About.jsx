@@ -12,7 +12,7 @@ const About = () => {
       <div className="absolute left-0 h-full w-screen overflow-x-hidden">
         <div
           className="absolute top-40 -z-10 lg:top-52 xl:top-64 2xl:top-96"
-          data-aos="fade-left"
+          data-aos="fade-in"
           data-aos-delay="400"
         >
           <Marquee>

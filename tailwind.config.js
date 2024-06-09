@@ -18,6 +18,18 @@ module.exports = {
     },
 
     extend: {
+      container: {
+        2: {
+          center: true,
+          padding: "2rem",
+          screens: {
+            sm: "540px",
+            md: "720px",
+            lg: "960px",
+            xl: "1400px",
+          },
+        },
+      },
       fontFamily: {
         chillax: ["Chillax", "sans-serif"],
         gambetta: ["Gambetta", "sans-serif"],
