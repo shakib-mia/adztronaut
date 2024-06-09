@@ -11,15 +11,15 @@ const Page = () => {
 
   return (
     <Layout>
-      <div className="mx-auto w-1/2 pt-56">
+      <div className="mx-auto w-full pt-20 md:pt-32 xl:w-1/2 xl:pt-56">
         <h2
-          className="text-center font-satoshi text-heading-lg"
+          className="text-center font-satoshi text-h3 xl:text-heading-lg"
           data-aos="fade-up"
         >
           Work
         </h2>
         <p
-          className="text-center font-chillax text-xl text-text-muted"
+          className="text-center font-chillax text-sm text-text-muted md:text-md xl:text-xl"
           data-aos="fade-up"
           data-aos-delay="500"
         >
@@ -28,7 +28,7 @@ const Page = () => {
         </p>
       </div>
 
-      <div className="pb-40 pt-24">
+      <div className="pb-10 pt-4 md:pb-20 md:pt-14 xl:pb-40 xl:pt-24">
         <Works />
       </div>
     </Layout>
