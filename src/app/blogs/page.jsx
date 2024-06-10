@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
 import Blog from "../components/Blog/Blog";
 import blog1 from "@/assets/images/blogs/blog-1.jpg";
@@ -10,68 +10,17 @@ import blog5 from "@/assets/images/blogs/blog-5.jpg";
 import blog6 from "@/assets/images/blogs/blog-6.jpg";
 import useAOS from "../hooks/useAos";
 import useLenis from "../hooks/useLenis";
+import axios from "axios";
+import { getData, url } from "@/constants";
 
 const Page = () => {
   useAOS();
   useLenis();
+  const [blogs, setBlogs] = useState([]);
 
-  const blogs = [
-    {
-      link: "/",
-      image: blog1,
-      date: "23rd Aug 2023",
-      heading: "How to Build a Stunning Website with Framer",
-      paragraph:
-        "Learn how to create an impressive website using Framer with our step-by-step guide.",
-      tag: "Webdesign",
-    },
-    {
-      link: "/",
-      image: blog2,
-      date: "23rd Aug 2023",
-      heading: "10 website elements for maximum user engagement",
-      paragraph:
-        "10 website elements to engage users, from intuitive navigation to compelling visuals.",
-      tag: "Webdesign",
-    },
-    {
-      link: "/",
-      image: blog3,
-      date: "23rd Aug 2023",
-      heading: "The importance of content in driving website traffic",
-      paragraph:
-        "Learn how to create an impressive website using Framer with our step-by-step guide.",
-      tag: "Webdesign",
-    },
-    {
-      link: "/",
-      image: blog4,
-      date: "23rd Aug 2023",
-      heading: "10 common web development mistakes to avoid",
-      paragraph:
-        "Quality content is king. Learn how to create valuable, SEO-optimized content.",
-      tag: "Webdesign",
-    },
-    {
-      link: "/",
-      image: blog5,
-      date: "23rd Aug 2023",
-      heading: "Why responsive web design is critical for your business",
-      paragraph:
-        "Learn how to create an impressive website using Framer with our step-by-step guide.",
-      tag: "Webdesign",
-    },
-    {
-      link: "/",
-      image: blog6,
-      date: "23rd Aug 2023",
-      heading:
-        "The art of SEO writing: How to write content that ranks on Google",
-      paragraph:
-        "Learn how to create an impressive website using Framer with our step-by-step guide.",
-      tag: "Webdesign",
-    },
-  ];
+  useEffect(() => {
+    getData().then((data) => setBlogs(data));
+  }, []);
 
   return (
     <Layout>

@@ -59,20 +59,6 @@ module.exports = {
         h2: ["48px", "110%"],
         h1: ["64px", "110%"],
       },
-      animation: {
-        marquee: "marquee 5s linear infinite",
-        marquee2: "marquee2 5s linear infinite",
-      },
-      keyframes: {
-        marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
-        },
-        marquee2: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(100%)" },
-        },
-      },
     },
 
     colors: {
@@ -99,13 +85,6 @@ module.exports = {
       },
       black: "#000000",
       transparent: "#00000000",
-    },
-
-    keyframes: {
-      marquee: {
-        "0%": { transform: "translateX(0%)" },
-        "100%": { transform: "translateX(-100%)" },
-      },
     },
   },
   plugins: [],

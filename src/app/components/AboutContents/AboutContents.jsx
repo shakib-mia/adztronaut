@@ -11,6 +11,8 @@ import {
   FaPinterest,
   FaTwitter,
 } from "react-icons/fa";
+import { smoothScrollTo } from "@/utils/smoothScroll";
+import { getElementTopPosition } from "@/utils/getElementTopPosition";
 
 const AboutContents = () => {
   const social = [
@@ -54,14 +56,13 @@ const AboutContents = () => {
         data-aos="fade-down"
         data-aos-duration="1000"
         data-aos-delay="1500"
-        onClick={() => {
-          //   console.log(document.getElementById("text-container").);
-          window.scrollTo({
-            left: 0,
-            top: window.innerHeight - 200,
-            behavior: "smooth",
-          });
-        }}
+        id="about"
+        onClick={() =>
+          smoothScrollTo(
+            getElementTopPosition(document.getElementById("about")) + 20,
+            500,
+          )
+        }
       >
         <div className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg-muted">
           <PiArrowDown className="text-md" />

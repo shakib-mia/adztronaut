@@ -12,7 +12,7 @@ const SocialButton = ({ icon, text, link, id }) => {
       data-aos="fade-left"
       data-aos-delay={delay}
     >
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2 md:gap-3 lg:gap-4">
         {icon}
 
         <p className="text-meta uppercase">{text}</p>

@@ -7,49 +7,9 @@ import { AiOutlineDribbble } from "react-icons/ai";
 import Link from "next/link";
 import Button from "../Button/Button";
 import { GoArrowUp, GoArrowUpRight } from "react-icons/go";
+import { smoothScrollTo } from "@/utils/smoothScroll";
 
 const Footer = () => {
-  function easeOutQuad(t) {
-    return t * (2 - t);
-  }
-
-  function smoothScrollToTop(duration) {
-    const start = window.scrollY;
-    const startTime =
-      "now" in window.performance ? performance.now() : new Date().getTime();
-
-    const documentHeight = document.documentElement.scrollHeight;
-    const windowHeight = window.innerHeight;
-    const destinationOffset = 0;
-    const destinationOffsetToScroll = Math.round(
-      documentHeight - windowHeight < destinationOffset
-        ? documentHeight - windowHeight
-        : destinationOffset,
-    );
-
-    if ("requestAnimationFrame" in window === false) {
-      window.scroll(0, destinationOffsetToScroll);
-      return;
-    }
-
-    function scroll() {
-      const now =
-        "now" in window.performance ? performance.now() : new Date().getTime();
-      const time = Math.min(1, (now - startTime) / duration);
-      const timeFunction = easeOutQuad(time);
-      window.scroll(
-        0,
-        Math.ceil(timeFunction * (destinationOffsetToScroll - start) + start),
-      );
-
-      if (window.scrollY !== destinationOffsetToScroll) {
-        requestAnimationFrame(scroll);
-      }
-    }
-
-    scroll();
-  }
-
   return (
     <footer className="relative bg-bg-muted">
       <div className="mx-auto grid grid-cols-1 gap-10 p-4 uppercase text-text-muted md:grid-cols-2 xl:grid-cols-4 xl:gap-4 2xl:max-w-[1300px]">
@@ -256,7 +216,7 @@ const Footer = () => {
 
         <div
           className="absolute bottom-5 right-5 flex cursor-pointer items-center gap-4 text-meta text-text md:static"
-          onClick={() => smoothScrollToTop(2000)}
+          onClick={() => smoothScrollTo(0, 2000)}
         >
           TO TOP
           <aside className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg-muted">

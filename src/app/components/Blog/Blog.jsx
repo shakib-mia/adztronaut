@@ -4,7 +4,7 @@ import Image from "next/image";
 import { PiArrowDownRightThin } from "react-icons/pi";
 import Link from "next/link";
 
-const Blog = ({ id, image, heading, date, paragraph, tag }) => {
+const Blog = ({ id, image, heading, date, paragraph, tag, details }) => {
   return (
     <article
       className="group relative"
@@ -12,11 +12,19 @@ const Blog = ({ id, image, heading, date, paragraph, tag }) => {
       data-aos-duration="1000"
     >
       <Link
-        href={"/"}
+        href={details}
         className="inline-block h-full bg-bg-muted p-4 md:p-8 lg:p-12"
       >
         <div className="relative">
-          <Image src={image} alt="blog" />
+          <Image
+            src={image}
+            className="w-full"
+            width={416}
+            // layout="fill"
+            height={270}
+            alt="blog"
+            responsive
+          />
           <div className="absolute bottom-0 left-0 right-0 top-0 m-auto hidden h-8 w-8 items-center justify-center rounded-full border border-border group-hover:flex">
             {/* <FaArrowRight className="-rotate-45 font-thin" /> */}
             <PiArrowDownRightThin className="-rotate-90" />
