@@ -1,6 +1,7 @@
 "use client";
 import BlogContainer from "@/app/components/BlogContainer/BlogContainer";
 import Layout from "@/app/components/Layout/Layout";
+import RelatedBlogs from "@/app/components/RelatedBlogs/RelatedBlogs";
 import useAOS from "@/app/hooks/useAos";
 import useLenis from "@/app/hooks/useLenis";
 import { getData } from "@/constants";
@@ -25,6 +26,7 @@ const Page = () => {
   return (
     <Layout>
       <BlogContainer blog={blogs[parseFloat(pathname.split("/")[2]) - 1]} />
+      <RelatedBlogs blogs={blogs} />
     </Layout>
   );
 };
