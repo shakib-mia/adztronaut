@@ -4,6 +4,7 @@ import Layout from "../components/Layout/Layout";
 import useAOS from "../hooks/useAos";
 import useLenis from "../hooks/useLenis";
 import Package from "../components/Package/Package";
+import FAQ from "../components/FAQ/FAQ";
 
 const Page = () => {
   useAOS();
@@ -35,7 +36,7 @@ const Page = () => {
 
   return (
     <Layout>
-      <div className="py-20 lg:py-56">
+      <div className="py-20 lg:pb-40 lg:pt-56">
         <div className="mx-auto text-center lg:w-2/3">
           <p
             className="text-meta-sm uppercase text-text-muted md:text-meta"
@@ -71,6 +72,7 @@ const Page = () => {
           ))}
         </div>
       </div>
+      <FAQ />
     </Layout>
   );
 };
