@@ -1,13 +1,20 @@
 import React from "react";
 import logo from "@/assets/images/logo.png";
 import Image from "next/image";
-import { FaBehance, FaInstagram, FaTwitter } from "react-icons/fa";
+import {
+  FaBehance,
+  FaEnvelope,
+  FaInstagram,
+  FaPhone,
+  FaTwitter,
+} from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import { AiOutlineDribbble } from "react-icons/ai";
 import Link from "next/link";
 import Button from "../Button/Button";
 import { GoArrowUp, GoArrowUpRight } from "react-icons/go";
 import { smoothScrollTo } from "@/utils/smoothScroll";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -117,20 +124,20 @@ const Footer = () => {
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/"}
+                href={"/works"}
               >
-                Home
+                Works
               </Link>
             </li>
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
-                href={"/services"}
+                href={"/blogs"}
               >
-                Services
+                Blogs
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 className="transition duration-500 hover:text-text"
                 href={"/about"}
@@ -145,7 +152,7 @@ const Footer = () => {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
         </aside>
 
@@ -154,47 +161,36 @@ const Footer = () => {
           data-aos-duration="1000"
           data-aos-delay="1500"
         >
-          <h5 className="text-h6 text-text xl:text-h5">Utility Pages</h5>
+          <h5 className="text-h6 text-text xl:text-h5">Contact</h5>
           <ul className="mt-8 flex flex-col gap-4">
             <li>
-              <Link
-                className="transition duration-500 hover:text-text"
-                href={"/Home"}
+              <a
+                className="flex items-center gap-2 transition duration-500 hover:text-text"
+                href={"callto:833-900-8338"}
               >
-                404 Error Page
-              </Link>
+                <FaPhone className="rotate-90" />
+                833-900-8338
+              </a>
             </li>
             <li>
-              <Link
-                className="transition duration-500 hover:text-text"
-                href={"/Services"}
+              <a
+                className="flex items-center gap-2 transition duration-500 hover:text-text"
+                href={"mailto:support@raddito.com"}
               >
-                Password Protected
-              </Link>
+                <FaEnvelope />
+                mailto:support@raddito.com
+              </a>
             </li>
             <li>
-              <Link
-                className="transition duration-500 hover:text-text"
-                href={"/About"}
+              <a
+                className="flex items-center gap-2 transition duration-500 hover:text-text"
+                href={"https://maps.app.goo.gl/2UzAdKXEh7w2b9e66"}
+                target="_blank"
+                rel="noreferrer"
               >
-                Styleguide
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="transition duration-500 hover:text-text"
-                href={"/Contact"}
-              >
-                Licensing
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="transition duration-500 hover:text-text"
-                href={"/Contact"}
-              >
-                Changelog
-              </Link>
+                <FaLocationDot className="text-xl" />
+                818 22ND AVE NW SAINT PAUL, MN 55112-6629 USA
+              </a>
             </li>
           </ul>
         </aside>
