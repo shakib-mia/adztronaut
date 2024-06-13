@@ -25,8 +25,8 @@ const RelatedBlogs = ({ blogs }) => {
 
   return (
     <>
-      <div className="flex items-center justify-between p-8">
-        <h1 className="font-satoshi text-h1" data-aos="fade-right">
+      <div className="flex items-center justify-between pb-4 lg:p-8">
+        <h1 className="font-satoshi text-h3 lg:text-h1" data-aos="fade-right">
           Related <span className="font-gambetta italic">News</span>
         </h1>
 
