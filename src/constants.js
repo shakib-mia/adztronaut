@@ -1,9 +1,8 @@
 import axios from "axios";
 
-export const url = "http://localhost:3000";
+export const url = window.location.origin;
 
-export async function getData() {
-  const { data } = await axios.get(`${url}/blogs.json`);
-  //   console.log(data);
+export async function getData(item) {
+  const { data } = await axios.get(`${url}/${item}.json`);
   return data;
 }

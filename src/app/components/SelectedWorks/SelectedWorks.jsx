@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { PiArrowDownRightThin } from "react-icons/pi";
-import Work from "../Work/Work";
+// import Work from "../Work/works";
 import Works from "../Works/Works";
 import SeeAll from "../SeeAll/SeeAll";
 
@@ -17,19 +17,7 @@ const SelectedWorks = () => {
           Selected <span className="font-gambetta italic">Work</span>
         </h2>
 
-        {/* <Link
-          href={"/"}
-          className="flex items-center gap-3"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-        >
-          <div className="flex h-8 w-8 items-center justify-center rounded-full border border-border bg-bg-muted p-2">
-            <PiArrowDownRightThin className="-rotate-90" />
-          </div>
-          <p className="font-satoshi text-meta uppercase text-text">See all</p>
-        </Link> */}
-
-        <SeeAll link={"/"} />
+        <SeeAll link={"/works"} />
       </div>
 
       <Works />

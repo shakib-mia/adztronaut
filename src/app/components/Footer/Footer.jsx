@@ -101,10 +101,9 @@ const Footer = () => {
           <Button className="!p-0">
             <Link
               href={"/contact"}
-              className="flex items-center gap-2 bg-bg-primary px-4 py-[0.625rem] uppercase text-black"
+              className="flex items-center gap-2 px-4 py-[0.625rem] uppercase"
             >
-              more templates
-              <GoArrowUpRight />
+              More Templates
             </Link>
           </Button>
         </aside>
@@ -201,8 +200,8 @@ const Footer = () => {
         </aside>
       </div>
 
-      <div className="mx-auto mt-20 flex justify-between p-4 pb-16 2xl:max-w-[1300px]">
-        <p className="text-xs text-text-muted">
+      <div className="mx-auto mt-4 flex justify-center p-4 pb-16 md:mt-20 lg:justify-between 2xl:max-w-[1300px]">
+        <p className="text-center text-xs text-text-muted lg:text-left">
           Copyright © 2024 Developed by{" "}
           <a href="https://raddito.com/" className="font-semibold">
             Raddito LLC

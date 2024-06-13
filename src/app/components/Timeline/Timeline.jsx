@@ -67,7 +67,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="mt-16">
+    <div className="relative mt-16">
       {items.map((item, key) => (
         <TimelineItem {...item} id={key + 1} key={key} />
       ))}

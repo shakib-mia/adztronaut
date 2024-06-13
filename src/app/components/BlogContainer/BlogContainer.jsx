@@ -45,15 +45,30 @@ const BlogContainer = ({ blog }) => {
       </button>
 
       <div className="grid grid-cols-1 gap-4 uppercase md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex justify-between border border-border bg-bg-muted p-4 text-meta text-text md:p-5 lg:p-8">
+        <div
+          className="flex justify-between border border-border bg-bg-muted p-4 text-meta text-text md:p-5 lg:p-8"
+          data-aos="fade-left"
+          // data-aos-duration="1000"
+          data-aos-delay="250"
+        >
           <aside className="text-text-muted">date</aside>
           <aside className="text-text">{blog.date}</aside>
         </div>
-        <div className="flex justify-between border border-border bg-bg-muted p-4 text-meta text-text md:p-5 lg:p-8">
+        <div
+          className="flex justify-between border border-border bg-bg-muted p-4 text-meta text-text md:p-5 lg:p-8"
+          data-aos="fade-left"
+          // data-aos-duration="1000"
+          data-aos-delay="500"
+        >
           <aside className="text-text-muted">category</aside>
           <aside className="text-text">{blog.tag}</aside>
         </div>
-        <div className="flex justify-between border border-border bg-bg-muted p-4 text-meta text-text md:p-5 lg:p-8">
+        <div
+          className="flex justify-between border border-border bg-bg-muted p-4 text-meta text-text md:p-5 lg:p-8"
+          data-aos="fade-left"
+          // data-aos-duration="1000"
+          data-aos-delay="750"
+        >
           <aside className="text-text-muted">reading time</aside>
           <aside className="text-text">{blog.readingTime}</aside>
         </div>

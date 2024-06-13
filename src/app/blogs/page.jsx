@@ -2,16 +2,9 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
 import Blog from "../components/Blog/Blog";
-import blog1 from "@/assets/images/blogs/blog-1.jpg";
-import blog2 from "@/assets/images/blogs/blog-2.jpg";
-import blog3 from "@/assets/images/blogs/blog-3.jpg";
-import blog4 from "@/assets/images/blogs/blog-4.jpg";
-import blog5 from "@/assets/images/blogs/blog-5.jpg";
-import blog6 from "@/assets/images/blogs/blog-6.jpg";
 import useAOS from "../hooks/useAos";
 import useLenis from "../hooks/useLenis";
-import axios from "axios";
-import { getData, url } from "@/constants";
+import { getData } from "@/constants";
 
 const Page = () => {
   useAOS();
@@ -19,7 +12,7 @@ const Page = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    getData().then((data) => setBlogs(data));
+    getData("blogs").then((data) => setBlogs(data));
   }, []);
 
   return (

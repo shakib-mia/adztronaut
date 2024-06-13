@@ -1,6 +1,8 @@
 import React from "react";
 import hero from "@/assets/images/hero-image.png";
 import Image from "next/image";
+import Button from "../Button/Button";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -38,6 +40,22 @@ const Header = () => {
           Premium web design, development, and SEO services to help your
           business stand out.
         </p>
+
+        <div
+          className="mt-6 flex justify-center"
+          data-aos="fade-up"
+          // data-aos-duration="900"
+          data-aos-delay="700"
+        >
+          <Button className="!p-0 sm:hidden">
+            <Link
+              href={"/contact"}
+              className="flex items-center gap-2 px-4 py-[0.625rem] uppercase"
+            >
+              {"Let's"} Talk
+            </Link>
+          </Button>
+        </div>
       </div>
     </header>
   );

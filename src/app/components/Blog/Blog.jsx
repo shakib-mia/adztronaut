@@ -25,7 +25,7 @@ const Blog = ({ id, image, heading, date, paragraph, tag, details }) => {
             alt="blog"
             responsive
           />
-          <div className="absolute bottom-0 left-0 right-0 top-0 m-auto hidden h-8 w-8 items-center justify-center rounded-full border border-border group-hover:flex">
+          <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-8 w-8 items-center justify-center rounded-full border border-border opacity-0 transition duration-700 group-hover:opacity-100">
             {/* <FaArrowRight className="-rotate-45 font-thin" /> */}
             <PiArrowDownRightThin className="-rotate-90" />
           </div>

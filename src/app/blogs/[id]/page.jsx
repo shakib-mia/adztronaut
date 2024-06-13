@@ -1,6 +1,7 @@
 "use client";
 import BlogContainer from "@/app/components/BlogContainer/BlogContainer";
 import Layout from "@/app/components/Layout/Layout";
+import NotFound from "@/app/components/NotFound/NotFound";
 import RelatedBlogs from "@/app/components/RelatedBlogs/RelatedBlogs";
 import useAOS from "@/app/hooks/useAos";
 import useLenis from "@/app/hooks/useLenis";
@@ -14,11 +15,11 @@ const Page = () => {
 
   const [blogs, setBlogs] = useState([]);
   const pathname = usePathname();
-
+  const blog = blogs[parseFloat(pathname.split("/")[2]) - 1];
   //   console.log(parseFloat(pathname.split("/")[2]) - 1);
 
   useEffect(() => {
-    getData().then((data) => setBlogs(data));
+    getData("blogs").then((data) => setBlogs(data));
   }, []);
 
   //   console.log(blogs);

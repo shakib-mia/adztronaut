@@ -74,7 +74,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section>
+    <section className="mt-16 lg:mt-0">
       <h2
         className="mx-auto mb-2 text-center font-satoshi text-h4 font-light md:mb-4 lg:w-1/2 lg:text-heading-md"
         data-aos="fade-right"
@@ -91,7 +91,7 @@ const Testimonials = () => {
         helped them achieve.
       </p>
 
-      <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:mt-16">
         <div className="flex flex-col gap-8">
           {testis.map(
             (item, key) =>

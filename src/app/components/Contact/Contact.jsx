@@ -87,7 +87,7 @@ const Contact = () => {
             <Button className="mt-8 !p-0">
               <Link
                 href={"/contact"}
-                className="flex items-center gap-2 bg-bg-primary px-4 py-[0.625rem] uppercase text-black"
+                className="flex items-center gap-2 px-4 py-[0.625rem] uppercase"
               >
                 get in touch
                 <GoArrowUpRight />

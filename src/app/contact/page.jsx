@@ -90,25 +90,30 @@ const Page = () => {
             </h2>
 
             <div className="flex flex-col gap-4">
-              <InputField
+              <div
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-delay="600"
-                placeholder="name"
-              />
-              <InputField
+              >
+                <InputField placeholder="name" />
+              </div>
+              <div
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-delay="800"
-                placeholder="email"
-              />
-              <InputField
+              >
+                <InputField placeholder="email" />
+              </div>
+
+              <div
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-delay="1000"
-                placeholder="message"
-                textarea
-              />
+              >
+                <div>
+                  <InputField placeholder="message" textarea />
+                </div>
+              </div>
 
               <div
                 data-aos="zoom-in"

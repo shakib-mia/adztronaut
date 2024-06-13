@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply rounded selection:bg-text selection:text-text-inverse;
+}
+
 body {
   /* font-family: ; */
   @apply overflow-x-hidden scroll-smooth bg-black text-text;

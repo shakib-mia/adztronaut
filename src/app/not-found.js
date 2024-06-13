@@ -1,12 +1,13 @@
 import React from "react";
+import NotFound from "./components/NotFound/NotFound";
 import Layout from "./components/Layout/Layout";
 
-const NotFound = () => {
+const page = () => {
   return (
     <Layout>
-      <div className="my-40 text-center">Oops page is not found</div>
+      <NotFound />
     </Layout>
   );
 };
 
-export default NotFound;
+export default page;

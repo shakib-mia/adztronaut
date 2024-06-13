@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "image": "/selected-works/space.jpg",
+    "heading": "Space",
+    "tag": "Webdesign",
+    "subheading": "Modern and visually appealing website that reflected the client's brand.",
+    "clientDetails": {
+      "client": "Pawel Gola",
+      "timeline": "3 Weeks",
+      "services": "Template",
+      "website": "gola.io"
+    },
+
+    "about": {
+      "heading": "Concept, Design, and Development. All-in-one.",
+      "details": [
+        {
+          "heading": "Challenge",
+          "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
+        },
+
+        {
+          "heading": "Goal",
+          "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
+        },
+
+        {
+          "heading": "Result",
+          "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
+        }
+      ]
+    },
+    "link": "/works/1"
+  },
+  {
+    "id": 2,
+    "image": "/selected-works/nova.jpg",
+    "heading": "Nova",
+    "tag": "Webdesign",
+    "subheading": "Modern and visually appealing website that reflected the client's brand.",
+    "clientDetails": {
+      "client": "Pawel Gola",
+      "timeline": "3 Weeks",
+      "services": "Template",
+      "website": "gola.io"
+    },
+
+    "about": {
+      "heading": "Concept, Design, and Development. All-in-one.",
+      "details": [
+        {
+          "heading": "Challenge",
+          "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
+        },
+
+        {
+          "heading": "Goal",
+          "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
+        },
+
+        {
+          "heading": "Result",
+          "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
+        }
+      ]
+    },
+    "link": "/works/2"
+  },
+  {
+    "id": 3,
+    "image": "/selected-works/sonic.jpg",
+    "heading": "Sonic",
+    "tag": "Webdesign",
+    "subheading": "Modern and visually appealing website that reflected the client's brand.",
+    "clientDetails": {
+      "client": "Pawel Gola",
+      "timeline": "3 Weeks",
+      "services": "Template",
+      "website": "gola.io"
+    },
+
+    "about": {
+      "heading": "Concept, Design, and Development. All-in-one.",
+      "details": [
+        {
+          "heading": "Challenge",
+          "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
+        },
+
+        {
+          "heading": "Goal",
+          "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
+        },
+
+        {
+          "heading": "Result",
+          "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
+        }
+      ]
+    },
+    "link": "/works/3"
+  },
+  {
+    "id": 4,
+    "image": "/selected-works/solar.jpg",
+    "heading": "Solar",
+    "tag": "Webdesign",
+    "subheading": "Modern and visually appealing website that reflected the client's brand.",
+    "clientDetails": {
+      "client": "Pawel Gola",
+      "timeline": "3 Weeks",
+      "services": "Template",
+      "website": "gola.io"
+    },
+
+    "about": {
+      "heading": "Concept, Design, and Development. All-in-one.",
+      "details": [
+        {
+          "heading": "Challenge",
+          "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
+        },
+
+        {
+          "heading": "Goal",
+          "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
+        },
+
+        {
+          "heading": "Result",
+          "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
+        }
+      ]
+    },
+    "link": "/works/4"
+  }
+]
