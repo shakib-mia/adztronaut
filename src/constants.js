@@ -9,6 +9,6 @@ export { url };
 
 export async function getData(item) {
   const { data } = await axios.get(`${url}/${item}.json`);
-  console.log(url);
+  // console.log(url);
   return data;
 }

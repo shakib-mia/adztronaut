@@ -25,10 +25,10 @@ const Page = () => {
   //   console.log(blogs);
 
   return (
-    <Layout>
+    <>
       <BlogContainer blog={blogs[parseFloat(pathname.split("/")[2]) - 1]} />
       <RelatedBlogs blogs={blogs} />
-    </Layout>
+    </>
   );
 };
 

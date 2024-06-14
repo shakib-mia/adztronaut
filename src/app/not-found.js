@@ -4,9 +4,9 @@ import Layout from "./components/Layout/Layout";
 
 const page = () => {
   return (
-    <Layout>
+    <>
       <NotFound />
-    </Layout>
+    </>
   );
 };
 

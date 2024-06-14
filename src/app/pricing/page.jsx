@@ -35,7 +35,7 @@ const Page = () => {
   ];
 
   return (
-    <Layout>
+    <>
       <div className="py-20 lg:pb-40 lg:pt-56">
         <div className="mx-auto text-center lg:w-2/3">
           <p
@@ -73,7 +73,7 @@ const Page = () => {
         </div>
       </div>
       <FAQ />
-    </Layout>
+    </>
   );
 };
 

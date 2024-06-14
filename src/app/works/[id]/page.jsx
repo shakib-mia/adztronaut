@@ -20,7 +20,7 @@ const Page = () => {
     getData("works").then((data) => setData(data[pathname - 1]));
   }, [pathname]);
 
-  return <Layout>{data ? <WorkDetails data={data} /> : <NotFound />}</Layout>;
+  return <>{data ? <WorkDetails data={data} /> : <NotFound />}</>;
 };
 
 export default Page;

@@ -60,82 +60,76 @@ const Page = () => {
   };
 
   return (
-    <Layout>
-      <div className="grid h-full grid-cols-1 items-center gap-20 py-10 md:py-20 lg:grid-cols-2 lg:py-56">
-        <Image src={image} alt="contact-image" data-aos="fade-right" />
-        <aside
-          className="text-text"
-          data-aos="fade-left"
-          data-aos-duration="200"
+    <div className="grid h-full grid-cols-1 items-center gap-20 py-10 md:py-20 lg:grid-cols-2 lg:py-56">
+      <Image src={image} alt="contact-image" data-aos="fade-right" />
+      <aside className="text-text" data-aos="fade-left" data-aos-duration="200">
+        <form
+          className="border border-border bg-bg-muted p-5 font-satoshi md:p-8 xl:p-12"
+          onSubmit={handleSubmit}
         >
-          <form
-            className="border border-border bg-bg-muted p-5 font-satoshi md:p-8 xl:p-12"
-            onSubmit={handleSubmit}
+          <p
+            className="mb-2 text-meta uppercase text-text-muted"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
           >
-            <p
-              className="mb-2 text-meta uppercase text-text-muted"
+            Contact
+          </p>
+          <h2
+            className="mb-8 text-h2 font-light"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            Let’s get in touch.
+          </h2>
+
+          <div className="flex flex-col gap-4">
+            <div
               data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-delay="200"
+              data-aos-delay="600"
             >
-              Contact
-            </p>
-            <h2
-              className="mb-8 text-h2 font-light"
+              <InputField placeholder="name" />
+            </div>
+            <div
               data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-delay="400"
+              data-aos-delay="800"
             >
-              Let’s get in touch.
-            </h2>
+              <InputField placeholder="email" />
+            </div>
 
-            <div className="flex flex-col gap-4">
-              <div
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="600"
-              >
-                <InputField placeholder="name" />
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-              >
-                <InputField placeholder="email" />
-              </div>
-
-              <div
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="1000"
-              >
-                <div>
-                  <InputField placeholder="message" textarea />
-                </div>
-              </div>
-
-              <div
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-delay="1500"
-                className="w-full"
-              >
-                <Button className="w-full" type="submit">
-                  Send Message
-                </Button>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            >
+              <div>
+                <InputField placeholder="message" textarea />
               </div>
             </div>
-          </form>
 
-          <div className="mt-4 grid grid-cols-2 gap-4">
-            {socialSites.map((item, key) => (
-              <SocialButton key={key} id={key + 1} {...item} />
-            ))}
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1500"
+              className="w-full"
+            >
+              <Button className="w-full" type="submit">
+                Send Message
+              </Button>
+            </div>
           </div>
-        </aside>
-      </div>
-    </Layout>
+        </form>
+
+        <div className="mt-4 grid grid-cols-2 gap-4">
+          {socialSites.map((item, key) => (
+            <SocialButton key={key} id={key + 1} {...item} />
+          ))}
+        </div>
+      </aside>
+    </div>
   );
 };
 

@@ -17,7 +17,7 @@ export default function Home() {
   useAOS();
 
   return (
-    <Layout>
+    <>
       <Header />
       <Clients />
       <Services />
@@ -25,6 +25,6 @@ export default function Home() {
       <Steps />
       <Testimonials />
       <About />
-    </Layout>
+    </>
   );
 }
