@@ -72,7 +72,7 @@ const Contact = () => {
             className="mx-auto w-full text-center font-chillax text-md text-text-muted lg:w-9/12 lg:text-lg"
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-delay="1000"
+            data-aos-delay="600"
           >
             Premium web design, webflow, and SEO services to help your business
             stand out.
@@ -82,7 +82,7 @@ const Contact = () => {
             className="flex justify-center"
             data-aos="zoom-in"
             data-aos-duration="1000"
-            data-aos-delay="1500"
+            data-aos-delay="700"
           >
             <Button className="mt-8 !p-0">
               <Link
