@@ -11,6 +11,7 @@ const Header = () => {
         <Image
           className="mx-auto object-cover"
           src={hero}
+          placeholder="blur"
           alt="hero image"
           data-aos="fade-up"
           data-aos-delay="250"
