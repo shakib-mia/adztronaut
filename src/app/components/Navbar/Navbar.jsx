@@ -74,7 +74,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          <div className="relative">
+          <div className="relative cursor-pointer">
             <li className="group mt-3 flex items-center gap-2 sm:mt-0">
               <p>More</p>
               <FaChevronDown className="transition group-hover:rotate-180" />

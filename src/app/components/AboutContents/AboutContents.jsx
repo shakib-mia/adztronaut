@@ -79,7 +79,7 @@ const AboutContents = () => {
           className="mb-4 text-meta text-text-muted"
           data-aos="fade-left"
           data-aos-duration="1000"
-          data-aos-delay="2500"
+          // data-aos-delay="2500"
         >
           ARIK ANDERSSON
         </p>
@@ -87,7 +87,7 @@ const AboutContents = () => {
           className="mb-4 font-satoshi text-h5 text-text lg:text-h2"
           data-aos="fade-left"
           data-aos-duration="1000"
-          data-aos-delay="2500"
+          // data-aos-delay="2500"
         >
           Your Partner in Bringing Your Web Design Vision to Life
         </h2>

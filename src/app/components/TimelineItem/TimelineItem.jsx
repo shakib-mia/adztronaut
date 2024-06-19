@@ -76,12 +76,14 @@ const TimelineItem = ({
 
       <div className="w-fit" data-aos="fade-down">
         <div
-          className={`relative -left-[0.2px] mx-auto mb-2 ${id === 5 ? "h-64" : "h-52"} w-px bg-border md:h-48`}
+          className={`relative ${id % 2 === 1 ? "lg:-left-px" : "left-0"} mx-auto mb-2 ${id === 5 ? "h-64" : "h-52"} w-px bg-border md:h-48`}
         ></div>
         <div className="mx-auto flex aspect-square w-10 items-center justify-center rounded-full border border-border bg-bg-muted">
           0{id}
         </div>
-        <div className="relative -left-[0.2px] mx-auto mt-2 h-52 w-px bg-border"></div>
+        <div
+          className={`relative ${id % 2 === 1 ? "lg:-left-px" : "left-0"} mx-auto mt-2 h-52 w-px bg-border`}
+        ></div>
       </div>
 
       {id % 2 !== 0 ? (
