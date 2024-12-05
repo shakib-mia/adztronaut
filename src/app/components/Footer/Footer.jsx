@@ -199,7 +199,11 @@ const Footer = () => {
       <div className="mx-auto mt-4 flex justify-center p-4 pb-16 md:mt-20 lg:justify-between 2xl:max-w-[1300px]">
         <p className="text-center text-xs text-text-muted lg:text-left">
           Copyright © 2024 Developed by{" "}
-          <a href="https://raddito.com/" className="font-semibold">
+          <a
+            href="https://raddito.com/"
+            className="font-semibold"
+            rel="nofollow"
+          >
             Raddito LLC
           </a>
           . Designed by{" "}
