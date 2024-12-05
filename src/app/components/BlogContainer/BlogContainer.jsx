@@ -6,6 +6,7 @@ import SocialButton from "../SocialButton/SocialButton";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { smoothScrollTo } from "@/utils/smoothScroll";
 import { getElementTopPosition } from "@/utils/getElementTopPosition";
+import blur from "@/assets/images/blur.jpg";
 
 const BlogContainer = ({ blog }) => {
   // window.addEventListener("scroll", (e) => {
@@ -80,6 +81,7 @@ const BlogContainer = ({ blog }) => {
         width={1400}
         height={900}
         // responsive
+        blurDataURL={blur}
         className="mt-4"
         loading="lazy"
         id="blogImage"

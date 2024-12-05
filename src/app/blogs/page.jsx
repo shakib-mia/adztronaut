@@ -1,19 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Layout from "../components/Layout/Layout";
-import Blog from "../components/Blog/Blog";
+import React from "react";
 import useAOS from "../hooks/useAos";
 import useLenis from "../hooks/useLenis";
-import { getData } from "@/constants";
+import Blogs from "../components/Blogs/Blogs";
 
 const Page = () => {
   useAOS();
   useLenis();
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    getData("blogs").then((data) => setBlogs(data));
-  }, []);
 
   return (
     <div className="pb-6 pt-20 md:pb-16 md:pt-32 xl:pb-32 xl:pt-56">
@@ -34,11 +27,7 @@ const Page = () => {
         </p>
       </div>
 
-      <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {blogs.map((blog, key) => (
-          <Blog {...blog} key={key} />
-        ))}
-      </div>
+      <Blogs />
     </div>
   );
 };

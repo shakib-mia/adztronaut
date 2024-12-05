@@ -8,43 +8,9 @@ const Contact = () => {
   return (
     <>
       <div className="bg-bg py-4 xl:py-10" id="contact">
-        <Marquee>
-          <div className="flex w-full gap-8">
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
-            <div className="flex gap-8 text-meta lg:text-2xl">
-              <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
-            </div>
+        <Marquee autoFill={true}>
+          <div className="mr-8 flex gap-8 text-meta lg:text-2xl">
+            <aside>{"Let's Talk"}</aside> <aside>{"+++"}</aside>
           </div>
         </Marquee>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import blog from "@/assets/images/blogs/blog-1.jpg";
+import blur from "@/assets/images/blur.jpg";
 import Image from "next/image";
 import { PiArrowDownRightThin } from "react-icons/pi";
 import Link from "next/link";
@@ -23,7 +23,8 @@ const Blog = ({ id, image, heading, date, paragraph, tag, details }) => {
             // layout="fill"
             height={270}
             alt="blog"
-            responsive
+            blurDataURL={blur}
+            responsive="true"
           />
           <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-8 w-8 items-center justify-center rounded-full border border-border opacity-0 transition duration-700 group-hover:opacity-100">
             {/* <FaArrowRight className="-rotate-45 font-thin" /> */}

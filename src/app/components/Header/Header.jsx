@@ -9,7 +9,7 @@ const Header = () => {
     <header className="pb-8">
       <div className="mx-auto">
         <Image
-          className="mx-auto object-cover"
+          className="mx-auto w-full"
           src={hero}
           placeholder="blur"
           alt="hero image"
