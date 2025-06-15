@@ -3,11 +3,15 @@ import hero from "@/assets/images/hero-image.png";
 import Image from "next/image";
 import Button from "../Button/Button";
 import Link from "next/link";
+import bg from "@/assets/images/hero-section/1.jpg";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const Header = () => {
   return (
-    <header className="pb-8">
-      <div className="mx-auto">
+    <header className="flex h-screen items-center pb-8">
+      {/* <div className="mx-auto">
         <Image
           className="mx-auto w-full"
           src={hero}
@@ -57,7 +61,46 @@ const Header = () => {
             </Link>
           </Button>
         </div>
-      </div>
+      </div> */}
+
+      <Swiper
+        modules={[Pagination, Autoplay]}
+        spaceBetween={30}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000 }}
+        loop={true}
+        speed={1000}
+        className="h-[500px] w-full"
+      >
+        <SwiperSlide>
+          {/* <img src="/images/slide1.jpg" alt="Slide 1" /> */}
+          <div
+            className="h-full w-full bg-cover bg-center"
+            style={{
+              backgroundImage: `url(${bg.src})`,
+            }}
+          >
+            <h1 className="text-heading-md leading-tight lg:w-8/12">
+              Built for impact - insight-driven, identity-focused
+            </h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          {/* <img src="/images/slide2.jpg" alt="Slide 2" /> */}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iure
+          adipisci ea iusto quos architecto mollitia officiis tenetur rem? Quo
+          veniam ipsum alias nihil. Blanditiis consequuntur perspiciatis aliquid
+          saepe accusamus?
+        </SwiperSlide>
+        <SwiperSlide>
+          {/* <img src="/images/slide3.jpg" alt="Slide 3" /> */}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iure
+          adipisci ea iusto quos architecto mollitia officiis tenetur rem? Quo
+          veniam ipsum alias nihil. Blanditiis consequuntur perspiciatis aliquid
+          saepe accusamus?
+        </SwiperSlide>
+      </Swiper>
     </header>
   );
 };

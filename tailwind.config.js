@@ -31,9 +31,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        chillax: ["Chillax", "sans-serif"],
-        gambetta: ["Gambetta", "sans-serif"],
-        satoshi: ["Satoshi", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
+        "sans-serif": ["Poppins", "sans-serif"],
       },
       fontSize: {
         // Text sizes
@@ -83,6 +82,7 @@ module.exports = {
         muted: "#DAC5A70D", // Bg muted
         "muted-2": "#FFFFFF12", // Bg muted 2
       },
+      brand: "#ffd232",
       black: "#000000",
       transparent: "#00000000",
     },

@@ -47,12 +47,12 @@ const Navbar = () => {
 
       {/* ${scrollDirection === "up" ? "-translate-y-20" : ""} */}
       <nav
-        className={`${scrollDirection === "up" ? "!translate-y-0" : "!-translate-y-40"} fixed left-0 right-0 top-0 z-[99999] mx-auto mt-4 flex w-full max-w-[95vw] items-center justify-between rounded-sm border border-border bg-bg-muted p-3 text-text backdrop-blur transition-transform !duration-500 md:mt-6 md:max-w-[95vw] lg:mt-12 lg:max-w-[41.5rem]`}
+        className={`${scrollDirection === "up" ? "!translate-y-0" : "!-translate-y-40"} text-brand fixed left-0 right-0 top-0 z-[99999] mx-auto mt-4 flex w-full max-w-[95vw] items-center justify-center rounded-sm border border-border bg-bg-muted p-3 backdrop-blur transition-transform !duration-500 md:mt-6 md:max-w-[95vw] lg:mt-12 lg:max-w-[fit-content]`}
         data-aos="fade-up"
         data-aos-delay="100"
       >
         <Link href="/">
-          <Image src={logo} alt="Logo" className="w-14" />
+          <Image src={logo} alt="Logo" className="w-7" />
         </Link>
 
         <label className="sm:hidden">
@@ -65,7 +65,7 @@ const Navbar = () => {
         </label>
 
         <ul
-          className={`absolute left-0 top-16 z-10 hidden h-fit w-full flex-col items-end gap-5 overflow-visible border-t-0 border-border px-3 text-meta uppercase text-text transition-all duration-300 sm:static sm:flex sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent xl:overscroll-none`}
+          className={`text-brand absolute left-0 top-16 z-10 hidden h-fit w-full flex-col items-end gap-5 overflow-visible border-t-0 border-border px-3 text-meta uppercase transition-all duration-300 sm:static sm:flex sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent xl:overscroll-none`}
         >
           {navItem.slice(0, 5).map(({ path, text }, key) => (
             <li className="group relative mt-3 sm:mt-0" key={key}>
@@ -90,7 +90,9 @@ const Navbar = () => {
             </li>
           </div>
 
-          <Button className="mb-3 uppercase sm:hidden">{"Let's"} Talk</Button>
+          <Button className="!bg-brand !border-brand mb-3 uppercase sm:hidden">
+            {"Let's"} Talk
+          </Button>
         </ul>
 
         {/* <Button className="hidden p-0 !px-0 !py-0 sm:block">
@@ -102,7 +104,7 @@ const Navbar = () => {
           </Link>
         </Button> */}
 
-        <Button className="hidden !p-0 sm:block">
+        <Button className="bg-brand border-brand hover:text-brand hidden !p-0 sm:block">
           <Link
             href={"/contact"}
             className="flex items-center gap-2 px-4 py-[0.625rem] uppercase"
