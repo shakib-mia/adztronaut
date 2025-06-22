@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 // import Layout from "../components/Layout/Layout";
 import useLenis from "../hooks/useLenis";
@@ -7,8 +7,8 @@ import Works from "../components/Works/Works";
 import Head from "next/head";
 
 const Page = () => {
-  useLenis();
-  useAOS();
+  // useLenis();
+  // useAOS();
 
   return (
     <>
@@ -18,13 +18,13 @@ const Page = () => {
 
       <div className="mx-auto w-full pt-20 md:pt-32 xl:w-1/2 xl:pt-56">
         <h2
-          className="text-center font-satoshi text-h3 xl:text-heading-lg"
+          className="font-satoshi text-center text-h3 xl:text-heading-lg"
           data-aos="fade-up"
         >
           Work
         </h2>
         <p
-          className="text-center font-chillax text-sm text-text-muted md:text-md xl:text-xl"
+          className="font-chillax text-center text-sm text-text-muted md:text-md xl:text-xl"
           data-aos="fade-up"
           data-aos-delay="500"
         >

@@ -5,13 +5,16 @@ import Layout from "./components/Layout/Layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Arik",
+  title: "Adztronaut",
   description: "Web Designer & Developer",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body>
         <Layout>{children}</Layout>
       </body>

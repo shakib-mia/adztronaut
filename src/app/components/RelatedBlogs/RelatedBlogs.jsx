@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import SeeAll from "../SeeAll/SeeAll";
 import { usePathname } from "next/navigation";
@@ -21,7 +22,7 @@ const RelatedBlogs = ({ blogs }) => {
 
   const filteredBlogs = removeItemAtIndex(parseInt(pathname.split("/")[2]) - 1);
 
-  console.log(filteredBlogs);
+  // console.log(filteredBlogs);
 
   return (
     <>

@@ -6,7 +6,7 @@ import { FaBars, FaChevronDown } from "react-icons/fa";
 import logo from "./../../../assets/images/logo.png";
 import Button from "../Button/Button";
 import useScrollDirection from "@/app/hooks/useScrollDirection";
-import { IoChevronDown } from "react-icons/io5";
+import { HiBars3 } from "react-icons/hi2";
 
 const Navbar = () => {
   const [navChecked, setNavChecked] = useState(false);
@@ -47,16 +47,17 @@ const Navbar = () => {
 
       {/* ${scrollDirection === "up" ? "-translate-y-20" : ""} */}
       <nav
-        className={`${scrollDirection === "up" ? "!translate-y-0" : "!-translate-y-40"} text-brand fixed left-0 right-0 top-0 z-[99999] mx-auto mt-4 flex w-full max-w-[95vw] items-center justify-center rounded-sm border border-border bg-bg-muted p-3 backdrop-blur transition-transform !duration-500 md:mt-6 md:max-w-[95vw] lg:mt-12 lg:max-w-[fit-content]`}
+        className={`${scrollDirection === "up" ? "!translate-y-0" : "!-translate-y-40"} fixed left-0 right-0 top-0 z-[99999] mx-auto mt-4 flex w-full max-w-[95vw] items-center justify-between rounded-sm border border-border bg-bg-muted bg-opacity-20 p-3 text-brand backdrop-blur transition-transform !duration-500 md:mt-6 md:max-w-[95vw] lg:mt-12 lg:max-w-[fit-content] lg:justify-center`}
+        style={{ borderEndStartRadius: navChecked ? "2px" : "0" }}
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        <Link href="/">
-          <Image src={logo} alt="Logo" className="w-7" />
+        <Link href="/" onClick={() => setNavChecked(false)}>
+          <Image src={logo} alt="Logo" className="w-8 lg:w-7" />
         </Link>
 
         <label className="sm:hidden">
-          <FaBars />
+          <HiBars3 className="text-4xl" />
           <input
             type="checkbox"
             onChange={(e) => setNavChecked(e.target.checked)}
@@ -65,10 +66,14 @@ const Navbar = () => {
         </label>
 
         <ul
-          className={`text-brand absolute left-0 top-16 z-10 hidden h-fit w-full flex-col items-end gap-5 overflow-visible border-t-0 border-border px-3 text-meta uppercase transition-all duration-300 sm:static sm:flex sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent xl:overscroll-none`}
+          className={`absolute left-0 top-16 z-10 hidden h-fit w-full flex-col items-end gap-5 overflow-visible border-t-0 border-border px-3 text-meta uppercase text-brand transition-all duration-300 sm:static sm:flex sm:w-auto sm:flex-row sm:items-center sm:border-0 sm:bg-transparent xl:overscroll-none`}
         >
           {navItem.slice(0, 5).map(({ path, text }, key) => (
-            <li className="group relative mt-3 sm:mt-0" key={key}>
+            <li
+              className="group relative mt-3 sm:mt-0"
+              key={key}
+              onClick={() => setNavChecked(false)}
+            >
               <Link href={path}>{text}</Link>
               <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
             </li>
@@ -90,7 +95,7 @@ const Navbar = () => {
             </li>
           </div>
 
-          <Button className="!bg-brand !border-brand mb-3 uppercase sm:hidden">
+          <Button className="mb-3 !border-brand !bg-brand uppercase sm:hidden">
             {"Let's"} Talk
           </Button>
         </ul>
@@ -104,7 +109,7 @@ const Navbar = () => {
           </Link>
         </Button> */}
 
-        <Button className="bg-brand border-brand hover:text-brand hidden !p-0 sm:block">
+        <Button className="hidden border-brand bg-brand !p-0 hover:text-brand sm:block">
           <Link
             href={"/contact"}
             className="flex items-center gap-2 px-4 py-[0.625rem] uppercase"
@@ -115,23 +120,21 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`fixed left-0 right-0 top-16 z-10 mx-auto max-w-[95%] ${navChecked ? "h-60" : "h-0"} flex w-full flex-col divide-y overflow-hidden border-t-0 border-border text-meta uppercase text-text backdrop-blur transition-[height] duration-300 sm:static sm:hidden sm:w-auto sm:flex-row sm:items-center sm:gap-5 sm:border-0 sm:bg-transparent sm:backdrop-blur-0`}
+        className={`fixed left-0 right-0 top-[78px] z-10 mx-auto max-h-[14.5rem] max-w-[95%] rounded-t-none border-t-0 border-border bg-bg-muted ${navChecked ? "h-full border" : "h-0 py-0"} flex w-full flex-col divide-y overflow-hidden border-t-0 border-border text-meta uppercase text-text backdrop-blur transition-[height_padding] duration-500 sm:static sm:hidden sm:w-auto sm:flex-row sm:items-center sm:gap-5 sm:border-0 sm:bg-transparent sm:backdrop-blur-0`}
       >
-        <ul className={`border border-t-0 border-border`}>
+        <ul className={`divide-y-[1px] divide-border`}>
           {navItem.map(({ path, text }, key) => (
-            <li className="group relative" key={key}>
-              <Link className="inline-block w-full p-2" href={path}>
+            <li className="group relative rounded-none py-2" key={key}>
+              <Link
+                className="inline-block w-full px-3"
+                href={path}
+                onClick={() => setNavChecked(false)}
+              >
                 {text}
               </Link>
               <div className="absolute bottom-0 left-0 right-0 mx-auto h-px w-0 bg-text transition-[width] duration-300 group-hover:w-full"></div>
             </li>
           ))}
-
-          {/* <Button className="mb-3 w-fit !p-0 !py-0 sm:hidden">
-          <Link href={"/contact"} className="mb-3 bg-bg-primary px-4 py-2">
-            {"Let's"} Talk
-          </Link>
-        </Button> */}
         </ul>
       </div>
     </>

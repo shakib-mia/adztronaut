@@ -1,9 +1,10 @@
 import React from "react";
-import logo from "@/assets/images/logo.png";
+import logo from "@/assets/images/logo-yellow-adztronaut.png";
 import Image from "next/image";
 import {
   FaBehance,
   FaEnvelope,
+  FaEnvelopeOpen,
   FaInstagram,
   FaPhone,
   FaTwitter,
@@ -15,14 +16,19 @@ import Button from "../Button/Button";
 import { GoArrowUp, GoArrowUpRight } from "react-icons/go";
 import { smoothScrollTo } from "@/utils/smoothScroll";
 import { FaLocationDot } from "react-icons/fa6";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const Footer = () => {
   return (
     <footer className="relative bg-bg-muted">
       <div className="mx-auto grid grid-cols-1 gap-10 p-4 uppercase text-text-muted md:grid-cols-2 xl:grid-cols-4 xl:gap-4 2xl:max-w-[1300px]">
         <aside data-aos="fade-up" data-aos-duration="1000">
-          <Image src={logo} alt="logo" />
-          <ul className="mt-6 flex flex-col gap-4 md:mt-8 xl:mt-11">
+          <Image
+            src={logo}
+            alt="logo"
+            className="w-[40%] rounded-none border-b border-brand pb-2"
+          />
+          <ul className="mt-6 flex flex-col gap-4 md:mt-8">
             <li>
               <a className="group flex items-center gap-2" href="#">
                 <aside className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg-muted text-text-muted transition duration-500 group-hover:bg-bg-secondary">
@@ -169,27 +175,31 @@ const Footer = () => {
                 href={"callto:833-900-8338"}
               >
                 <FaPhone className="rotate-90" />
-                833-900-8338
+                123-456-7890
               </a>
             </li>
             <li>
               <a
                 className="flex items-center gap-2 transition duration-500 hover:text-text"
-                href={"mailto:support@raddito.com"}
+                href={"mailto:smdshakibmia2001@gmail.com"}
               >
-                <FaEnvelope />
-                mailto:support@raddito.com
+                <div className="aspect-square w-4">
+                  <FaEnvelopeOpen />
+                </div>
+                mailto:smdshakibmia2001@gmail.com
               </a>
             </li>
             <li>
               <a
                 className="flex items-center gap-2 transition duration-500 hover:text-text"
-                href={"https://maps.app.goo.gl/2UzAdKXEh7w2b9e66"}
+                // href={"https://maps.app.goo.gl/2UzAdKXEh7w2b9e66"}
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaLocationDot className="text-xl" />
-                818 22ND AVE NW SAINT PAUL, MN 55112-6629 USA
+                <div className="aspect-square w-4">
+                  <FaLocationDot />
+                </div>
+                Cooch Beher, West Bengal, India
               </a>
             </li>
           </ul>
@@ -200,11 +210,11 @@ const Footer = () => {
         <p className="text-center text-xs text-text-muted lg:text-left">
           Copyright © 2024 Developed by{" "}
           <a
-            href="https://raddito.com/"
+            // href="https://raddito.com/"
             className="font-semibold"
             rel="nofollow"
           >
-            Raddito LLC
+            smdshakibmia2001@gmail.com
           </a>
           . Designed by{" "}
           <a href="https://templates.gola.io/" className="font-semibold">
@@ -213,15 +223,17 @@ const Footer = () => {
           .
         </p>
 
-        <div
+        <ScrollToTop />
+
+        {/* <div
           className="absolute bottom-5 right-5 flex cursor-pointer items-center gap-4 text-meta text-text md:static"
-          onClick={() => smoothScrollTo(0, 2000)}
+          // onClick={() => smoothScrollTo(0, 2000)}
         >
           TO TOP
           <aside className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg-muted">
             <GoArrowUp />
           </aside>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

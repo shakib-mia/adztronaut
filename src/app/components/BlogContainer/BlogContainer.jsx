@@ -7,43 +7,30 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { smoothScrollTo } from "@/utils/smoothScroll";
 import { getElementTopPosition } from "@/utils/getElementTopPosition";
 import blur from "@/assets/images/blur.jpg";
+import ScrollDownButton from "../ScrollDownButton/ScrollDownButton";
 
 const BlogContainer = ({ blog }) => {
   // window.addEventListener("scroll", (e) => {
   //   console.log(window.pageYOffset);
   // });
-  // console.log();
   return blog ? (
     <div className="pb-8 pt-20 lg:pb-32 lg:pt-56">
       <h1
-        className="text-center font-satoshi text-h3 lg:text-heading-sm"
+        className="font-satoshi text-center text-h3 lg:text-heading-sm"
         data-aos="fade-right"
       >
         {blog.heading}
       </h1>
 
       <p
-        className="mx-auto mt-2 w-full text-clip text-center font-chillax text text-text-muted lg:w-1/2 lg:text-lg"
+        className="font-chillax mx-auto mt-2 w-full text-clip text-center text text-text-muted lg:w-1/2 lg:text-lg"
         data-aos="fade-right"
         data-aos-delay="500"
       >
         {blog.paragraph}
       </p>
 
-      <button
-        className="mb-8 mt-6 flex w-full items-center justify-center gap-4 text-meta uppercase lg:mb-16 lg:mt-12"
-        onClick={() =>
-          smoothScrollTo(
-            getElementTopPosition(document.getElementById("blogImage")),
-            500,
-          )
-        }
-      >
-        <div className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg-muted">
-          <PiArrowDown className="text-icon" />
-        </div>
-        Read more
-      </button>
+      <ScrollDownButton />
 
       <div className="grid grid-cols-1 gap-4 uppercase md:grid-cols-2 lg:grid-cols-3">
         <div
@@ -89,7 +76,7 @@ const BlogContainer = ({ blog }) => {
 
       <div className="mx-auto w-full lg:w-5/6" data-aos="fade-in">
         <div className="mt-5 lg:mt-20">
-          <h2 className="mb-4 font-satoshi text-h3 lg:text-h2">
+          <h2 className="font-satoshi mb-4 text-h3 lg:text-h2">
             {blog.introduction.heading}
           </h2>
           <p className="font-chillax text-sm text-text-muted lg:text">
@@ -102,15 +89,15 @@ const BlogContainer = ({ blog }) => {
             <h3 className="font-satoshi text-h4 text-text lg:text-h3">
               {heading}
             </h3>
-            <p className="mt-4 font-chillax text-sm text-text-muted lg:text">
+            <p className="font-chillax mt-4 text-sm text-text-muted lg:text">
               {paragraph}
             </p>
           </div>
         ))}
 
         <div className="mt-12 border border-border bg-bg-muted p-6 md:p-8 lg:p-12">
-          <h3 className="mb-2 font-satoshi text-h4 lg:text-h3">Conclusion</h3>
-          <p className="mb-8 w-5/6 font-chillax text-sm text-text-muted lg:text">
+          <h3 className="font-satoshi mb-2 text-h4 lg:text-h3">Conclusion</h3>
+          <p className="font-chillax mb-8 w-5/6 text-sm text-text-muted lg:text">
             {blog.conclusion}
           </p>
 

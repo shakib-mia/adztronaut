@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { smoothScrollTo } from "@/utils/smoothScroll";
 import { getElementTopPosition } from "@/utils/getElementTopPosition";
+import ScrollDownButton from "../ScrollDownButton/ScrollDownButton";
 
 const AboutContents = () => {
   const social = [
@@ -36,14 +37,14 @@ const AboutContents = () => {
   return (
     <aside className="pt-8 md:pt-12 lg:pt-16">
       <h1
-        className="pb-4 font-satoshi text-h1 lg:text-heading-md"
+        className="font-satoshi pb-4 text-h1 lg:text-heading-md"
         data-aos="fade-left"
         data-aos-duration="1000"
       >
         Arik <i className="font-gambetta">Andersson</i>
       </h1>
       <p
-        className="mb-8 font-chillax text-lg text-text-muted lg:mb-16"
+        className="font-chillax mb-8 text-lg text-text-muted lg:mb-16"
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-delay="500"
@@ -51,7 +52,8 @@ const AboutContents = () => {
         Delivering Premium Web Design and Development Services to Boost Your
         Online Presence.
       </p>
-      <button
+      <ScrollDownButton text={"About Me"} />
+      {/* <button
         className="flex items-center gap-4"
         data-aos="fade-down"
         data-aos-duration="1000"
@@ -68,7 +70,7 @@ const AboutContents = () => {
           <PiArrowDown className="text-md" />
         </div>
         ABOUT ME
-      </button>
+      </button> */}
       <div
         className="mt-10 overflow-x-hidden border border-border bg-bg-muted p-4 text-text lg:mt-32 lg:p-12"
         data-aos="fade-in"
@@ -84,7 +86,7 @@ const AboutContents = () => {
           ARIK ANDERSSON
         </p>
         <h2
-          className="mb-4 font-satoshi text-h5 text-text lg:text-h2"
+          className="font-satoshi mb-4 text-h5 text-text lg:text-h2"
           data-aos="fade-left"
           data-aos-duration="1000"
           // data-aos-delay="2500"
@@ -105,7 +107,7 @@ const AboutContents = () => {
         </p>
 
         <p
-          className="mt-3 font-chillax text-xs text-text-muted lg:mt-6 lg:text"
+          className="font-chillax mt-3 text-xs text-text-muted lg:mt-6 lg:text"
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="0"
@@ -137,11 +139,11 @@ const AboutContents = () => {
       </div>
 
       <div className="mt-4 border border-border bg-bg-muted p-4 text-text lg:p-12">
-        <p className="mb-2 font-satoshi text-meta uppercase text-text-muted lg:mb-8">
+        <p className="font-satoshi mb-2 text-meta uppercase text-text-muted lg:mb-8">
           Awards
         </p>
 
-        <div className="flex flex-col divide-y divide-border font-satoshi">
+        <div className="font-satoshi flex flex-col divide-y divide-border">
           {awards.map(({ name, year }, key) => (
             <div
               className="flex items-center justify-between py-2 md:py-4 lg:py-6"

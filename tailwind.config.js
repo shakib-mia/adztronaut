@@ -63,23 +63,23 @@ module.exports = {
     colors: {
       white: "#FFFFFF",
       text: {
-        DEFAULT: "#DAC5A7", // Text default 100%
-        muted: "#DAC5A799", // Text muted
+        DEFAULT: "#FFFBD6", // Text default 100%
+        muted: "#FFFBD699", // Text muted
         inverse: "#0E0E0E",
       },
       icon: {
-        DEFAULT: "#DAC5A7", // Icon default 100%
+        DEFAULT: "#FFFBD6", // Icon default 100%
         inverse: "#0E0E0E", // Icon inverse
       },
       border: {
-        DEFAULT: "#DAC5A726", // Border default
+        DEFAULT: "#FFFBD626", // Border default
         inverse: "#FFFFFF1E", // Border inverse
       },
       bg: {
         DEFAULT: "#0E0E0E", // Bg default
-        primary: "#DAC5A7", // Bg primary
+        primary: "#FFFBD6", // Bg primary
         secondary: "#1A1A1A", // Bg secondary
-        muted: "#DAC5A70D", // Bg muted
+        muted: "#FFFBD60D", // Bg muted
         "muted-2": "#FFFFFF12", // Bg muted 2
       },
       brand: "#ffd232",

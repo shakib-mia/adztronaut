@@ -5,6 +5,7 @@
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
+@import "swiper/css/parallax";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,22 +25,30 @@ body {
 
 /* General bullet style */
 header .swiper-pagination-bullet {
-  @apply relative h-[2px] w-1/3 overflow-hidden rounded-lg bg-icon bg-opacity-50 opacity-100;
+  @apply relative h-[2px] w-full overflow-hidden rounded-lg bg-icon bg-opacity-50 opacity-100;
 }
 
 header .swiper-pagination-bullet::after {
   content: "";
-  @apply absolute right-0 top-0 h-full w-0 bg-icon transition-all duration-1000 ease-linear;
+  @apply absolute right-0 top-0 h-full w-0 bg-icon;
+  transition-property: width;
+  transition-duration: 0ms; /* No transition initially */
 }
 
-/* When bullet is active, animate the width from 0 to 100% */
-header .swiper-pagination-bullet-active::after {
-  @apply left-0 w-full duration-[4000ms];
+/* After swiper-ready is added, allow transitions */
+header .swiper-pagination.swiper-ready .swiper-pagination-bullet::after {
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+}
+
+/* Animate the active bullet */
+header .swiper-pagination.swiper-ready .swiper-pagination-bullet-active::after {
+  @apply left-0 w-full delay-1000 duration-[3700ms];
 }
 
 /* Align the pagination bullets */
 header .swiper-pagination {
-  @apply flex;
+  @apply flex w-full;
 }
 
 h1,

@@ -74,16 +74,16 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="mt-16 lg:mt-0">
+    <section className="mt-16 lg:mt-16">
       <h2
-        className="mx-auto mb-2 text-center font-satoshi text-h4 font-light md:mb-4 lg:w-1/2 lg:text-heading-md"
+        className="font-satoshi mx-auto mb-2 text-center text-h4 font-light md:mb-4 lg:w-1/2 lg:text-heading-md"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
         What my <span className="font-gambetta italic">clients say</span>
       </h2>
       <p
-        className="mx-auto text-center font-chillax text-sm text-text-muted md:text-md lg:w-1/2"
+        className="font-chillax mx-auto text-center text-sm text-text-muted md:text-md lg:w-1/2"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
