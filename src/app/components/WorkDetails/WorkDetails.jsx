@@ -5,20 +5,22 @@ import { smoothScrollTo } from "@/utils/smoothScroll";
 import Image from "next/image";
 import { getElementTopPosition } from "@/utils/getElementTopPosition";
 import WorkDetailsItem from "../WorkDetailsItem/WorkDetailsItem";
+import ScrollToTop from "../ScrollTo/ScrollTo";
+import { GoArrowUp } from "react-icons/go";
 
 const WorkDetails = ({ data }) => {
   //   console.log(data);
   return (
     <div className="pb-8 pt-20 xl:pb-32 xl:pt-56">
       <h1
-        className="mb-4 text-center font-satoshi text-h2 md:text-heading-md xl:text-heading-lg"
+        className="font-satoshi mb-4 text-center text-h2 md:text-heading-md xl:text-heading-lg"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
         {data.heading}
       </h1>
       <p
-        className="mx-auto w-full text-center font-chillax text text-text-muted md:text-md lg:w-1/2 lg:text-lg xl:text-xl"
+        className="font-chillax mx-auto w-full text-center text text-text-muted md:text-md lg:w-1/2 lg:text-lg xl:text-xl"
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="500"
@@ -38,14 +40,14 @@ const WorkDetails = ({ data }) => {
           ))}
       </div>
 
-      <button
+      {/* <button
         className="mb-8 mt-6 flex w-full items-center justify-center gap-4 text-meta uppercase xl:mb-16 xl:mt-12"
-        onClick={() =>
-          smoothScrollTo(
-            getElementTopPosition(document.getElementById("workImage")),
-            500,
-          )
-        }
+        // onClick={() =>
+        //   smoothScrollTo(
+        //     getElementTopPosition(document.getElementById("workImage")),
+        //     500,
+        //   )
+        // }
         data-aos="fade-down"
         data-aos-duration="1000"
         data-aos-delay="1500"
@@ -54,7 +56,9 @@ const WorkDetails = ({ data }) => {
           <PiArrowDown className="text-icon" />
         </div>
         more details
-      </button>
+      </button> */}
+
+      <ScrollToTop text={"To Top"} position={0} icon={<GoArrowUp />} />
 
       <Image
         id="workImage"

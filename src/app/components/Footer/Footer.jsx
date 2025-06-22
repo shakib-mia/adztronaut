@@ -16,7 +16,7 @@ import Button from "../Button/Button";
 import { GoArrowUp, GoArrowUpRight } from "react-icons/go";
 import { smoothScrollTo } from "@/utils/smoothScroll";
 import { FaLocationDot } from "react-icons/fa6";
-import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import ScrollTo from "../ScrollTo/ScrollTo";
 
 const Footer = () => {
   return (
@@ -223,7 +223,15 @@ const Footer = () => {
           .
         </p>
 
-        <ScrollToTop />
+        {/* <ScrollToTop text={"To Top"} position={0} icon={<GoArrowUp />} /> */}
+        <ScrollTo position={0}>
+          <div className="flex cursor-pointer items-center gap-4 text-meta text-text md:static">
+            TO TOP
+            <aside className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg-muted">
+              <GoArrowUp />
+            </aside>
+          </div>
+        </ScrollTo>
 
         {/* <div
           className="absolute bottom-5 right-5 flex cursor-pointer items-center gap-4 text-meta text-text md:static"

@@ -1,26 +1,23 @@
-"use client";
+// src/app/works/[id]/page.jsx
 import Layout from "@/app/components/Layout/Layout";
 import NotFound from "@/app/components/NotFound/NotFound";
 import WorkDetails from "@/app/components/WorkDetails/WorkDetails";
-// import useAOS from "@/app/hooks/useAos";
-// import useLenis from "@/app/hooks/useLenis";
 import { getData } from "@/constants";
-import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
 
-const Page = () => {
-  // useAOS();
-  // useLenis();
+// Server Components do not use useState, useEffect, usePathname
 
-  const pathname = usePathname().split("/")[2];
-  // console.log(pathname);
-  const [data, setData] = useState({});
+export default async function Page({ params }) {
+  const id = params.id; // dynamic [id] from the URL like /works/1
 
-  useEffect(() => {
-    getData("works").then((data) => setData(data[pathname - 1]));
-  }, [pathname]);
+  const data = await getData("works");
 
-  return <>{data ? <WorkDetails data={data} /> : <NotFound />}</>;
-};
+  const selectedWork = data[id - 1];
 
-export default Page;
+  if (!selectedWork) return <NotFound />;
+
+  return (
+    <>
+      <WorkDetails data={selectedWork} />
+    </>
+  );
+}
