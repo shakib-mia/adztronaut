@@ -1,26 +1,37 @@
-// app/components/AOSLenisWrapper.jsx
-// "use client";
-import Lenis from "@studio-freight/lenis";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+// src/app/components/AOSLenisWrapper/AOSLenisWrapper.jsx
+"use client";
 
-const AOSLenisWrapper = () => {
-  AOS.init({
-    duration: 800, // Duration of animations
-    easing: "ease-in-out", // Easing option
-    once: true, // Only animate elements once
-  });
+import { useEffect } from "react";
 
-  const lenis = new Lenis();
+export default function AOSLenisWrapper() {
+  useEffect(() => {
+    // Dynamically import AOS and Lenis only in the browser
+    const loadAnimation = async () => {
+      if (typeof window === "undefined") return;
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
+      const AOS = (await import("aos")).default;
+      await import("aos/dist/aos.css"); // ✅ Safe here after dynamic import
 
-  requestAnimationFrame(raf);
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+
+      const Lenis = (await import("@studio-freight/lenis")).default;
+
+      const lenis = new Lenis();
+
+      const raf = (time) => {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      };
+
+      requestAnimationFrame(raf);
+    };
+
+    loadAnimation();
+  }, []);
 
   return null;
-};
-
-export default AOSLenisWrapper;
+}
