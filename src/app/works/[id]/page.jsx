@@ -2,15 +2,15 @@
 import Layout from "@/app/components/Layout/Layout";
 import NotFound from "@/app/components/NotFound/NotFound";
 import WorkDetails from "@/app/components/WorkDetails/WorkDetails";
-import useAOS from "@/app/hooks/useAos";
-import useLenis from "@/app/hooks/useLenis";
+// import useAOS from "@/app/hooks/useAos";
+// import useLenis from "@/app/hooks/useLenis";
 import { getData } from "@/constants";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 const Page = () => {
-  useAOS();
-  useLenis();
+  // useAOS();
+  // useLenis();
 
   const pathname = usePathname().split("/")[2];
   // console.log(pathname);

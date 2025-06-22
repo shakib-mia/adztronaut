@@ -3,14 +3,14 @@ import React from "react";
 import heroImage from "@/assets/images/hero-image.jpg";
 import Layout from "../components/Layout/Layout";
 import Image from "next/image";
-import useLenis from "../hooks/useLenis";
-import useAOS from "../hooks/useAos";
+// import useLenis from "../hooks/useLenis";
+// import useAOS from "../hooks/useAos";
 import AboutContents from "../components/AboutContents/AboutContents";
 import Head from "next/head";
 
 const Page = () => {
-  useLenis();
-  useAOS();
+  // useLenis();
+  // useAOS();
 
   return (
     <>

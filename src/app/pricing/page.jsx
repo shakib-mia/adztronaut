@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import Layout from "../components/Layout/Layout";
-import useAOS from "../hooks/useAos";
-import useLenis from "../hooks/useLenis";
+// import Layout from "../components/Layout/Layout";
+// import useAOS from "../hooks/useAos";
+// import useLenis from "../hooks/useLenis";
 import Package from "../components/Package/Package";
 import FAQ from "../components/FAQ/FAQ";
 
 const Page = () => {
-  useAOS();
-  useLenis();
+  // useAOS();
+  // useLenis();
 
   const packages = [
     {
@@ -46,7 +46,7 @@ const Page = () => {
             pricing
           </p>
           <h1
-            className="mb-4 font-satoshi text-h3 md:text-h1"
+            className="font-satoshi mb-4 text-h3 md:text-h1"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="500"
@@ -56,7 +56,7 @@ const Page = () => {
           </h1>
 
           <p
-            className="mx-auto font-chillax text-sm text-text-muted md:text-md lg:w-2/3 lg:text-lg"
+            className="font-chillax mx-auto text-sm text-text-muted md:text-md lg:w-2/3 lg:text-lg"
             data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-delay="1000"

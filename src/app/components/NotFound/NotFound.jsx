@@ -6,18 +6,18 @@ import { GoArrowUpRight } from "react-icons/go";
 import Link from "next/link";
 import Layout from "../Layout/Layout";
 import Button from "../Button/Button";
-import useAOS from "@/app/hooks/useAos";
-import useLenis from "@/app/hooks/useLenis";
+// import useAOS from "@/app/hooks/useAos";
+// import useLenis from "@/app/hooks/useLenis";
 // import useAOS from "./hooks/useAos";
 // import useLenis from "./hooks/useLenis";
 
 const NotFound = () => {
-  useAOS();
-  useLenis();
+  // useAOS();
+  // useLenis();
 
   return (
     <>
-      <div className="flex h-screen flex-col justify-center text-center font-satoshi">
+      <div className="font-satoshi flex h-screen flex-col justify-center text-center">
         <h1
           className="text-heading-sm md:text-heading-md lg:text-heading-xl"
           data-aos="zoom-in"

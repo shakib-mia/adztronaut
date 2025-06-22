@@ -3,9 +3,9 @@ import React from "react";
 import Layout from "../components/Layout/Layout";
 import image from "@/assets/images/contact-image.png";
 import Image from "next/image";
-import useLenis from "../hooks/useLenis";
+// import useLenis from "../hooks/useLenis";
 import InputField from "../components/InputField/InputField";
-import useAOS from "../hooks/useAos";
+// import useAOS from "../hooks/useAos";
 import Button from "../components/Button/Button";
 import { GoArrowUpRight } from "react-icons/go";
 import {
@@ -19,8 +19,8 @@ import {
 import SocialButton from "../components/SocialButton/SocialButton";
 
 const Page = () => {
-  useLenis();
-  useAOS();
+  // useLenis();
+  // useAOS();
 
   const socialSites = [
     {
@@ -64,7 +64,7 @@ const Page = () => {
       <Image src={image} alt="contact-image" data-aos="fade-right" />
       <aside className="text-text" data-aos="fade-left" data-aos-duration="200">
         <form
-          className="border border-border bg-bg-muted p-5 font-satoshi md:p-8 xl:p-12"
+          className="font-satoshi border border-border bg-bg-muted p-5 md:p-8 xl:p-12"
           onSubmit={handleSubmit}
         >
           <p
