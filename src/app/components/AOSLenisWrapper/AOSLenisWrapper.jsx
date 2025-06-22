@@ -1,5 +1,5 @@
 // app/components/AOSLenisWrapper.jsx
-"use client";
+// "use client";
 import Lenis from "@studio-freight/lenis";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
