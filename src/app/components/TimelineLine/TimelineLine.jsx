@@ -1,11 +1,12 @@
+"use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function TimelineLine() {
-  const ref = useRef(null); // ✅ ref setup
+const TimelineLine = () => {
+  const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
-    target: ref, // ✅ use ref instead of string
+    target: ref,
     offset: ["start 90%", "end end"],
   });
 
@@ -14,7 +15,7 @@ export default function TimelineLine() {
   return (
     <div
       ref={ref}
-      className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-transparent"
+      className="absolute left-0 top-0 h-full w-px -translate-x-1/2 bg-transparent lg:left-1/2"
     >
       <motion.div
         style={{ height }}
@@ -22,4 +23,6 @@ export default function TimelineLine() {
       />
     </div>
   );
-}
+};
+
+export default TimelineLine;

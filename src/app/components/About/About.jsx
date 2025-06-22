@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
@@ -10,121 +11,106 @@ import { FaBehance } from "react-icons/fa";
 const About = () => {
   const sectionRef = useRef(null);
 
-  const { scrollYProgress: xScrollYProgress } = useScroll({
+  const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end end"],
   });
 
-  const { scrollYProgress: opacityScrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start center", "end end"],
-  });
-
-  // From right (100vw) to center (0vw) to left (-200vw)
-  const x = useTransform(
-    xScrollYProgress,
-    [0, 0.5, 1],
-    ["100vw", "0vw", "-200vw"],
+  // Shared animation transforms
+  const imageY = useTransform(
+    scrollYProgress,
+    [0, 0.3, 0.7, 1],
+    [200, 0, 0, -300],
   );
-
   const imageOpacity = useTransform(
-    opacityScrollYProgress,
-    [0, 0.3, 1],
-    [0, 1, 1],
+    scrollYProgress,
+    [0, 0.2, 0.8, 1],
+    [0, 1, 1, 0.6],
   );
-  const top = useTransform(opacityScrollYProgress, [0, 0.3, 1], [500, 50, 0]);
-  const leftText = useTransform(
-    opacityScrollYProgress,
-    [0, 0.3, 1],
-    [500, 50, 0],
+  const textX = useTransform(
+    scrollYProgress,
+    [0, 0.5, 0.9],
+    ["110vw", "0vw", "-150vw"],
   );
+  const textOpacity = useTransform(scrollYProgress, [0.2, 0.4, 0.6], [1, 1, 1]);
 
   return (
     <>
       <section
-        className="relative overflow-visible"
-        id="aboutSection"
+        className="relative lg:min-h-[250vh]"
         ref={sectionRef}
+        id="aboutSection"
       >
-        <div className="sticky top-0 h-screen">
+        {/* Sticky container for desktop only */}
+        <div className="sticky top-0 hidden h-screen w-full items-center justify-center sm:flex">
+          {/* Image Layer */}
           <motion.div
-            style={{ x }}
-            className="absolute top-40 -z-10 !overflow-x-visible sm:top-52 xl:top-80"
-          >
-            <div className="!overflow-x-visible">
-              <div className="flex w-full justify-around">
-                <h1 className="text-nowrap text-h3 md:text-h1 lg:text-heading-lg">
-                  Adztronaut:{" "}
-                  <span className="font-gambetta italic">
-                    Simplifying advertisements
-                  </span>
-                </h1>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="relative"
-            style={{ opacity: imageOpacity, top }}
+            className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center"
+            style={{ y: imageY, opacity: imageOpacity }}
           >
             <Image
               src={image}
               alt="about"
-              className="mx-auto h-screen w-auto drop-shadow-[0_0px_41px_#000]"
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              className="h-screen w-auto object-contain drop-shadow-[0_0px_41px_#000]"
             />
           </motion.div>
+
+          {/* Text Layer */}
+          <motion.div
+            className="pointer-events-none absolute inset-0 flex items-center justify-center px-6 text-center text-text"
+            style={{ x: textX, opacity: textOpacity }}
+          >
+            <h1 className="whitespace-nowrap text-h3 md:text-h1 lg:text-heading-lg">
+              Adztronaut:{" "}
+              <span className="font-gambetta italic">
+                Simplifying advertisements
+              </span>
+            </h1>
+          </motion.div>
         </div>
-        <div className="-z-50 h-[150vh]"></div>
+
+        {/* Mobile fallback: no sticky, basic layout */}
+        <div className="px-4 pt-16 text-center sm:hidden">
+          <Image
+            src={image}
+            alt="about"
+            className="mx-auto h-[300px] w-auto object-contain drop-shadow-[0_0px_41px_#000]"
+          />
+          <h1 className="font-satoshi mt-6 text-h4 text-text sm:text-h3">
+            Adztronaut:{" "}
+            <span className="font-gambetta italic">
+              Simplifying advertisements
+            </span>
+          </h1>
+        </div>
+
+        {/* Background Scroll Push */}
+        <div className="lg:h-[100vh]" />
       </section>
 
-      <div className="mb-12 flex flex-col md:flex-row xl:mb-40">
-        <motion.aside
-          className="w-full text-text lg:w-1/2"
-          style={{ top: leftText }}
-        >
-          <motion.h2
-            className="font-satoshi text-h3 font-light lg:text-h2"
-            style={{
-              y: useTransform(opacityScrollYProgress, [0, 0.3, 1], [100, 0, 0]),
-            }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
+      {/* Static content section */}
+      <div className="mb-20 mt-10 flex flex-col gap-5 px-4 sm:px-8 md:flex-row md:gap-10 xl:mb-40 xl:px-20">
+        <div className="w-full text-text md:w-1/2">
+          <h2 className="font-satoshi text-h5 font-light sm:text-h2 lg:text-h1">
             A website that leaves{" "}
             <div className="font-gambetta italic">a lasting impression!</div>
-          </motion.h2>
-        </motion.aside>
-
-        <motion.aside
-          className="w-full lg:w-1/2"
-          style={{
-            opacity: useTransform(
-              opacityScrollYProgress,
-              [0.2, 0.5, 1],
-              [0, 0.6, 1],
-            ),
-            y: useTransform(
-              opacityScrollYProgress,
-              [0.2, 0.5, 1],
-              [100, 20, 0],
-            ),
-          }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          <p className="text-sm text-text-muted md:text-md">
-            Hi, {"I'm"} Arik Andersson - a freelancer specializing in premium
+          </h2>
+        </div>
+        <div className="w-full md:w-1/2">
+          <p className="text-sm text-text-muted sm:text-base lg:text-lg">
+            Hi, {"I'm"} Arik Andersson — a freelancer specializing in premium
             web design, development, and SEO services. {"I'm"} passionate about
             creating unique and effective solutions for my clients, and I bring
             a personal touch to every project. {"Let's"} work together to bring
             your vision to life!
           </p>
-
-          <div className="mt-4 flex gap-2 lg:mt-8">
-            {/* social icons same as before */}
-            {/* ... */}
+          <div className="mt-4 flex gap-3 lg:mt-8">
+            <CiInstagram className="hover:text-primary text-2xl" />
+            <CiTwitter className="hover:text-primary text-2xl" />
+            <AiOutlineDribbble className="hover:text-primary text-2xl" />
+            <FaBehance className="hover:text-primary text-2xl" />
           </div>
-        </motion.aside>
+        </div>
       </div>
     </>
   );

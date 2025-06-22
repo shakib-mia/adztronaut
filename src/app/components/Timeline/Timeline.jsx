@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
-import TimelineItem from "../TimelineItem/TimelineItem";
 import TimelineLine from "../TimelineLine/TimelineLine";
+import TimelineItem from "../TimelineItem/TimelineItem";
 
 const Timeline = () => {
-  // const containerRef = useRef(null);
-
   const items = [
     {
       heading: "Strategy Before Everything",
@@ -35,7 +33,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="relative mt-32" id="timeline">
+    <div className="relative mt-4 pl-4 sm:px-6 lg:mt-32 lg:px-16" id="timeline">
       <TimelineLine />
       {items.map((item, key) => (
         <TimelineItem {...item} id={key + 1} key={key} />
