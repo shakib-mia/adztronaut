@@ -1,12 +1,25 @@
 // app/components/AOSLenisWrapper.jsx
 "use client";
-
-import useAOS from "@/app/hooks/useAos";
-import useLenis from "@/app/hooks/useLenis";
+import Lenis from "@studio-freight/lenis";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const AOSLenisWrapper = () => {
-  useAOS(); // custom hook for AOS init
-  useLenis(); // custom hook for smooth scroll
+  AOS.init({
+    duration: 800, // Duration of animations
+    easing: "ease-in-out", // Easing option
+    once: true, // Only animate elements once
+  });
+
+  const lenis = new Lenis();
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
   return null;
 };
 
