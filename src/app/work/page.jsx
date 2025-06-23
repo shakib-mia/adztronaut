@@ -1,8 +1,11 @@
 import React from "react";
-import Layout from "../components/Layout/Layout";
-import useLenis from "../hooks/useLenis";
-import useAOS from "../hooks/useAos";
 import Works from "../components/Works/Works";
+
+export async function generateMetadata({ params }) {
+  return {
+    title: `Works - Adztronaut`,
+  };
+}
 
 const Page = () => {
   // useLenis();

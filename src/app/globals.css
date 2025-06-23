@@ -43,7 +43,7 @@ header .swiper-pagination.swiper-ready .swiper-pagination-bullet::after {
 
 /* Animate the active bullet */
 header .swiper-pagination.swiper-ready .swiper-pagination-bullet-active::after {
-  @apply left-0 w-full delay-1000 duration-[3700ms];
+  @apply left-0 w-full delay-1000 duration-[6000ms];
 }
 
 /* Align the pagination bullets */

@@ -89,11 +89,11 @@ const About = () => {
       </section>
 
       {/* Static content section */}
-      <div className="mb-20 mt-10 flex flex-col gap-5 px-4 sm:px-8 md:flex-row md:gap-10 xl:mb-40 xl:px-20">
+      <div className="mb-20 mt-10 flex flex-col gap-4 px-4 sm:px-8 md:flex-row md:gap-10 xl:mb-40 xl:px-0">
         <div className="w-full text-text md:w-1/2">
-          <h2 className="font-satoshi text-h5 font-light sm:text-h2 lg:text-h1">
+          <h2 className="font-satoshi text-h5 font-light sm:text-h2 lg:text-h2">
             A website that leaves{" "}
-            <div className="font-gambetta italic">a lasting impression!</div>
+            <span className="font-gambetta italic">a lasting impression!</span>
           </h2>
         </div>
         <div className="w-full md:w-1/2">
@@ -104,11 +104,63 @@ const About = () => {
             a personal touch to every project. {"Let's"} work together to bring
             your vision to life!
           </p>
-          <div className="mt-4 flex gap-3 lg:mt-8">
-            <CiInstagram className="hover:text-primary text-2xl" />
-            <CiTwitter className="hover:text-primary text-2xl" />
-            <AiOutlineDribbble className="hover:text-primary text-2xl" />
-            <FaBehance className="hover:text-primary text-2xl" />
+          <div className="mt-4 flex gap-2 lg:mt-8">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-delay="1500"
+            >
+              <a
+                href="#"
+                className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted transition duration-300 hover:bg-bg-secondary"
+              >
+                <div className="flex h-full w-full items-center justify-center">
+                  <CiTwitter />
+                </div>
+              </a>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-delay="1700"
+            >
+              <a
+                href="#"
+                className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted transition duration-300 hover:bg-bg-secondary"
+              >
+                <div className="flex h-full w-full items-center justify-center">
+                  <CiInstagram />
+                </div>
+              </a>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-delay="1800"
+            >
+              <a
+                href="#"
+                className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted transition duration-300 hover:bg-bg-secondary"
+              >
+                <div className="flex h-full w-full items-center justify-center">
+                  <AiOutlineDribbble />
+                </div>
+              </a>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-delay="2000"
+            >
+              <a
+                href="#"
+                className="inline-block h-12 w-12 items-center justify-center rounded-full border border-border bg-bg-muted transition duration-300 hover:bg-bg-secondary"
+              >
+                <div className="flex h-full w-full items-center justify-center">
+                  <FaBehance className="font-light" />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>

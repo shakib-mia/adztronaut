@@ -1,8 +1,11 @@
+import { notFound } from "next/navigation";
+
 export async function getData(item) {
-  console.log(item);
-  const res = await fetch(
-    `https://arik-git-adztronaut-shakibmias-projects.vercel.app/${item}.json`,
-  );
-  if (!res.ok) throw new Error("Failed to fetch");
-  return res.json();
+  const url = `http://localhost:3000/api/${item}`;
+  console.log(url);
+  const res = await fetch(url);
+
+  const data = await res.json();
+  if (!res.ok) notFound();
+  return data;
 }
