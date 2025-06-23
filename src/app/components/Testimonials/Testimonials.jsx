@@ -74,7 +74,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="my-16">
+    <section className="container my-16">
       <h2
         className="font-satoshi mx-auto mb-2 text-center text-h4 font-light md:mb-4 lg:w-1/2 lg:text-heading-md"
         data-aos="fade-right"

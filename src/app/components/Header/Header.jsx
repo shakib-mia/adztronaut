@@ -8,7 +8,7 @@ import { Navigation, Pagination, Autoplay, Parallax } from "swiper/modules";
 
 const Header = () => {
   return (
-    <header className="h-[70vh] max-h-screen">
+    <header className="container h-[70vh] max-h-screen">
       <Swiper
         modules={[Pagination, Autoplay, Parallax]}
         parallax={true}

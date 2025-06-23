@@ -7,7 +7,7 @@ const Steps = () => {
   //   window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
   // };
   return (
-    <section className="pt-10 xl:pt-20">
+    <section className="container pt-10 xl:pt-20">
       <h2
         className="font font-satoshi mx-auto w-7/12 text-center text-h3 md:w-2/3 md:text-h1 xl:text-heading-sm"
         data-aos="fade-up"

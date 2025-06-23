@@ -6,7 +6,7 @@ import Works from "../Works/Works";
 
 const SelectedWorks = () => {
   return (
-    <section className="py-10 xl:pb-20 xl:pt-32">
+    <section className="container py-10 xl:pb-20 xl:pt-32">
       <div className="flex items-center justify-between">
         <h2
           className="font-satoshi text-h3 md:text-h2"

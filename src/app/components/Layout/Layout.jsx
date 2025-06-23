@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <AOSLenisWrapper />
-      <div className="container overflow-x-hidden md:overflow-visible">
+      <div className="overflow-x-hidden md:overflow-visible">
         <Navbar />
         {children}
       </div>

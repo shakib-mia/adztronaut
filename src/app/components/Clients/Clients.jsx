@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Clients = () => {
   return (
-    <section className="flex items-center justify-evenly gap-5 py-10 sm:gap-0 xl:pb-20 xl:pt-32">
+    <section className="container flex items-center justify-evenly gap-5 py-10 sm:gap-0 xl:pb-20 xl:pt-32">
       <div className="w-1/6">
         <Image
           data-aos="fade-up"
