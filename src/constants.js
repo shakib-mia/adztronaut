@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
 export async function getData(item) {
-  const url = `http://localhost:3000/api/${item}`;
+  const url = `https://adztronaut.com/${item}.json`;
   console.log(url);
   const res = await fetch(url);
 
