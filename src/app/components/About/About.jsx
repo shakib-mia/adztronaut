@@ -74,7 +74,7 @@ const About = () => {
           <Image
             src={image}
             alt="about"
-            className="mx-auto h-[300px] w-auto object-contain drop-shadow-[0_0px_41px_#000]"
+            className="mx-auto w-full object-contain drop-shadow-[0_0px_41px_#000]"
           />
           <h1 className="font-satoshi mt-6 text-h4 text-text sm:text-h3">
             Adztronaut:{" "}
