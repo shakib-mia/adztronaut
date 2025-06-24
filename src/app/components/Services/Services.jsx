@@ -52,7 +52,7 @@ const Services = () => {
     },
   ];
   return (
-    <section className="container px-0 pb-0 pt-10 xl:pt-20">
+    <section className="container pb-0 pt-10 xl:pt-20">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
         {services.map((item, key) => (
           <Service key={key} id={key} {...item} />
