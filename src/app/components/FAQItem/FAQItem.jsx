@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { PiMinusThin, PiPlusThin } from "react-icons/pi";
@@ -31,7 +32,7 @@ const FAQItem = ({ question, answer, id }) => {
       </label>
 
       {showAnswer && (
-        <p className="mt-2 font-chillax text-sm text-text-muted md:text">
+        <p className="font-chillax mt-2 text-sm text-text-muted md:text">
           {answer}
         </p>
       )}

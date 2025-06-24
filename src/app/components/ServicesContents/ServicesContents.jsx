@@ -7,6 +7,7 @@ import image1 from "@/assets/images/services/ideas-into-reality.jpg";
 import image2 from "@/assets/images/services/developing-high-performing-app.jpg";
 import image3 from "@/assets/images/services/ideas-into-reality.jpg";
 import ServiceContentDetails from "../ServiceContentDetails/ServiceContentDetails";
+import ScrollDownButton from "../ScrollDownButton/ScrollDownButton";
 
 const ServicesContents = () => {
   const services = [
@@ -88,9 +89,9 @@ const ServicesContents = () => {
   ];
 
   return (
-    <div className="pb-6 pt-20 md:pb-16 md:pt-32 xl:pb-32 xl:pt-56">
+    <div className="container pb-6 pt-20 md:pb-16 md:pt-32 xl:pb-32 xl:pt-56">
       <h1
-        className="mx-auto text-center font-satoshi text-h2 md:text-heading-md xl:w-7/12 xl:text-heading-lg"
+        className="font-satoshi mx-auto text-center text-h2 md:text-heading-md xl:w-7/12 xl:text-heading-lg"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
@@ -98,7 +99,7 @@ const ServicesContents = () => {
       </h1>
 
       <p
-        className="mx-auto mb-5 text-center font-chillax text-lg text-text-muted md:mb-11 xl:mb-16 xl:w-1/2 xl:text-xl"
+        className="font-chillax mx-auto mb-5 text-center text-lg text-text-muted md:mb-11 xl:mb-16 xl:w-1/2 xl:text-xl"
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-delay="500"
@@ -108,35 +109,18 @@ const ServicesContents = () => {
       </p>
 
       <div className="flex w-full justify-center">
-        <button
-          className="flex items-center gap-4"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="1500"
-          id="about"
-          onClick={() =>
-            smoothScrollTo(
-              getElementTopPosition(document.getElementById("about")) + 20,
-              500,
-            )
-          }
-        >
-          <div className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-bg-muted">
-            <PiArrowDown className="text-md" />
-          </div>
-          ABOUT ME
-        </button>
+        <ScrollDownButton text={"About Me"} />
       </div>
       <Image
         src={laptop}
         alt="laptop"
-        className="mt-16"
+        className="mt-16 w-full"
         data-aos="fade-in"
         data-aos-delay="2000"
         data-aos-duration="1000"
       />
 
-      <div className="mt-20 grid grid-cols-2 gap-16 font-satoshi md:grid-cols-4">
+      <div className="font-satoshi mt-20 grid grid-cols-2 gap-16 md:grid-cols-4">
         <div
           className="text-center"
           data-aos="fade-up"

@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 // import useAOS from "../hooks/useAos";
 // import useLenis from "../hooks/useLenis";
@@ -9,7 +9,7 @@ const Page = () => {
   // useLenis();
 
   return (
-    <div className="pb-6 pt-20 md:pb-16 md:pt-32 xl:pb-32 xl:pt-56">
+    <div className="container pb-6 pt-20 md:pb-16 md:pt-32 xl:pb-32 xl:pt-56">
       <div className="mx-auto text-center lg:w-7/12">
         <h1
           className="font-satoshi mb-4 text-h2 md:text-heading-md xl:text-heading-lg"

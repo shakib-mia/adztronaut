@@ -72,7 +72,7 @@ const AboutContents = () => {
         ABOUT ME
       </button> */}
       <div
-        className="mt-10 overflow-x-hidden border border-border bg-bg-muted p-4 text-text lg:mt-32 lg:p-12"
+        className="mt-10 overflow-visible border border-border bg-bg-muted p-4 text-text lg:mt-32 lg:p-12"
         data-aos="fade-in"
         data-aos-delay="2000"
         data-aos-duration="1000"

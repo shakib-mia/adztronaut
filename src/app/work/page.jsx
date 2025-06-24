@@ -1,5 +1,6 @@
 import React from "react";
 import Works from "../components/Works/Works";
+import Head from "next/head";
 
 export async function generateMetadata({ params }) {
   return {
@@ -13,6 +14,9 @@ const Page = () => {
 
   return (
     <>
+      <Head>
+        <title>Works - Adztronaut</title>
+      </Head>
       <div className="mx-auto w-full pt-20 md:pt-32 xl:w-1/2 xl:pt-56">
         <h2
           className="font-satoshi text-center text-h3 xl:text-heading-lg"

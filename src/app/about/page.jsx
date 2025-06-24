@@ -13,7 +13,7 @@ const Page = () => {
   // useAOS();
 
   return (
-    <>
+    <div className="container">
       <Head>
         <title>About - Arik Andersson</title>
       </Head>
@@ -23,7 +23,7 @@ const Page = () => {
         </aside>
         <AboutContents />
       </div>
-    </>
+    </div>
   );
 };
 

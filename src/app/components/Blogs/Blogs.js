@@ -4,9 +4,9 @@ import { VscLoading } from "react-icons/vsc";
 import axios from "axios";
 
 const Blogs = async () => {
-  const { data: blogs } = await axios.get(
-    "https://arik-zeta.vercel.app/blogs.json",
-  );
+  const res = await fetch("https://adztronaut.com/blogs.json");
+  const blogs = await res.json();
+  // const { data: blogs } = res;
   // const blogs = await response.json();
 
   return (

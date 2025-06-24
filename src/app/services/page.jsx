@@ -12,7 +12,7 @@ const Page = () => {
   return (
     <>
       <Head>
-        <title>Works - Arik Andersson</title>
+        <title>Services - Adztronaut</title>
       </Head>
       <ServicesContents />
     </>
