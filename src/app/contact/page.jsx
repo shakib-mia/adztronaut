@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Layout from "../components/Layout/Layout";
-import image from "@/assets/images/contact-image.png";
+import image from "@/assets/images/adzronaut.png";
 import Image from "next/image";
 // import useLenis from "../hooks/useLenis";
 import InputField from "../components/InputField/InputField";
@@ -60,7 +60,7 @@ const Page = () => {
   };
 
   return (
-    <div className="grid h-full grid-cols-1 items-center gap-20 py-10 md:py-20 lg:grid-cols-2 lg:py-56">
+    <div className="container grid h-full grid-cols-1 items-center gap-20 py-10 md:py-20 lg:grid-cols-2 lg:py-56">
       <Image src={image} alt="contact-image" data-aos="fade-right" />
       <aside className="text-text" data-aos="fade-left" data-aos-duration="200">
         <form
