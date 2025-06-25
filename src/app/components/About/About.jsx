@@ -101,7 +101,7 @@ const About = () => {
         <div className="w-full text-text md:w-1/2">
           <h2 className="font-satoshi text-h5 font-light sm:text-h2 lg:text-h1">
             A website that leaves{" "}
-            <div className="font-gambetta italic">a lasting impression!</div>
+            <span className="font-gambetta italic">a lasting impression!</span>
           </h2>
         </div>
         <div className="w-full md:w-1/2">
