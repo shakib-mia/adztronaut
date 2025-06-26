@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "image": "/selected-works/space.jpg",
-    "heading": "Space",
+    "image": "/selected-works/damro.jpeg",
+    "heading": "Damro India",
     "tag": "Webdesign",
     "subheading": "Modern and visually appealing website that reflected the client's brand.",
     "clientDetails": {
@@ -35,8 +35,8 @@
   },
   {
     "id": 2,
-    "image": "/selected-works/nova.jpg",
-    "heading": "Nova",
+    "image": "/selected-works/JBR Property Aerial .png",
+    "heading": "JBR Property Aerial",
     "tag": "Webdesign",
     "subheading": "Modern and visually appealing website that reflected the client's brand.",
     "clientDetails": {
@@ -69,9 +69,9 @@
   },
   {
     "id": 3,
-    "image": "/selected-works/sonic.jpg",
-    "heading": "Sonic",
-    "tag": "Webdesign",
+    "image": "/selected-works/dark-charts.jpg",
+    "heading": "Growcial Bull",
+    "tag": "Webdevelopment",
     "subheading": "Modern and visually appealing website that reflected the client's brand.",
     "clientDetails": {
       "client": "Pawel Gola",
@@ -103,8 +103,8 @@
   },
   {
     "id": 4,
-    "image": "/selected-works/solar.jpg",
-    "heading": "Solar",
+    "image": "/selected-works/dark-music.jpg",
+    "heading": "ForeVision Digital",
     "tag": "Webdesign",
     "subheading": "Modern and visually appealing website that reflected the client's brand.",
     "clientDetails": {
