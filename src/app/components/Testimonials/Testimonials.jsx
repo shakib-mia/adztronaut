@@ -1,5 +1,5 @@
 import React from "react";
-import partner1 from "./../../../assets/images/partners/logo.svg";
+import partner1 from "./../../../assets/images/partners/the-chocolate-company.png";
 import partner2 from "./../../../assets/images/partners/logo-1.svg";
 import partner3 from "./../../../assets/images/partners/logo-2.svg";
 import partner4 from "./../../../assets/images/partners/logo-3.svg";
@@ -17,59 +17,52 @@ const Testimonials = () => {
   const testis = [
     {
       logo: partner1,
-      heading: "Amazing Results with Arik’s Premium Web Design Services.",
       paragraph:
-        "Arik is a top-notch web designer who created a stunning website for my business. He was attentive to my needs and provided excellent customer service throughout the entire process. I highly recommend his services.",
-      name: "John Smith",
-      designation: "ABC Company",
+        "Adztronaut changed the game for us. From strategy to scale—they nailed it all.",
+      name: "Shreya N.",
+      designation: "Founder, FounderThe Chocolate Company",
       image: client1,
     },
     {
       logo: partner2,
-      heading:
-        "Expert Webflow and SEO Services: Excellent Work, Great Results.",
       paragraph:
-        "Working with Arik on my website redesign was a fantastic experience. He was able to take my vision and turn it into a beautiful and functional website. His attention to detail and creative approach is unmatched. I couldn't be happier with the end result.",
-      name: "David Kim",
-      designation: "Design Inc.",
+        "The most responsive, creative, and ROI-driven team we’ve ever worked with.",
+      name: "Anuj K.",
+      designation: "Head of Marketing, UrbanStacks",
       image: client2,
     },
     {
       logo: partner3,
-      heading: "Professional, Collaborative Web Design Experience with Arik.",
       paragraph:
-        "I had the pleasure of working with Arik on a website development project and was blown away by his expertise and professionalism. He made the process seamless and delivered a website that exceeded our expectations. I highly recommend Arik for all your web development needs.",
-      name: "Karen Lee",
-      designation: "Redwood Technologies",
+        "They just get it. Fast, flexible, and fantastic at what they do.",
+      name: "Riya D.",
+      designation: "Co-founder, BareSkin Beauty",
+      image: client3,
+    },
+
+    {
+      logo: partner3,
+      paragraph:
+        "We gave them a vision. They gave us viral reels, ad revenue, and a whole new brand voice we didn't know we needed",
+      name: "Tania S.",
+      designation: "Co-founder, F&B Brand",
       image: client3,
     },
     {
-      logo: partner4,
-      heading: "Expertise in Web Design: Second to None with Arik.",
+      logo: partner3,
       paragraph:
-        "Arik is not only an exceptional web designer, but also a pleasure to work with. He took the time to understand my business and its unique needs, and created a website that perfectly represents my brand. I highly recommend Arik's services to anyone looking for a top-quality web designer.",
-      name: "John Smith",
-      designation: "ABC Company",
-      image: client4,
+        "SEO, socials, ads, brand—you name it, Adztronaut did it. They’re not an agency. They’re an extension of our team.",
+      name: "Anirban R.",
+      designation: "Director, D2C Clothing Brand",
+      image: client3,
     },
     {
-      logo: partner5,
-      heading: "Web Design and Content Solutions: Stand Out from the Crowd.",
+      logo: partner3,
       paragraph:
-        "Arik's SEO services have helped my business improve its online presence and increase traffic to our website. He is knowledgeable, professional, and provides excellent results. I highly recommend him for all your SEO needs.",
-      name: "Emily Davis",
-      designation: "Greenway Industries",
-      image: client5,
-    },
-    {
-      logo: partner6,
-      heading:
-        "High-Quality Web Design: Exceptional Attention to Detail with Arik.",
-      paragraph:
-        "Arik's development services are top-notch. He is able to take complex ideas and turn them into functional, user-friendly websites. His attention to detail and commitment to customer satisfaction are unmatched. I highly recommend Arik for all your web development needs.",
-      name: "Ryan Chen",
-      designation: "Golden Gate Solutions",
-      image: client6,
+        "I went from 0 to 1 lakh+ monthly reach within 45 days. No fluff. Just results.",
+      name: "Nisha M.",
+      designation: "Resort Owner, North Bengal",
+      image: client3,
     },
   ];
 

@@ -23,18 +23,8 @@ const Steps = () => {
         data-aos-duration="1000"
         data-aos-delay="500"
       >
-        Because we’re built different—and built for you.
+        Your in-house team that just happens to work out-of-this-world.
       </p>
-
-      {/* <div
-        className="mx-auto flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-border bg-bg-muted"
-        onClick={handleScrollDown}
-        data-aos="fade-down"
-        data-aos-duration="1000"
-        data-aos-delay="1000"
-      >
-        <PiArrowDownThin className="text-lg text-icon" />
-      </div> */}
 
       <Timeline />
     </section>

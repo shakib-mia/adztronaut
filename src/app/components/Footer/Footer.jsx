@@ -206,7 +206,7 @@ const Footer = () => {
         </aside>
       </div>
 
-      <div className="mx-auto mt-4 flex justify-center p-4 pb-16 md:mt-20 lg:justify-between 2xl:max-w-[1300px]">
+      <div className="mx-auto mt-4 flex flex-col items-center justify-center p-4 pb-16 md:mt-20 md:flex-row lg:justify-between 2xl:max-w-[1300px]">
         <p className="text-center text-xs text-text-muted lg:text-left">
           Copyright © 2024 Developed by{" "}
           <a

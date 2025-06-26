@@ -69,3 +69,7 @@ h6 {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
+#clientsSection .swiper-wrapper {
+  @apply !flex !items-center !justify-center;
+}

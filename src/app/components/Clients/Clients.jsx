@@ -1,75 +1,61 @@
+"use client";
 import React from "react";
-import partner1 from "./../../../assets/images/partners/logo.svg";
-import partner2 from "./../../../assets/images/partners/logo-1.svg";
-import partner3 from "./../../../assets/images/partners/logo-2.svg";
-import partner4 from "./../../../assets/images/partners/logo-3.svg";
-import partner5 from "./../../../assets/images/partners/logo-4.svg";
-import partner6 from "./../../../assets/images/partners/logo-5.svg";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+
+import partner1 from "@/assets/images/partners/damro.png";
+import partner2 from "@/assets/images/partners/the-chocolate-company.png";
+import partner3 from "@/assets/images/partners/jb.png";
+import partner4 from "@/assets/images/partners/growcial-bull.png";
+import partner5 from "@/assets/images/partners/forevision-digital.png";
+import partner6 from "@/assets/images/partners/the-aroggo.png";
+import partner7 from "@/assets/images/partners/shree-gourango-bostraloy.png";
+
+const partners = [
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  partner6,
+  partner7,
+];
 
 const Clients = () => {
   return (
-    <section className="container flex items-center justify-evenly gap-5 py-10 sm:gap-0 xl:pb-20 xl:pt-32">
-      <div className="w-1/6">
-        <Image
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          // data-aos-delay="100"
-          alt="partner1"
-          src={partner1}
-          className="mx-auto"
-        ></Image>
-      </div>
-      <div className="w-1/6">
-        <Image
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-          alt="partner2"
-          src={partner2}
-          className="mx-auto"
-        ></Image>
-      </div>
-      <div className="w-1/6">
-        <Image
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="400"
-          alt="partner3"
-          src={partner3}
-          className="mx-auto"
-        ></Image>
-      </div>
-      <div className="w-1/6">
-        <Image
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="600"
-          alt="partner4"
-          src={partner4}
-          className="mx-auto"
-        ></Image>
-      </div>
-      <div className="w-1/6">
-        <Image
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="800"
-          alt="partner5"
-          src={partner5}
-          className="mx-auto"
-        ></Image>
-      </div>
-      <div className="w-1/6">
-        <Image
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="1000"
-          alt="partner6"
-          src={partner6}
-          className="mx-auto"
-        ></Image>
-      </div>
+    <section className="container py-10 xl:pb-20 xl:pt-32">
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={30}
+        slidesPerView={3}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+          1280: { slidesPerView: 7 },
+        }}
+      >
+        {partners.map((partner, index) => (
+          <SwiperSlide key={index}>
+            <Image
+              src={partner}
+              alt={`Partner ${index + 1}`}
+              className="mx-auto h-24 object-contain"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={`${index * 100}`}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };

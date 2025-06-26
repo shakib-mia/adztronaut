@@ -5,10 +5,11 @@ import bg2 from "@/assets/images/hero-section/hero-2.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, Parallax } from "swiper/modules";
+import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="container h-[70vh] max-h-screen">
+    <header className="container mt-10 h-[70vh] max-h-screen pt-20">
       <Swiper
         modules={[Pagination, Autoplay, Parallax]}
         parallax={true}
@@ -35,10 +36,14 @@ const Header = () => {
                   background: "radial-gradient(transparent 0, black 69%)",
                 }}
               ></div>
-              <div
-                style={{ backgroundImage: `url(${bg2.src})` }} // slide 1 bg
+              <Image
+                src={bg2}
+                alt="slide background"
+                fill
+                priority
+                // style={{ backgroundImage: `url(${bg2.src})` }} // slide 1 bg
                 className="absolute left-0 top-0 -z-20 h-full w-full -scale-x-100 bg-cover bg-center brightness-75 filter transition-transform duration-1000 ease-out"
-              ></div>
+              />
             </div>
             <div className="absolute left-0 top-0 z-10 flex h-full w-full flex-col justify-center lg:p-10">
               <h1
@@ -75,10 +80,14 @@ const Header = () => {
                   // transform: "flipX(180)",
                 }}
               ></div>
-              <div
-                style={{ backgroundImage: `url(${bg.src})` }} // slide 1 bg
-                className="absolute left-0 top-0 -z-20 h-full w-full bg-cover bg-center brightness-75 filter transition-transform duration-1000 ease-out"
-              ></div>
+              <Image
+                src={bg}
+                alt="slide background"
+                fill
+                priority
+                // style={{ backgroundImage: `url(${bg2.src})` }} // slide 1 bg
+                className="absolute left-0 top-0 -z-20 h-full w-full -scale-x-100 bg-cover bg-center brightness-75 filter transition-transform duration-1000 ease-out"
+              />
             </div>
             <div className="absolute left-0 top-0 z-10 flex h-full w-full flex-col justify-center lg:p-10">
               <h1
@@ -114,10 +123,14 @@ const Header = () => {
                   background: "radial-gradient(transparent 0, black 69%)",
                 }}
               ></div>
-              <div
-                style={{ backgroundImage: `url(${bg.src})` }} // slide 1 bg
-                className="absolute left-0 top-0 -z-20 h-full w-full bg-cover bg-center brightness-75 filter transition-transform duration-1000 ease-out"
-              ></div>
+              <Image
+                src={bg}
+                alt="slide background"
+                fill
+                priority
+                // style={{ backgroundImage: `url(${bg2.src})` }} // slide 1 bg
+                className="absolute left-0 top-0 -z-20 h-full w-full -scale-x-100 bg-cover bg-center brightness-75 filter transition-transform duration-1000 ease-out"
+              />
             </div>
             <div className="absolute left-0 top-0 z-10 flex h-full w-full flex-col justify-center lg:p-10">
               <h1

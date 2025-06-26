@@ -64,7 +64,7 @@ const WorkDetails = ({ data }) => {
         id="workImage"
         src={data.image}
         alt={data.heading}
-        className="w-full"
+        className="aspect-video w-full object-cover"
         width={1400}
         height={900}
         data-aos="fade-down"

@@ -45,12 +45,12 @@ const TimelineItem = ({
               {tag}
             </div>
           )}
+          <h4 className="mb-2 text-h5 uppercase sm:text-h4">{heading}</h4>
           {subHeading && (
-            <p className="mb-1 text-xs uppercase text-text-muted sm:text-sm">
+            <h5 className="mb-3 text-h6 italic text-text-muted sm:text-h5">
               {subHeading}
-            </p>
+            </h5>
           )}
-          <h4 className="mb-4 text-h5 uppercase sm:text-h4">{heading}</h4>
           <p className="font-chillax mb-6 text-sm text-text-muted sm:text-base">
             {paragraph}
           </p>

@@ -9,10 +9,11 @@ const Work = ({ image, heading, tag, id, link }) => {
   // console.log(window.innerWidth);
   return (
     <article
-      className="group relative w-full"
-      data-aos="fade-up"
-      data-aos-delay={id % 2 ? 250 : 2 * 250}
+      className="group relative h-full w-full"
+      data-aos={id % 2 ? "fade-right" : "fade-left"}
+      // data-aos-delay={id % 2 ? 250 : 2 * 250}
     >
+      <div className="absolute left-0 top-0 z-0 h-full w-full bg-black bg-opacity-30"></div>
       <Link
         href={link}
         className="absolute left-0 top-0 flex h-full w-full items-center justify-center transition"
@@ -28,7 +29,7 @@ const Work = ({ image, heading, tag, id, link }) => {
         loading="lazy"
         height={1000}
         alt="work"
-        className="w-full"
+        className="aspect-video h-full w-full object-cover"
       />
 
       <div className="relative mx-3 lg:mx-8">

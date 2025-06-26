@@ -4,29 +4,33 @@ import TimelineLine from "../TimelineLine/TimelineLine";
 
 const items = [
   {
-    heading: "Strategy Before Everything",
+    heading: "The Strategy",
+    subHeading: "You don’t need more ads. You need better decisions",
     paragraph:
-      "We don’t jump straight into execution. We ask, research, and plan so every piece of content actually has a purpose—and performs.",
+      "We dive deep. Like the Mariana Trench deep. Research, behavior patterns, market gaps—everything your competitors forgot to look at. Then we reverse-engineer a plan that doesn’t just “look good”—it delivers growth. Every click, swipe, and scroll matters. Outcome? A strategy that sells, scales, and stays in memory.",
   },
   {
-    heading: "We’re Always in Touch",
+    heading: "The Creative",
+    subHeading: "It’s not just design. It’s persuasion wrapped in pixels",
     paragraph:
       "We're not the “vanish after invoice” type. Whether it’s a weekend idea or a late-night brainstorm, we’re here for the real conversations.",
   },
   {
-    heading: "Creativity Backed by Data",
-    paragraph:
-      "We blend storytelling with performance insights—so every campaign is both beautiful and bottom-line driven.",
+    heading: "The Execution",
+    subHeading: "We don’t vanish after the pitch. We get things done",
+    paragraph: `Plans mean nothing without flawless execution. From publishing your first campaign to optimizing the 100th, we obsess over every asset, ad set, and analytics dashboard. We track. We tweak. We toast (when it works—which it does). Because we aren’t “just creatives”—we’re performance junkies in disguise. `,
   },
   {
-    heading: "We Build Systems, Not Just Posts",
+    heading: "The Optimization",
+    subHeading: "Good isn’t enough—we chase greatness",
     paragraph:
-      "From organic content flows to ad funnels, we build full ecosystems that scale. One carousel or reel is just the tip of the iceberg.",
+      "Every campaign is a living, breathing experiment. We analyze, A/B test, and iterate relentlessly. If there’s a smarter way to win, we’ll find it. Your results aren’t static—they’re always improving.",
   },
   {
-    heading: "We're Partners, Not Vendors",
+    heading: "The Partnership",
+    subHeading: "Growth is a journey—let’s travel together",
     paragraph:
-      "Think of us as an extended growth team—people who care about your business like it's our own.",
+      "We’re not just a service provider. We’re your growth partner. Expect transparency, collaboration, and a shared obsession with your success. When you win, we win.",
   },
 ];
 
