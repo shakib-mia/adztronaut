@@ -8,6 +8,8 @@ import InputField from "../components/InputField/InputField";
 // import useAOS from "../hooks/useAos";
 import Button from "../components/Button/Button";
 import { GoArrowUpRight } from "react-icons/go";
+import emailjs from "@emailjs/browser";
+
 import {
   FaBehance,
   FaDribbble,
@@ -17,6 +19,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import SocialButton from "../components/SocialButton/SocialButton";
+import axios from "axios";
 
 const Page = () => {
   // useLenis();
@@ -57,6 +60,32 @@ const Page = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = {};
+
+    for (let [key, value] of formData.entries()) {
+      data[key] = value;
+    }
+
+    // console.log(data);
+    axios
+      .post("http://localhost:5000/contact", data)
+      .then(({ data }) => e.target.reset())
+      .catch((error) => {
+        console.error("There was an error sending the message!", error);
+      });
+
+    // emailjs
+    //   .send("service_cwqlucm", "template_2owm21a", data, "mRxoGmlaLFzL128O3")
+    //   .then(
+    //     (result) => {
+    //       console.log("Email successfully sent!", result.text);
+    //     },
+    //     (error) => {
+    //       console.log("There was an error sending the email!", error);
+    //       e.target.reset();
+    //     },
+    //   );
   };
 
   return (
@@ -90,14 +119,14 @@ const Page = () => {
               data-aos-duration="1000"
               data-aos-delay="600"
             >
-              <InputField placeholder="name" />
+              <InputField placeholder="name" name="name" required />
             </div>
             <div
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="800"
             >
-              <InputField placeholder="email" />
+              <InputField placeholder="email" name="email" required />
             </div>
 
             <div
@@ -105,9 +134,20 @@ const Page = () => {
               data-aos-duration="1000"
               data-aos-delay="1000"
             >
-              <div>
-                <InputField placeholder="message" textarea />
-              </div>
+              <InputField placeholder="subject" name="subject" required />
+            </div>
+
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="1200"
+            >
+              <InputField
+                placeholder="message"
+                textarea
+                name="message"
+                required
+              />
             </div>
 
             <div
