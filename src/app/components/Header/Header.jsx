@@ -10,6 +10,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="container mt-10 h-[70vh] max-h-screen pt-20 lg:h-[80vh]">
+      beta
       <Swiper
         modules={[Pagination, Autoplay, Parallax]}
         parallax={true}
