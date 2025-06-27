@@ -16,6 +16,7 @@ export default function Home() {
 
   return (
     <>
+      from beta
       <Header />
       <Services />
       <About />
