@@ -105,31 +105,28 @@
     "id": 4,
     "image": "/selected-works/dark-music.jpg",
     "heading": "ForeVision Digital",
-    "tag": "Webdesign",
-    "subheading": "Modern and visually appealing website that reflected the client's brand.",
+    "tag": "Web Design & Development",
+    "subheading": "A modern, high-converting music distribution platform tailored to the client's vision.",
     "clientDetails": {
       "client": "Pawel Gola",
       "timeline": "3 Weeks",
-      "services": "Template",
+      "services": "Custom Template & Development",
       "website": "gola.io"
     },
-
     "about": {
-      "heading": "Concept, Design, and Development. All-in-one.",
+      "heading": "Strategy, Design, and Development — All in One.",
       "details": [
         {
           "heading": "Challenge",
-          "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
+          "text": "The client’s previous website was outdated, unresponsive, and lacked the modern design and functionality needed to attract music creators and labels. This was negatively impacting both their credibility and conversion rates."
         },
-
         {
           "heading": "Goal",
-          "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
+          "text": "We set out to design and build a contemporary website that embodied the client's brand, offered an intuitive experience for artists and partners, and was fully optimized for search engines to increase visibility in the highly competitive music distribution market."
         },
-
         {
           "heading": "Result",
-          "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
+          "text": "The final product was a sleek, responsive website that clearly showcases the client’s services and unique value proposition. After launch, the site experienced a substantial boost in organic traffic and user engagement. The client reported overwhelmingly positive feedback and significant improvements in customer acquisition."
         }
       ]
     },
