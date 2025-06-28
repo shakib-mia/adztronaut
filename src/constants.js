@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
 export async function getData(item) {
-  const url = `https://adztronaut-server.vercel.app/${item}`;
+  const url = `https://adztronaut-server.onrender.com/${item}`;
 
   const res = await fetch(url);
   if (!res.ok) notFound();
