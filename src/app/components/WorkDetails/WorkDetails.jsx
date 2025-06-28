@@ -11,9 +11,9 @@ import { GoArrowUp } from "react-icons/go";
 const WorkDetails = ({ data }) => {
   // console.log(data);
   return (
-    <div className="pb-8 pt-20 xl:pb-32 xl:pt-56">
+    <div className="pb-8 pt-24 xl:pb-32 xl:pt-56">
       <h1
-        className="font-satoshi mb-4 text-center text-h2 md:text-heading-md xl:text-heading-lg"
+        className="font-satoshi mb-0 text-center text-h2 md:text-heading-md xl:mb-4 xl:text-heading-lg"
         data-aos="fade-up"
         data-aos-duration="1000"
       >

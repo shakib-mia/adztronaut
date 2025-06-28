@@ -1,15 +1,10 @@
-// "use client";
 import React from "react";
-// import Layout from "../components/Layout/Layout";
 import useLenis from "../hooks/useLenis";
 import useAOS from "../hooks/useAos";
 import Works from "../components/Works/Works";
 import Head from "next/head";
 
 const Page = () => {
-  // useLenis();
-  // useAOS();
-
   return (
     <div className="container">
       <Head>
@@ -24,7 +19,11 @@ const Page = () => {
           Work
         </h2>
 
-        <h3 className="mt-6 text-center xl:text-h3">
+        <h3
+          className="mt-6 text-center xl:text-h3"
+          data-aos="fade-up"
+          data-aos-delay="250"
+        >
           Proof that we don’t just talk. We launch.
         </h3>
 

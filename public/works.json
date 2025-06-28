@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "slug": "damro-india",
     "image": "/selected-works/damro.jpeg",
     "heading": "Damro India",
     "tag": "Webdesign",
@@ -11,7 +11,6 @@
       "services": "Template",
       "website": "gola.io"
     },
-
     "about": {
       "heading": "Concept, Design, and Development. All-in-one.",
       "details": [
@@ -19,22 +18,19 @@
           "heading": "Challenge",
           "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
         },
-
         {
           "heading": "Goal",
           "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
         },
-
         {
           "heading": "Result",
           "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
         }
       ]
-    },
-    "link": "/works/1"
+    }
   },
   {
-    "id": 2,
+    "slug": "jbr-property-aerial",
     "image": "/selected-works/JBR Property Aerial .png",
     "heading": "JBR Property Aerial",
     "tag": "Webdesign",
@@ -45,7 +41,6 @@
       "services": "Template",
       "website": "gola.io"
     },
-
     "about": {
       "heading": "Concept, Design, and Development. All-in-one.",
       "details": [
@@ -53,56 +48,50 @@
           "heading": "Challenge",
           "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
         },
-
         {
           "heading": "Goal",
           "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
         },
-
         {
           "heading": "Result",
           "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
         }
       ]
-    },
-    "link": "/works/2"
+    }
   },
   {
-    "id": 3,
+    "_id": "685f5c778763f801ce912510",
+    "slug": "growcial-bull",
     "image": "/selected-works/dark-charts.jpg",
     "heading": "Growcial Bull",
-    "tag": "Webdevelopment",
-    "subheading": "Modern and visually appealing website that reflected the client's brand.",
+    "tag": "Web Development",
+    "subheading": "A sleek and conversion-focused crypto platform landing page built to strengthen the client's online presence.",
     "clientDetails": {
       "client": "Pawel Gola",
       "timeline": "3 Weeks",
-      "services": "Template",
+      "services": "Custom Template & Development",
       "website": "gola.io"
     },
-
     "about": {
-      "heading": "Concept, Design, and Development. All-in-one.",
+      "heading": "Strategy, Design, and Development. End-to-End.",
       "details": [
         {
           "heading": "Challenge",
-          "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
+          "text": "The client was facing difficulties attracting investors and crypto enthusiasts because their previous website was outdated, non-responsive, and lacked the credibility needed in the fast-paced blockchain industry."
         },
-
         {
           "heading": "Goal",
-          "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
+          "text": "Our goal was to design a modern, visually compelling landing page with multiple routes to highlight key offerings such as tokenomics, roadmap, and partnership opportunities. The website needed to be responsive, easy to navigate, and fully optimized for search engines and conversions."
         },
-
         {
           "heading": "Result",
-          "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
+          "text": "We built a polished, responsive crypto platform landing page that showcases the client's brand authority while delivering a smooth user experience. Since launch, the site has seen a significant increase in organic traffic, lead generation, and user engagement. The client was delighted with the final outcome and received positive feedback from their community."
         }
       ]
-    },
-    "link": "/works/3"
+    }
   },
   {
-    "id": 4,
+    "slug": "forevision-digital",
     "image": "/selected-works/dark-music.jpg",
     "heading": "ForeVision Digital",
     "tag": "Web Design & Development",
@@ -129,7 +118,6 @@
           "text": "The final product was a sleek, responsive website that clearly showcases the client’s services and unique value proposition. After launch, the site experienced a substantial boost in organic traffic and user engagement. The client reported overwhelmingly positive feedback and significant improvements in customer acquisition."
         }
       ]
-    },
-    "link": "/works/4"
+    }
   }
 ]

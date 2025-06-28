@@ -15,7 +15,9 @@ const ClientDetails = ({ heading, text, id }) => {
       data-aos="fade-right"
       data-aos-delay={id * 250}
     >
-      <p className="mb-1 text-meta uppercase text-text opacity-60">{heading}</p>
+      <p className="text-meta uppercase text-text opacity-60 lg:mb-1">
+        {heading}
+      </p>
       {/* <p className="text-meta uppercase text-text">{text}</p> */}
       {heading === "website" ? (
         <a
