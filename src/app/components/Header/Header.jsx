@@ -13,7 +13,7 @@ const Header = () => {
       <Swiper
         modules={[Pagination, Autoplay, Parallax]}
         parallax={true}
-        autoplay={{ delay: 6000 }}
+        // autoplay={{ delay: 6000 }}
         pagination={{ clickable: false }}
         speed={1000}
         className="h-full"
@@ -76,7 +76,7 @@ const Header = () => {
               <div
                 className="absolute left-0 top-0 h-full w-full"
                 style={{
-                  background: "radial-gradient(transparent 0, black 100%)",
+                  background: "radial-gradient(transparent 0, black 70%)",
                   // transform: "flipX(180)",
                 }}
               ></div>

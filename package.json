@@ -15,11 +15,13 @@
     "axios": "^1.7.2",
     "framer-motion": "^12.18.1",
     "next": "14.2.3",
+    "plaiceholder": "^3.0.0",
     "react": "^18",
     "react-countup": "^6.5.3",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.4",
     "react-icons": "^5.2.1",
+    "sharp": "^0.34.2",
     "swiper": "^11.2.8"
   },
   "devDependencies": {

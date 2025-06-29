@@ -26,36 +26,49 @@ const partners = [
 const Clients = () => {
   return (
     <section className="container py-10 xl:pb-20 xl:pt-32">
-      <Swiper
-        modules={[Autoplay]}
-        spaceBetween={30}
-        slidesPerView={3}
-        loop={true}
-        loopFillGroupWithBlank={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
-          1280: { slidesPerView: 7 },
-        }}
-      >
+      <div className="xl:hidden">
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={30}
+          slidesPerView={3}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+            1280: { slidesPerView: 7 },
+          }}
+        >
+          {partners.map((partner, index) => (
+            <SwiperSlide key={index}>
+              <Image
+                src={partner}
+                alt={`Partner ${index + 1}`}
+                className="mx-auto h-24 object-contain"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      <div className="hidden grid-cols-7 xl:grid">
         {partners.map((partner, index) => (
-          <SwiperSlide key={index}>
-            <Image
-              src={partner}
-              alt={`Partner ${index + 1}`}
-              className="mx-auto h-24 object-contain"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay={`${index * 100}`}
-            />
-          </SwiperSlide>
+          <Image
+            src={partner}
+            alt={`Partner ${index + 1}`}
+            className="mx-auto h-24 object-contain"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay={`${index * 100}`}
+            key={index}
+          />
         ))}
-      </Swiper>
+      </div>
     </section>
   );
 };

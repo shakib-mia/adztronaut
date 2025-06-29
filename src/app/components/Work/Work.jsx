@@ -6,7 +6,6 @@ import { PiArrowUpRight } from "react-icons/pi";
 import Link from "next/link";
 
 const Work = ({ image, heading, tag, id, link, slug }) => {
-  // console.log(slug);
   return (
     <article
       className="group relative h-full w-full"

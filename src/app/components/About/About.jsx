@@ -115,7 +115,7 @@ const About = () => {
           </h2>
         </div>
         <div className="w-full md:w-1/2">
-          <p className="font-gambetta italic text-white lg:text-2xl">
+          <p className="font-gambetta italic text-text lg:text-2xl">
             So here’s ours.
           </p>
           <p className="text-sm text-text-muted sm:text-base lg:text-lg">
