@@ -33,7 +33,7 @@ const About = () => {
 
   const imageOpacity = useTransform(
     imageScrollYProgress,
-    [0, 0.2, 0.5, 1],
+    [0, 0.15, 0.5, 1],
     [0, 1, 1, 0.6],
   );
   const textX = useTransform(
