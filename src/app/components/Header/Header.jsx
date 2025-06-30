@@ -13,7 +13,7 @@ const Header = () => {
       <Swiper
         modules={[Pagination, Autoplay, Parallax]}
         parallax={true}
-        // autoplay={{ delay: 6000 }}
+        autoplay={{ delay: 6000 }}
         pagination={{ clickable: false }}
         speed={1000}
         className="h-full"
