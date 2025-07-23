@@ -1,8 +1,38 @@
 [
   {
-    "slug": "damro-india",
-    "image": "/selected-works/damro.jpeg",
-    "heading": "Damro India",
+    "slug": "damro-india-cooch-behar",
+    "image": "https://i.ibb.co/ccH95ZWY/damro.jpg",
+    "heading": "Damro India (Cooch Behar Branch)",
+    "tag": "Inauguration Campaign",
+    "subheading": "Modern and visually appealing website that reflected the client's brand.",
+    "clientDetails": {
+      "client": "Pawel Gola",
+      "timeline": "3 Weeks",
+      "services": "Template",
+      "website": "gola.io"
+    },
+    "about": {
+      "heading": "Concept, Design, and Development. All-in-one.",
+      "details": [
+        {
+          "heading": "Challenge",
+          "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
+        },
+        {
+          "heading": "Goal",
+          "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
+        },
+        {
+          "heading": "Result",
+          "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "the-jungle-book-resort",
+    "image": "https://i.ibb.co/3964LcRq/JBR-Property-Aerial.png",
+    "heading": "The Jungle Book Resort",
     "tag": "Webdesign",
     "subheading": "Modern and visually appealing website that reflected the client's brand.",
     "clientDetails": {
@@ -30,76 +60,45 @@
     }
   },
   {
-    "slug": "jbr-property-aerial",
-    "image": "/selected-works/JBR Property Aerial .png",
-    "heading": "JBR Property Aerial",
-    "tag": "Webdesign",
-    "subheading": "Modern and visually appealing website that reflected the client's brand.",
-    "clientDetails": {
-      "client": "Pawel Gola",
-      "timeline": "3 Weeks",
-      "services": "Template",
-      "website": "gola.io"
-    },
-    "about": {
-      "heading": "Concept, Design, and Development. All-in-one.",
-      "details": [
-        {
-          "heading": "Challenge",
-          "text": "Our client was struggling to attract and retain customers due to an outdated and non-responsive website that didn't align with their brand identity."
-        },
-        {
-          "heading": "Goal",
-          "text": "Our goal was to create a modern and visually appealing website that reflected the client's brand and delivered a seamless user experience. The website needed to be responsive, easy to navigate, and optimized for search engines to improve their online visibility."
-        },
-        {
-          "heading": "Result",
-          "text": "Our team developed a custom website design that was not only visually stunning but also user-friendly and optimized for search engines. The client's website now showcases their products and services in a professional and engaging manner, and has seen a significant increase in organic traffic and customer engagement. The client is thrilled with the final result and has received positive feedback from their customers."
-        }
-      ]
-    }
-  },
-  {
-    "_id": "685f5c778763f801ce912510",
     "slug": "growcial-bull",
     "image": "/selected-works/dark-charts.jpg",
     "heading": "Growcial Bull",
     "tag": "Web Development",
-    "subheading": "A sleek and conversion-focused crypto platform landing page built to strengthen the client's online presence.",
+    "subheading": "A modern crypto landing page built from a custom design.",
     "clientDetails": {
-      "client": "Pawel Gola",
+      "client": "Vikkas Chakraborty",
       "timeline": "3 Weeks",
-      "services": "Custom Template & Development",
-      "website": "gola.io"
+      "services": "Web Development",
+      "website": "growcialbull.com"
     },
     "about": {
-      "heading": "Strategy, Design, and Development. End-to-End.",
+      "heading": "Development and Implementation — From the Ground Up.",
       "details": [
         {
           "heading": "Challenge",
-          "text": "The client was facing difficulties attracting investors and crypto enthusiasts because their previous website was outdated, non-responsive, and lacked the credibility needed in the fast-paced blockchain industry."
+          "text": "The client had no existing website or online presence, which made it challenging to build trust and attract early supporters in the competitive blockchain industry. They provided a custom design that required precise implementation to ensure it performed well across devices."
         },
         {
           "heading": "Goal",
-          "text": "Our goal was to design a modern, visually compelling landing page with multiple routes to highlight key offerings such as tokenomics, roadmap, and partnership opportunities. The website needed to be responsive, easy to navigate, and fully optimized for search engines and conversions."
+          "text": "Our goal was to faithfully translate the client's design into a modern, responsive, and fast-loading website with multiple routes for showcasing tokenomics, project roadmap, and community information. The site needed to be optimized for search engines and ready to establish credibility from the moment it launched."
         },
         {
           "heading": "Result",
-          "text": "We built a polished, responsive crypto platform landing page that showcases the client's brand authority while delivering a smooth user experience. Since launch, the site has seen a significant increase in organic traffic, lead generation, and user engagement. The client was delighted with the final outcome and received positive feedback from their community."
+          "text": "We developed a polished, fully responsive crypto platform landing page exactly matching the client's design vision. This launch marked their first official online presence, leading to increased investor interest, strong community engagement, and a significant boost in organic traffic. The client was extremely satisfied with the seamless execution and overall performance."
         }
       ]
     }
   },
   {
     "slug": "forevision-digital",
-    "image": "/selected-works/dark-music.jpg",
+    "image": "https://i.ibb.co/XfcN9NN4/dark-music.jpg",
     "heading": "ForeVision Digital",
     "tag": "Web Design & Development",
     "subheading": "A modern, high-converting music distribution platform tailored to the client's vision.",
     "clientDetails": {
-      "client": "Pawel Gola",
+      "client": "Pulak Chakraborty",
       "timeline": "3 Weeks",
-      "services": "Custom Template & Development",
+      "services": "Custom Design & Development",
       "website": "gola.io"
     },
     "about": {

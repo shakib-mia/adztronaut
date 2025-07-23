@@ -11,6 +11,7 @@ import {
   FaWhatsappSquare,
 } from "react-icons/fa";
 import logo from "./../../../assets/images/logo.png";
+import logo2 from "./../../../assets/images/logo-yellow-adztronaut.png";
 import Button from "../Button/Button";
 import useScrollDirection from "@/app/hooks/useScrollDirection";
 
@@ -32,13 +33,18 @@ const Navbar = () => {
       <nav
         className={`${
           scrollDirection === "up" ? "!translate-y-0" : "!-translate-y-40"
-        } fixed left-0 right-0 top-0 z-[99999] mx-auto mt-4 flex w-full max-w-[95vw] items-center justify-between rounded-sm border border-border bg-bg-muted bg-opacity-20 p-3 text-brand backdrop-blur transition-transform !duration-500 md:mt-6 md:max-w-[95vw] lg:mt-12 lg:max-w-[fit-content] lg:justify-center`}
+        } fixed left-0 right-0 top-0 z-[99999] mx-auto mt-4 flex w-full max-w-[95vw] items-center justify-between rounded-sm border border-border bg-bg-muted bg-opacity-20 p-3 text-brand backdrop-blur transition-transform !duration-500 md:mt-6 md:max-w-[95vw] lg:mt-12 lg:max-w-[fit-content] lg:justify-center lg:gap-8`}
         data-aos="fade-up"
         data-aos-delay="100"
       >
         {/* Logo */}
-        <Link href="/" onClick={() => setNavChecked(false)}>
-          <Image src={logo} alt="Logo" className="w-8 lg:w-7" />
+        <Link
+          href="/"
+          onClick={() => setNavChecked(false)}
+          className="inline-block w-fit"
+        >
+          {/* <Image src={logo} alt="Logo" className="hidden lg:block lg:w-7" /> */}
+          <Image src={logo2} alt="Logo" className="w-36" />
         </Link>
 
         {/* Hamburger Button */}
