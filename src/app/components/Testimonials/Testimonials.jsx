@@ -67,7 +67,7 @@ const Testimonials = () => {
         data-aos="fade-right"
         data-aos-duration="1000"
       >
-        What my <span className="font-gambetta italic">clients say</span>
+        What our <span className="font-gambetta italic">clients say</span>
       </h2>
       <p
         className="font-chillax mx-auto text-center text-sm text-text-muted md:text-md lg:w-1/2"

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import laptop from "@/assets/images/services.png";
 import Image from "next/image";
@@ -12,76 +13,145 @@ const ServicesContents = () => {
   const services = [
     {
       image: image1,
-      header: "Transforming Your Ideas into Reality",
+      header: "Building Brands That People Remember",
       tag: "Webdesign",
       id: "Webdesign",
       details: [
         {
-          heading: "Concept",
-          paragraph:
-            "I take time to understand your business needs and audience to develop a unique concept for your website. I'll create wireframes that serve as the foundation for your site's design and functionality.",
+          heading: "Branding",
+          paragraph: "Positioning, tone of voice, visual language.",
         },
 
         {
-          heading: "UX / Ui Design",
-          paragraph:
-            "I'll design a user-friendly interface that is visually appealing and engages your target audience. Your website will be created to meet your brand's needs and goals while ensuring a seamless user experience.",
+          heading: "Campaign Design",
+          paragraph: "From brand launches to seasonal & sales campaigns",
         },
 
         {
-          heading: "Prototype",
+          heading: "Content Studio",
           paragraph:
-            "With an interactive prototype, you'll have the ability to test your website's functionality before it goes live. This will ensure that your website's design and user experience are optimized for your audience's needs and preferences.",
+            "In-house team to execute photoshoots, videos, Reels & ads.",
         },
       ],
     },
     {
       image: image2,
-      header: "Developing High-Performance Websites and Web Applications",
+      header: "Performance-Driven Paid Ads & Strategy",
       tag: "development",
       id: "development",
       details: [
         {
-          heading: "Framer",
-          paragraph:
-            "I specialize in developing web applications using Framer. From custom animations to complex interactions, I bring your web app to life.",
+          heading: "Paid Ads Management",
+          paragraph: "Meta & Google, full funnel.",
         },
 
         {
-          heading: "CMS Integration",
-          paragraph:
-            "I can help you streamline your content management process by integrating a CMS into your website. Say goodbye to manual updates and hello to efficiency.",
+          heading: "Media Buying Strategy",
+          paragraph: "Optimized creatives + retargeting flow.",
         },
 
         {
-          heading: "WEb Design System",
-          paragraph:
-            "I use a modular design approach to create a web design system that ensures consistency throughout your website. This results in a professional and cohesive online presence.",
+          heading: "Analytics & Reports",
+          paragraph: "Weekly breakdowns, ROAS tracking, recommendations.",
         },
       ],
     },
     {
       image: image3,
-      header: "Boosting Your Website's Organic Search Traffic",
+      header: "Boosting Your Website’s Organic Search Traffic",
       tag: "SEO & content",
       id: "seo_and_content",
       details: [
         {
-          heading: "Research",
-          paragraph:
-            "I conduct thorough research to identify the best keywords and strategies to improve your website's search engine ranking.",
+          heading: "SEO Audits & On-page",
+          paragraph: "Technical SEO, copy, meta, internal linking.",
         },
 
         {
-          heading: "SEo Ranking",
-          paragraph:
-            "My SEO services are designed to improve your website's visibility on search engines, increasing your organic traffic and driving more leads and sales.",
+          heading: "Content Marketing",
+          paragraph: "Blogs, long-form content, YouTube optimization.",
         },
 
         {
-          heading: "SEO Support",
+          heading: "Social Media Management",
           paragraph:
-            "With ongoing SEO support, I ensure that your website stays up-to-date with the latest SEO best practices, keeping you ahead of the competition.",
+            "Strategy, captions, carousels, Reels, and trend-tuned posting.",
+        },
+      ],
+    },
+
+    {
+      image: image3,
+      header: "Crafting Content That Clicks, Connects, Converts",
+      tag: "SEO & content",
+      id: "seo_and_content",
+      details: [
+        {
+          heading: "Creative Direction",
+          paragraph:
+            "Moodboards, storytelling, and shot-planning that align with your brand.",
+        },
+
+        {
+          heading: "Reels & Short-form",
+          paragraph:
+            "Platform-native scripts, trending audio, face-cam storytelling, product highlights.",
+        },
+
+        {
+          heading: "Product Shoots & Ads",
+          paragraph:
+            "High-conversion visual ads, lifestyle photography, flat-lays, and model shoots.",
+        },
+
+        {
+          heading: "Post-Production",
+          paragraph:
+            "Color correction, editing, motion graphics, thumbnail optimization.",
+        },
+
+        {
+          heading: "Content Calendars",
+          paragraph:
+            "Plug-and-play plans with visual mockups, posting dates, and formats",
+        },
+      ],
+    },
+
+    {
+      image: image3,
+      header: "Building Brands People Remember. Campaigns They Talk About.",
+      tag: "SEO & content",
+      id: "seo_and_content",
+      details: [
+        {
+          heading: "Brand Identity Design",
+          paragraph:
+            "Logos, fonts, color palettes, and systems built to scale with your brand.",
+        },
+
+        {
+          heading: "Tone of Voice & Messaging",
+          paragraph:
+            "Crafting how your brand sounds — from taglines to brand manifestos.",
+        },
+
+        {
+          heading: "Creative Campaigns",
+          paragraph:
+            "Strategy-to-shoot execution for brand launches, festivals, sales & product reveals.",
+        },
+
+        {
+          heading: "Ad Creatives & Concept Decks",
+          paragraph:
+            "Fully developed pitch decks, storyboarded ads, carousels, and digital campaigns.",
+        },
+
+        {
+          heading: "Launch Playbooks",
+          paragraph:
+            "Social roll-out strategies, timelines, and asset planning for a successful debut.",
         },
       ],
     },
@@ -90,25 +160,26 @@ const ServicesContents = () => {
   return (
     <div className="container pb-6 pt-28 md:pb-16 md:pt-32 xl:pb-32 xl:pt-56">
       <h1
-        className="font-satoshi mx-auto text-center text-h2 md:text-heading-md xl:w-7/12 xl:text-heading-lg"
+        className="font-satoshi mx-auto text-center text-h2 md:text-heading-md xl:w-11/12 xl:text-heading-lg"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
-        Web Design <div className="font-gambetta italic">& Framer</div>
+        Marketing That’s{" "}
+        <div className="font-gambetta italic">Out of This World</div>
       </h1>
 
       <p
-        className="font-chillax mx-auto mb-5 text-center text-lg text-text-muted md:mb-11 xl:mb-16 xl:w-1/2 xl:text-xl"
+        className="font-chillax mx-auto mb-5 mt-4 text-center text-lg text-text-muted md:mb-11 xl:mb-16 xl:w-11/12 xl:text-xl"
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-delay="500"
       >
-        Premium web design, development, and SEO services to help your business
-        stand out.
+        360° creative & performance marketing — from strategy to storytelling,
+        we help your business grow, scale & dominate the digital space.
       </p>
 
       <div className="flex w-full justify-center">
-        <ScrollDownButton text={"About Me"} />
+        <ScrollDownButton text={"Explore Our Services"} />
       </div>
       <Image
         src={laptop}
@@ -127,7 +198,7 @@ const ServicesContents = () => {
           data-aos-delay="200"
         >
           <p className="text-xs uppercase text-text-muted lg:text-meta">
-            Clients
+            Projects
           </p>
           <h1 className="mt-1 text-3xl text-text lg:text-h1">
             <CountUp
@@ -135,7 +206,7 @@ const ServicesContents = () => {
               enableScrollSpy
               delay={3}
               duration={2}
-              end={150}
+              end={25}
             />
             +
           </h1>
@@ -148,7 +219,7 @@ const ServicesContents = () => {
           data-aos-delay="400"
         >
           <p className="text-xs uppercase text-text-muted lg:text-meta">
-            Projects
+            Client Retention
           </p>
           <h1 className="mt-1 text-3xl text-text lg:text-h1">
             <CountUp
@@ -156,9 +227,9 @@ const ServicesContents = () => {
               enableScrollSpy
               delay={3}
               duration={2}
-              end={300}
+              end={92}
             />
-            +
+            %
           </h1>
         </div>
 
@@ -169,17 +240,11 @@ const ServicesContents = () => {
           data-aos-delay="600"
         >
           <p className="text-xs uppercase text-text-muted lg:text-meta">
-            Happy Clients
+            Avg. ROAS
           </p>
           <h1 className="mt-1 text-3xl text-text lg:text-h1">
-            <CountUp
-              start={0}
-              enableScrollSpy
-              delay={4}
-              duration={2}
-              end={100}
-            />
-            %
+            <CountUp start={0} enableScrollSpy delay={4} duration={2} end={4} />
+            x+
           </h1>
         </div>
 
@@ -190,17 +255,11 @@ const ServicesContents = () => {
           data-aos-delay="800"
         >
           <p className="text-xs uppercase text-text-muted lg:text-meta">
-            Followers
+            Campaign Reach
           </p>
           <h1 className="mt-1 text-3xl text-text lg:text-h1">
-            <CountUp
-              start={0}
-              enableScrollSpy
-              delay={4}
-              duration={2}
-              end={150}
-            />
-            K
+            <CountUp start={0} enableScrollSpy delay={4} duration={2} end={1} />
+            M+
           </h1>
         </div>
       </div>

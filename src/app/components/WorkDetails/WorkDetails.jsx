@@ -20,7 +20,7 @@ const WorkDetails = ({ data }) => {
         {data.heading}
       </h1>
       <p
-        className="font-chillax mx-auto w-full text-center text text-text-muted md:text-md lg:w-1/2 lg:text-lg xl:text-xl"
+        className="font-chillax mx-auto mb-4 w-full text-center text text-text-muted md:mb-6 md:text-md lg:mb-8 lg:w-1/2 lg:text-lg xl:mb-12 xl:text-xl"
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="500"
@@ -28,7 +28,7 @@ const WorkDetails = ({ data }) => {
         {data.subheading}
       </p>
 
-      <div className="my-4 grid grid-cols-2 gap-2 md:my-6 md:gap-4 lg:my-8 lg:grid-cols-4 lg:gap-6 xl:my-12 xl:gap-8">
+      {/* <div className="my-4 grid grid-cols-2 gap-2 md:my-6 md:gap-4 lg:my-8 lg:grid-cols-4 lg:gap-6 xl:my-12 xl:gap-8">
         {data.clientDetails &&
           Object.keys(data.clientDetails).map((item, key) => (
             <ClientDetails
@@ -38,7 +38,7 @@ const WorkDetails = ({ data }) => {
               text={data.clientDetails[item]}
             />
           ))}
-      </div>
+      </div> */}
 
       {/* <button
         className="mb-8 mt-6 flex w-full items-center justify-center gap-4 text-meta uppercase xl:mb-16 xl:mt-12"

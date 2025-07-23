@@ -29,11 +29,11 @@ const Work = ({ image, heading, tag, id, link, slug }) => {
           loading="lazy"
           height={1000}
           alt="work"
-          className="aspect-video h-full w-full object-cover"
+          className="aspect-video h-full w-full object-cover object-[0_65%]"
         />
       </div>
 
-      <div className="absolute bottom-3 left-0 right-0 mx-auto w-11/12 transition-all group-hover:-bottom-14">
+      <div className="absolute bottom-3 left-0 right-0 mx-auto w-11/12 transition-all group-hover:-bottom-24">
         <div className="pointer-events-none flex w-full items-baseline justify-between p-2 text-text backdrop-blur-xl lg:bottom-8 lg:px-4 lg:py-3">
           <h4 className="font-satoshi text-h6 md:text-h4">{heading}</h4>
           <p className="font-satoshi text-sm uppercase md:text-base">{tag}</p>

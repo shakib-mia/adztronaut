@@ -5,9 +5,11 @@ import {
   FaBehance,
   FaEnvelope,
   FaEnvelopeOpen,
+  FaFacebook,
   FaInstagram,
   FaPhone,
   FaTwitter,
+  FaYoutube,
 } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import { AiOutlineDribbble } from "react-icons/ai";
@@ -30,7 +32,12 @@ const Footer = () => {
           />
           <ul className="mt-6 flex flex-col gap-4 md:mt-8">
             <li>
-              <a className="group flex items-center gap-2" href="#">
+              <a
+                className="group flex items-center gap-2"
+                href="https://www.instagram.com/adztronaut/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <aside className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg-muted text-text-muted transition duration-500 group-hover:bg-bg-secondary">
                   <FaInstagram />
                 </aside>
@@ -41,41 +48,40 @@ const Footer = () => {
             </li>
 
             <li>
-              <a className="group flex items-center gap-2" href="#">
+              <a
+                className="group flex items-center gap-2"
+                href="https://www.facebook.com/adztronautofficial"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <aside className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg-muted text-text-muted transition duration-500 group-hover:bg-bg-secondary">
-                  <CiTwitter />
+                  <FaFacebook />
                 </aside>
                 <p className="text-meta text-text-muted transition duration-500 group-hover:text-text">
-                  TWITTER
+                  Facebook
                 </p>
               </a>
             </li>
 
             <li>
-              <a className="group flex items-center gap-2" href="#">
+              <a
+                className="group flex items-center gap-2"
+                href="https://www.youtube.com/@adztronaut"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <aside className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg-muted text-text-muted transition duration-500 group-hover:bg-bg-secondary">
-                  <AiOutlineDribbble />
+                  <FaYoutube />
                 </aside>
                 <p className="text-meta text-text-muted transition duration-500 group-hover:text-text">
-                  DRIBBBLE
-                </p>
-              </a>
-            </li>
-
-            <li>
-              <a className="group flex items-center gap-2" href="#">
-                <aside className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-bg-muted text-text-muted transition duration-500 group-hover:bg-bg-secondary">
-                  <FaBehance />
-                </aside>
-                <p className="text-meta text-text-muted transition duration-500 group-hover:text-text">
-                  BEHANCE
+                  YouTube
                 </p>
               </a>
             </li>
           </ul>
         </aside>
         <aside data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-          <h5 className="text-h6 text-text xl:text-h5">Pages</h5>
+          <h5 className="text-h6 text-text xl:text-h5">Links</h5>
           <ul className="mb-4 mt-8 flex flex-col gap-4">
             <li>
               <Link
@@ -110,22 +116,13 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-
-          <Button className="!p-0">
-            <Link
-              href={"/contact"}
-              className="flex items-center gap-2 px-4 py-[0.625rem] uppercase"
-            >
-              More Templates
-            </Link>
-          </Button>
         </aside>
         <aside
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="1000"
         >
-          <h5 className="text-h6 text-text xl:text-h5">CMS</h5>
+          <h5 className="text-h6 text-text xl:text-h5">Contents</h5>
           <ul className="mt-8 flex flex-col gap-4">
             <li>
               <Link
@@ -172,21 +169,21 @@ const Footer = () => {
             <li>
               <a
                 className="flex items-center gap-2 transition duration-500 hover:text-text"
-                href={"callto:833-900-8338"}
+                href={"callto:+917044732429"}
               >
                 <FaPhone className="rotate-90" />
-                123-456-7890
+                +91 7044 732 429
               </a>
             </li>
             <li>
               <a
-                className="flex items-center gap-2 transition duration-500 hover:text-text"
-                href={"mailto:smdshakibmia2001@gmail.com"}
+                className="flex items-center gap-2 lowercase transition duration-500 hover:text-text"
+                href={"mailto:connect@adztronaut.com"}
               >
                 <div className="aspect-square w-4">
                   <FaEnvelopeOpen />
                 </div>
-                mailto:smdshakibmia2001@gmail.com
+                connect@adztronaut.com
               </a>
             </li>
             <li>
@@ -199,7 +196,7 @@ const Footer = () => {
                 <div className="aspect-square w-4">
                   <FaLocationDot />
                 </div>
-                Cooch Beher, West Bengal, India
+                Kolkata, West Bengal, India
               </a>
             </li>
           </ul>
@@ -210,11 +207,11 @@ const Footer = () => {
         <p className="text-center text-xs text-text-muted lg:text-left">
           Copyright © 2024 Developed by{" "}
           <a
-            // href="https://raddito.com/"
+            href="https://adztronaut.com"
             className="font-semibold"
             rel="nofollow"
           >
-            smdshakibmia2001@gmail.com
+            adztronaut.com
           </a>
           . Designed by{" "}
           <a href="https://templates.gola.io/" className="font-semibold">
