@@ -23,7 +23,7 @@ const Steps = () => {
         data-aos-duration="1000"
         data-aos-delay="500"
       >
-        Your in-house team that just happens to work out-of-this-world.
+        Our in-house team that just happens to work out-of-this-world.
       </p>
 
       <Timeline />

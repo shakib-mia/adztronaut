@@ -169,7 +169,7 @@ const Footer = () => {
             <li>
               <a
                 className="flex items-center gap-2 transition duration-500 hover:text-text"
-                href={"callto:+917044732429"}
+                href={"tel:+917044732429"}
               >
                 <FaPhone className="rotate-90" />
                 +91 7044 732 429
