@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon-2.svg" />
+        <link rel="apple-touch-icon" href="/favicon-2.svg" />
       </head>
       <body>
         <Layout>{children}</Layout>
