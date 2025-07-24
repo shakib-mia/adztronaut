@@ -13,7 +13,7 @@ const ServiceContentDetails = ({ image, tag, header, details, id }) => {
           {tag}
         </p>
         <h1
-          className="mb-6 mt-4 font-satoshi text-3xl lg:mb-12 lg:text-h1"
+          className="font-satoshi mb-6 mt-4 text-3xl lg:mb-12 lg:text-h1"
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="500"
@@ -21,31 +21,34 @@ const ServiceContentDetails = ({ image, tag, header, details, id }) => {
           {header}
         </h1>
 
-        <Image
-          src={image}
-          alt="Transforming-ideas-into-reality"
-          className="mb-4 md:mb-8 lg:mb-12"
-          data-aos="fade-in"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-        />
-
-        <div className="flex flex-col divide-y divide-border">
-          {details.map(({ heading, paragraph }, key) => (
-            <div
-              className="flex flex-wrap py-6 lg:py-12"
+        <div className="flex flex-col items-center gap-4 lg:flex-row">
+          <aside className="h-full w-full object-cover lg:w-1/2">
+            <Image
+              src={image}
+              alt="Transforming-ideas-into-reality"
+              className="h-full w-full"
               data-aos="fade-right"
               data-aos-duration="1000"
-              key={key}
-            >
-              <aside className="w-full text-meta uppercase text-text lg:w-2/12">
-                {heading}
-              </aside>
-              <div className="w-full font-chillax text-sm text-text-muted lg:w-10/12 lg:text">
-                {paragraph}
+            />
+          </aside>
+
+          <div className="flex flex-col divide-y divide-border">
+            {details.map(({ heading, paragraph }, key) => (
+              <div
+                className="space-y-2 py-6 lg:flex-nowrap lg:py-12"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                key={key}
+              >
+                <aside className="w-full text-meta uppercase text-text lg:w-4/12">
+                  {heading}
+                </aside>
+                <div className="font-chillax w-full text-sm text-text-muted lg:w-8/12 lg:text">
+                  {paragraph}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

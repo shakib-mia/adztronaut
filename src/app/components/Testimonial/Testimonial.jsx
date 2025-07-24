@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { IoPersonCircleOutline } from "react-icons/io5";
 
 const Testimonial = ({
   logo,
@@ -17,16 +18,24 @@ const Testimonial = ({
         <Image
           src={logo}
           // height={25}
-          className="mb-8 h-4 w-auto md:h-[25px]"
+          className="mb-8 h-6 w-auto md:h-[25px]"
           alt={`${name}'s company`}
         />
         <h4 className="font-satoshi text-h6 text-text md:text-h4">{heading}</h4>
-        <p className="mb-8 mt-2 font-chillax text-sm text-text-muted md:text">
+        <p className="font-chillax mb-8 mt-2 text-sm text-text-muted md:text">
           {paragraph}
         </p>
 
         <div className="flex items-center gap-4">
-          <Image src={image} className="aspect-square w-[3.75rem]" alt={name} />
+          {image ? (
+            <Image
+              src={image}
+              className="aspect-square w-[3.75rem]"
+              alt={name}
+            />
+          ) : (
+            <IoPersonCircleOutline className="text-5xl" />
+          )}{" "}
           <aside>
             <p className="font-satoshi text-meta text-text">{name}</p>
             <p className="font-chillax text-meta text-text-muted">

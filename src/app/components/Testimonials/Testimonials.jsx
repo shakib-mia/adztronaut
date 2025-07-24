@@ -2,9 +2,6 @@ import React from "react";
 import partner1 from "./../../../assets/images/partners/the-chocolate-company.png";
 import partner2 from "./../../../assets/images/partners/logo-1.svg";
 import partner3 from "./../../../assets/images/partners/logo-2.svg";
-import client1 from "./../../../assets/images/testimonials/Image Wrapper.png";
-import client2 from "./../../../assets/images/testimonials/Image Wrapper-1.png";
-import client3 from "./../../../assets/images/testimonials/Image Wrapper-2.png";
 import Testimonial from "../Testimonial/Testimonial";
 
 const Testimonials = () => {
@@ -14,7 +11,7 @@ const Testimonials = () => {
       paragraph:
         "Adztronaut changed the game for us. From strategy to scale—they nailed it all.",
       name: "Shreya N.",
-      designation: "Founder, FounderThe Chocolate Company",
+      designation: "Founder, he Chocolate Company",
       // image: client1,
     },
     {

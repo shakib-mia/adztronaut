@@ -169,7 +169,7 @@ const ServicesContents = () => {
       </h1>
 
       <p
-        className="font-chillax mx-auto mb-5 mt-4 text-center text-lg text-text-muted md:mb-11 xl:mb-16 xl:w-11/12 xl:text-xl"
+        className="font-chillax mx-auto mb-5 mt-4 text-center text-base text-text-muted md:mb-11 lg:text-lg xl:mb-16 xl:w-11/12 xl:text-xl"
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-delay="500"
@@ -190,7 +190,7 @@ const ServicesContents = () => {
         data-aos-duration="1000"
       />
 
-      <div className="font-satoshi mt-20 grid grid-cols-2 gap-16 md:grid-cols-4">
+      <div className="font-satoshi mt-20 grid grid-cols-2 gap-4 gap-y-8 md:grid-cols-4 md:gap-10 lg:gap-16">
         <div
           className="text-center"
           data-aos="fade-up"
@@ -200,7 +200,7 @@ const ServicesContents = () => {
           <p className="text-xs uppercase text-text-muted lg:text-meta">
             Projects
           </p>
-          <h1 className="mt-1 text-3xl text-text lg:text-h1">
+          <h1 className="text-5xl text-text lg:mt-1 lg:text-h1">
             <CountUp
               start={0}
               enableScrollSpy
@@ -221,7 +221,7 @@ const ServicesContents = () => {
           <p className="text-xs uppercase text-text-muted lg:text-meta">
             Client Retention
           </p>
-          <h1 className="mt-1 text-3xl text-text lg:text-h1">
+          <h1 className="text-5xl text-text lg:mt-1 lg:text-h1">
             <CountUp
               start={0}
               enableScrollSpy
@@ -242,7 +242,7 @@ const ServicesContents = () => {
           <p className="text-xs uppercase text-text-muted lg:text-meta">
             Avg. ROAS
           </p>
-          <h1 className="mt-1 text-3xl text-text lg:text-h1">
+          <h1 className="text-5xl text-text lg:mt-1 lg:text-h1">
             <CountUp start={0} enableScrollSpy delay={4} duration={2} end={4} />
             x+
           </h1>
@@ -257,7 +257,7 @@ const ServicesContents = () => {
           <p className="text-xs uppercase text-text-muted lg:text-meta">
             Campaign Reach
           </p>
-          <h1 className="mt-1 text-3xl text-text lg:text-h1">
+          <h1 className="text-5xl text-text lg:mt-1 lg:text-h1">
             <CountUp start={0} enableScrollSpy delay={4} duration={2} end={1} />
             M+
           </h1>

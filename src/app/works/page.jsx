@@ -11,7 +11,7 @@ const Page = () => {
         <title>Works - Adztronaut</title>
       </Head>
 
-      <div className="mx-auto w-full pt-20 md:pt-32 xl:w-5/6 xl:pt-56">
+      <div className="mx-auto w-full pt-24 md:pt-32 xl:w-5/6 xl:pt-56">
         <h2
           className="font-satoshi text-center text-h3 xl:text-heading-lg"
           data-aos="fade-up"
@@ -20,7 +20,7 @@ const Page = () => {
         </h2>
 
         <h3
-          className="mt-6 text-center xl:text-h3"
+          className="mt-2 text-center lg:mt-6 xl:text-h3"
           data-aos="fade-up"
           data-aos-delay="250"
         >

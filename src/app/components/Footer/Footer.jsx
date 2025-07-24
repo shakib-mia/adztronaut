@@ -123,7 +123,7 @@ const Footer = () => {
           data-aos-delay="1000"
         >
           <h5 className="text-h6 text-text xl:text-h5">Contents</h5>
-          <ul className="mt-8 flex flex-col gap-4">
+          <ul className="mt-4 flex flex-col gap-4 lg:mt-8">
             <li>
               <Link
                 className="transition duration-500 hover:text-text"
@@ -165,7 +165,7 @@ const Footer = () => {
           data-aos-delay="1500"
         >
           <h5 className="text-h6 text-text xl:text-h5">Contact</h5>
-          <ul className="mt-8 flex flex-col gap-4">
+          <ul className="mt-4 flex flex-col gap-2 lg:mt-8 lg:gap-4">
             <li>
               <a
                 className="flex items-center gap-2 transition duration-500 hover:text-text"
@@ -214,7 +214,12 @@ const Footer = () => {
             adztronaut.com
           </a>
           . Designed by{" "}
-          <a href="https://templates.gola.io/" className="font-semibold">
+          <a
+            href="https://templates.gola.io/"
+            className="font-semibold"
+            target="_blank"
+            rel="noreferrer"
+          >
             Gola
           </a>
           .
