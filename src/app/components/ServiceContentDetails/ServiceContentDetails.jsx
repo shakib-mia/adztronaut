@@ -21,7 +21,7 @@ const ServiceContentDetails = ({ image, tag, header, details, id }) => {
           {header}
         </h1>
 
-        <div className="flex flex-col items-center gap-4 lg:flex-row">
+        <div className="flex flex-col gap-4 lg:flex-row">
           <aside className="h-full w-full object-cover lg:w-1/2">
             <Image
               src={image}
@@ -35,12 +35,12 @@ const ServiceContentDetails = ({ image, tag, header, details, id }) => {
           <div className="flex flex-col divide-y divide-border">
             {details.map(({ heading, paragraph }, key) => (
               <div
-                className="space-y-2 py-6 lg:flex-nowrap lg:py-12"
+                className={`space-y-2 py-6 lg:flex-nowrap lg:py-12 ${key === 0 && "lg:pt-0"}`}
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 key={key}
               >
-                <aside className="w-full text-meta uppercase text-text lg:w-4/12">
+                <aside className="w-full text-meta uppercase text-text">
                   {heading}
                 </aside>
                 <div className="font-chillax w-full text-sm text-text-muted lg:w-8/12 lg:text">

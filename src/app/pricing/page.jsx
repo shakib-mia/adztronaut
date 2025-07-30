@@ -72,7 +72,7 @@ const Page = () => {
           ))}
         </div>
       </div>
-      <FAQ />
+      {/* <FAQ /> */}
     </div>
   );
 };

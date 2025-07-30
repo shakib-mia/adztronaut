@@ -35,7 +35,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="font-satoshi grid grid-cols-1 gap-4 pb-10 md:gap-8 md:pb-20 lg:grid-cols-2 lg:gap-12 lg:pb-40">
+    <div className="font-satoshi grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-2 lg:gap-12">
       <aside>
         <p
           className="mb-2 text-meta text-text-muted"

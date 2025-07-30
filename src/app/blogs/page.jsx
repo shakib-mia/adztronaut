@@ -3,6 +3,7 @@ import React from "react";
 // import useAOS from "../hooks/useAos";
 // import useLenis from "../hooks/useLenis";
 import Blogs from "../components/Blogs/Blogs";
+import FAQ from "../components/FAQ/FAQ";
 
 const Page = () => {
   // useAOS();
@@ -27,7 +28,10 @@ const Page = () => {
         </p>
       </div>
 
-      <Blogs />
+      <div className="mb-16">
+        <Blogs />
+      </div>
+      <FAQ />
     </div>
   );
 };

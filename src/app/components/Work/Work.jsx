@@ -12,7 +12,7 @@ const Work = ({ image, heading, tag, id, link, slug }) => {
       data-aos={id % 2 ? "fade-right" : "fade-left"}
       // data-aos-delay={id % 2 ? 250 : 2 * 250}
     >
-      <div className="grayscale transition-[filter_transform] group-hover:scale-110 group-hover:grayscale-0">
+      <div className="grayscale transition-[filter_transform] duration-1000 group-hover:scale-110 group-hover:grayscale-0">
         <div className="absolute left-0 top-0 z-0 h-full w-full bg-black bg-opacity-30"></div>
         <Link
           href={`/works/${slug}`}

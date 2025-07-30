@@ -25,7 +25,7 @@ const Navbar = () => {
     { path: "/testimonials", text: "Testimonials" },
     { path: "/about", text: "About" },
     { path: "/blogs", text: "Blogs" },
-    { path: "/pricing", text: "Pricing" },
+    // { path: "/pricing", text: "Pricing" },
   ];
 
   return (
@@ -85,7 +85,7 @@ const Navbar = () => {
           ))}
 
           {/* More Dropdown */}
-          <div className="relative cursor-pointer">
+          {/* <div className="relative cursor-pointer">
             <li className="group mt-3 flex items-center gap-2 sm:mt-0">
               <p>More</p>
               <FaChevronDown className="transition group-hover:rotate-180" />
@@ -97,7 +97,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-          </div>
+          </div> */}
 
           <Button className="mb-3 !border-brand !bg-brand uppercase sm:hidden">
             {"Let's"} Talk
