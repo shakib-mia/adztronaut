@@ -26,7 +26,7 @@ const ServiceContentDetails = ({ image, tag, header, details, id }) => {
             <Image
               src={image}
               alt="Transforming-ideas-into-reality"
-              className="h-full w-full"
+              className="h-full w-full object-cover"
               data-aos="fade-right"
               data-aos-duration="1000"
             />
@@ -35,7 +35,7 @@ const ServiceContentDetails = ({ image, tag, header, details, id }) => {
           <div className="flex flex-col divide-y divide-border">
             {details.map(({ heading, paragraph }, key) => (
               <div
-                className={`space-y-2 py-6 lg:flex-nowrap lg:py-12 ${key === 0 && "lg:pt-0"}`}
+                className={`space-y-2 py-6 lg:flex-nowrap lg:py-6 ${key === 0 && "lg:pt-0"}`}
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 key={key}

@@ -3,9 +3,10 @@ import React from "react";
 import laptop from "@/assets/images/services.png";
 import Image from "next/image";
 import CountUp from "react-countup";
-import image1 from "@/assets/images/services/ideas-into-reality.jpg";
-import image2 from "@/assets/images/services/developing-high-performing-app.jpg";
-import image3 from "@/assets/images/services/ideas-into-reality.jpg";
+import image1 from "@/assets/images/services/beauty-4993466_1920.jpg";
+import image2 from "@/assets/images/services/premium_photo-1683583961441-511f9498e6ed.png";
+import image3 from "@/assets/images/services/seo.jpg";
+import image4 from "@/assets/images/services/alexander-dummer-aS4Duj2j7r4-unsplash.jpg";
 import ServiceContentDetails from "../ServiceContentDetails/ServiceContentDetails";
 import ScrollDownButton from "../ScrollDownButton/ScrollDownButton";
 
@@ -14,8 +15,8 @@ const ServicesContents = () => {
     {
       image: image1,
       header: "Building Brands That People Remember",
-      tag: "Webdesign",
-      id: "Webdesign",
+      tag: "Branding",
+      id: "Branding",
       details: [
         {
           heading: "Branding",
@@ -81,9 +82,9 @@ const ServicesContents = () => {
     },
 
     {
-      image: image3,
+      image: image4,
       header: "Crafting Content That Clicks, Connects, Converts",
-      tag: "SEO & content",
+      tag: "Media Production",
       id: "seo_and_content",
       details: [
         {
