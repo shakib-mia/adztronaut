@@ -38,8 +38,8 @@ const ServicesContents = () => {
     {
       image: image2,
       header: "Performance-Driven Paid Ads & Strategy",
-      tag: "development",
-      id: "development",
+      tag: "Performance Marketing",
+      id: "performance-marketing",
       details: [
         {
           heading: "Paid Ads Management",
