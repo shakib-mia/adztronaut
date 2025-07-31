@@ -187,17 +187,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="flex items-center gap-2 transition duration-500 hover:text-text"
-                // href={"https://maps.app.goo.gl/2UzAdKXEh7w2b9e66"}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <span className="flex items-center gap-2 transition duration-500 hover:text-text">
                 <div className="aspect-square w-4">
                   <FaLocationDot />
                 </div>
                 Kolkata, West Bengal, India
-              </a>
+              </span>
             </li>
           </ul>
         </aside>
