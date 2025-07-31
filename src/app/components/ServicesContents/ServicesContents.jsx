@@ -19,19 +19,33 @@ const ServicesContents = () => {
       id: "Branding",
       details: [
         {
-          heading: "Branding",
-          paragraph: "Positioning, tone of voice, visual language.",
-        },
-
-        {
-          heading: "Campaign Design",
-          paragraph: "From brand launches to seasonal & sales campaigns",
-        },
-
-        {
-          heading: "Content Studio",
+          heading: "Brand Identity Design",
           paragraph:
-            "In-house team to execute photoshoots, videos, Reels & ads.",
+            "Logos, fonts, color palettes, and systems built to scale with your brand.",
+        },
+
+        {
+          heading: "Tone of Voice & Messaging",
+          paragraph:
+            "Crafting how your brand sounds — from taglines to brand manifestos.",
+        },
+
+        {
+          heading: "Creative Campaigns",
+          paragraph:
+            "Strategy-to-shoot execution for brand launches, festivals, sales & product reveals.",
+        },
+
+        {
+          heading: "Ad Creatives & Concept Decks",
+          paragraph:
+            "Fully developed pitch decks, storyboarded ads, carousels, and digital campaigns.",
+        },
+
+        {
+          heading: "Launch Playbooks",
+          paragraph:
+            "Social roll-out strategies, timelines, and asset planning for a successful debut.",
         },
       ],
     },
@@ -119,43 +133,43 @@ const ServicesContents = () => {
       ],
     },
 
-    {
-      image: image3,
-      header: "Building Brands People Remember. Campaigns They Talk About.",
-      tag: "SEO & content",
-      id: "seo_and_content",
-      details: [
-        {
-          heading: "Brand Identity Design",
-          paragraph:
-            "Logos, fonts, color palettes, and systems built to scale with your brand.",
-        },
+    // {
+    //   image: image3,
+    //   header: "Building Brands People Remember. Campaigns They Talk About.",
+    //   tag: "SEO & content",
+    //   id: "seo_and_content",
+    //   details: [
+    //     {
+    //       heading: "Brand Identity Design",
+    //       paragraph:
+    //         "Logos, fonts, color palettes, and systems built to scale with your brand.",
+    //     },
 
-        {
-          heading: "Tone of Voice & Messaging",
-          paragraph:
-            "Crafting how your brand sounds — from taglines to brand manifestos.",
-        },
+    //     {
+    //       heading: "Tone of Voice & Messaging",
+    //       paragraph:
+    //         "Crafting how your brand sounds — from taglines to brand manifestos.",
+    //     },
 
-        {
-          heading: "Creative Campaigns",
-          paragraph:
-            "Strategy-to-shoot execution for brand launches, festivals, sales & product reveals.",
-        },
+    //     {
+    //       heading: "Creative Campaigns",
+    //       paragraph:
+    //         "Strategy-to-shoot execution for brand launches, festivals, sales & product reveals.",
+    //     },
 
-        {
-          heading: "Ad Creatives & Concept Decks",
-          paragraph:
-            "Fully developed pitch decks, storyboarded ads, carousels, and digital campaigns.",
-        },
+    //     {
+    //       heading: "Ad Creatives & Concept Decks",
+    //       paragraph:
+    //         "Fully developed pitch decks, storyboarded ads, carousels, and digital campaigns.",
+    //     },
 
-        {
-          heading: "Launch Playbooks",
-          paragraph:
-            "Social roll-out strategies, timelines, and asset planning for a successful debut.",
-        },
-      ],
-    },
+    //     {
+    //       heading: "Launch Playbooks",
+    //       paragraph:
+    //         "Social roll-out strategies, timelines, and asset planning for a successful debut.",
+    //     },
+    //   ],
+    // },
   ];
 
   return (
