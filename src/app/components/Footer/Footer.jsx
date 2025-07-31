@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import logo from "@/assets/images/logo-yellow-adztronaut.png";
 import Image from "next/image";
@@ -19,10 +21,14 @@ import { GoArrowUp, GoArrowUpRight } from "react-icons/go";
 import { smoothScrollTo } from "@/utils/smoothScroll";
 import { FaLocationDot } from "react-icons/fa6";
 import ScrollTo from "../ScrollTo/ScrollTo";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
   return (
-    <footer className="relative bg-bg-muted">
+    <footer
+      className={`${pathname === "/contact" ? "pt-16" : "pt-0"} relative bg-bg-muted`}
+    >
       <div className="mx-auto grid grid-cols-1 gap-10 p-4 uppercase text-text-muted md:grid-cols-2 xl:grid-cols-4 xl:gap-4 2xl:max-w-[1300px]">
         <aside data-aos="fade-up" data-aos-duration="1000">
           <Image
