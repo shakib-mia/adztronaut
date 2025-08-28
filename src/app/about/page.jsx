@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import heroImage from "@/assets/images/hero-image.jpg";
 import Layout from "../components/Layout/Layout";
@@ -10,6 +9,12 @@ import Head from "next/head";
 import sayang from "@/assets/images/Sayan ghosh.webp";
 import arpitar from "@/assets/images/Arpita roy.webp";
 import ScrollDownButton from "../components/ScrollDownButton/ScrollDownButton";
+
+export const metadata = {
+  title: "About - Adztronaut",
+  description:
+    "Digital Marketing | Content and performance marketing | Advertisements",
+};
 
 const Page = () => {
   // useLenis();
@@ -69,7 +74,7 @@ const Page = () => {
   return (
     <div className="container">
       <Head>
-        <title>About - Arik Andersson</title>
+        <title>About - Adztronauit</title>
       </Head>
       <div className="mt-28 lg:mt-56">
         <h1
@@ -88,7 +93,12 @@ const Page = () => {
           Delivering Premium Web Design and Development Services to Boost Your
           Online Presence.
         </p>
-        <p className="font-chillax mx-auto mb-8 text-center text-text-muted lg:mb-16 lg:w-8/12">
+        <p
+          className="font-chillax mx-auto mb-8 text-center text-text-muted lg:mb-16 lg:w-8/12"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="700"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
           consectetur blanditiis incidunt corrupti nostrum iusto nisi possimus
           enim aliquam? Voluptatem illo reiciendis officiis blanditiis officia
