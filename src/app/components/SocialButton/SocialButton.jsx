@@ -1,10 +1,11 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
-const SocialButton = ({ icon, text, link, id }) => {
-  const delay = id * 250;
+const SocialButton = (props) => {
+  const { icon, text, link, id, total, ...animations } = props;
+  // const delay = id * 250;
   return (
-    <div data-aos="fade-left" data-aos-delay={delay}>
+    <div {...animations}>
       <a
         href={link}
         className="flex items-center justify-between border border-border bg-bg-muted p-4 transition duration-500 hover:bg-bg-secondary"
