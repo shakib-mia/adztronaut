@@ -80,13 +80,19 @@ const Page = () => {
           About <i className="font-gambetta">Us</i>
         </h1>
         <p
-          className="font-chillax mx-auto mb-8 text-center text-lg text-text-muted lg:mb-16 lg:w-6/12"
+          className="font-chillax mx-auto mb-4 text-center text-lg text-text-muted lg:w-6/12"
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="500"
         >
           Delivering Premium Web Design and Development Services to Boost Your
           Online Presence.
+        </p>
+        <p className="font-chillax mx-auto mb-8 text-center text-text-muted lg:mb-16 lg:w-8/12">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+          consectetur blanditiis incidunt corrupti nostrum iusto nisi possimus
+          enim aliquam? Voluptatem illo reiciendis officiis blanditiis officia
+          beatae ipsa molestiae cupiditate fugiat.
         </p>
         {/* <ScrollDownButton text={"About Us"} /> */}
         <div className="grid grid-cols-1 gap-4 pb-10 md:pb-20 lg:grid-cols-2 lg:pb-40">
