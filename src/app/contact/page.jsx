@@ -20,6 +20,7 @@ import {
 } from "react-icons/fa";
 import SocialButton from "../components/SocialButton/SocialButton";
 import axios from "axios";
+import Head from "../head";
 
 const Page = () => {
   // useLenis();
@@ -90,6 +91,8 @@ const Page = () => {
 
   return (
     <div className="container grid h-full grid-cols-1 items-center gap-20 py-10 md:py-20 lg:grid-cols-2 lg:py-56">
+      <Head title={"Contact"} />
+
       <Image src={image} alt="contact-image" data-aos="fade-right" />
       <aside className="text-text" data-aos="fade-left" data-aos-duration="200">
         <form

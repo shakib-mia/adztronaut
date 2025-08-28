@@ -3,19 +3,14 @@ import React from "react";
 // import useLenis from "../hooks/useLenis";
 // import useAOS from "../hooks/useAos";
 import ServicesContents from "../components/ServicesContents/ServicesContents";
-import Head from "next/head";
-
-export const metadata = {
-  title: "Services - Adztronaut",
-  description:
-    "Digital Marketing | Content and performance marketing | Advertisements",
-};
+import Head from "../head";
 
 const Page = () => {
   // useLenis();
   // useAOS();
   return (
     <>
+      <Head title={"Services"} />
       <ServicesContents />
     </>
   );

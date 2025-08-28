@@ -5,6 +5,7 @@ import React from "react";
 // import useLenis from "../hooks/useLenis";
 import Package from "../components/Package/Package";
 import FAQ from "../components/FAQ/FAQ";
+import Head from "../head";
 
 const Page = () => {
   // useAOS();
@@ -36,6 +37,8 @@ const Page = () => {
 
   return (
     <div className="container">
+      <Head title={"Pricing"} />
+
       <div className="pb-20 pt-24 lg:pb-40 lg:pt-56">
         <div className="mx-auto text-center lg:w-2/3">
           <p

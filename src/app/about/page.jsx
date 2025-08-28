@@ -1,20 +1,17 @@
 import React from "react";
-import heroImage from "@/assets/images/hero-image.jpg";
-import Layout from "../components/Layout/Layout";
-import Image from "next/image";
 // import useLenis from "../hooks/useLenis";
 // import useAOS from "../hooks/useAos";
 import AboutContents from "../components/AboutContents/AboutContents";
-import Head from "next/head";
 import sayang from "@/assets/images/Sayan ghosh.webp";
 import arpitar from "@/assets/images/Arpita roy.webp";
 import ScrollDownButton from "../components/ScrollDownButton/ScrollDownButton";
+import Head from "../head";
 
-export const metadata = {
-  title: "About - Adztronaut",
-  description:
-    "Digital Marketing | Content and performance marketing | Advertisements",
-};
+// export const metadata = {
+//   title: "About - Adztronaut",
+//   description:
+//     "Digital Marketing | Content and performance marketing | Advertisements",
+// };
 
 const Page = () => {
   // useLenis();
@@ -73,9 +70,7 @@ const Page = () => {
 
   return (
     <div className="container">
-      <Head>
-        <title>About - Adztronauit</title>
-      </Head>
+      <Head title={"About"} />
       <div className="mt-28 lg:mt-56">
         <h1
           className="font-satoshi pb-4 text-center text-h1 lg:text-heading-md"

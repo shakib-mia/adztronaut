@@ -2,14 +2,19 @@ import React from "react";
 import useLenis from "../hooks/useLenis";
 import useAOS from "../hooks/useAos";
 import Works from "../components/Works/Works";
-import Head from "next/head";
+import Head from "../head";
 
 const Page = () => {
   return (
     <div className="container">
-      <Head>
+      {/* <Head>
         <title>Works - Adztronaut</title>
-      </Head>
+        <meta
+          name="description"
+          content="Digital Marketing | Content and performance marketing | Advertisements"
+        />
+      </Head> */}
+      <Head title={"Works"} />
 
       <div className="mx-auto w-full pt-24 md:pt-32 xl:w-5/6 xl:pt-56">
         <h2
