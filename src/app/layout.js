@@ -5,11 +5,11 @@ import Head from "./head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Adztronaut",
-  description:
-    "Digital Marketing | Content and performance marketing | Advertisements",
-};
+// export const metadata = {
+//   title: "Adztronaut",
+//   description:
+//     "Digital Marketing | Content and performance marketing | Advertisements",
+// };
 
 export default function RootLayout({ children }) {
   return (
