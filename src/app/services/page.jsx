@@ -7,7 +7,8 @@ import Head from "next/head";
 
 export const metadata = {
   title: "Services - Adztronaut",
-  description: "Web Designer & Developer",
+  description:
+    "Digital Marketing | Content and performance marketing | Advertisements",
 };
 
 const Page = () => {
