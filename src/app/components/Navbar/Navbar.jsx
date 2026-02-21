@@ -23,7 +23,7 @@ const Navbar = () => {
     { path: "/services", text: "Services" },
     { path: "/works", text: "Work" },
     { path: "/testimonials", text: "Testimonials" },
-    { path: "/about", text: "About" },
+    // { path: "/about", text: "About" },
     { path: "/blogs", text: "Blogs" },
     // { path: "/pricing", text: "Pricing" },
   ];
@@ -117,7 +117,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`fixed left-0 right-0 top-[78px] z-10 mx-auto max-h-[14.5rem] max-w-[95%] rounded-t-none border-t-0 border-border bg-bg-muted ${
+        className={`fixed left-0 right-0 top-[78px] z-10 mx-auto max-h-[9.5rem] max-w-[95%] rounded-t-none border-t-0 border-border bg-bg-muted ${
           navChecked ? "h-full border" : "h-0 py-0"
         } flex w-full flex-col divide-y overflow-hidden border-t-0 border-border text-meta uppercase text-text backdrop-blur transition-[height_padding] duration-500 sm:static sm:hidden sm:w-auto sm:flex-row sm:items-center sm:gap-5 sm:border-0 sm:bg-transparent sm:backdrop-blur-0`}
       >
