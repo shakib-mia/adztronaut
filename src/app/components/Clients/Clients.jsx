@@ -9,7 +9,6 @@ import partner1 from "@/assets/images/partners/damro.png";
 import partner2 from "@/assets/images/partners/the-chocolate-company.png";
 import partner3 from "@/assets/images/partners/jb.png";
 import partner4 from "@/assets/images/partners/growcial-bull.png";
-// import partner5 from "@/assets/images/partners/forevision-digital.png";
 import partner6 from "@/assets/images/partners/the-aroggo.png";
 import partner7 from "@/assets/images/partners/shree-gourango-bostraloy.png";
 
