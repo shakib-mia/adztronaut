@@ -154,7 +154,7 @@ const Header = () => {
               </h4>
 
               <a
-                href="tel:+8801832492467"
+                href="tel:+917044732429"
                 className="mt-4"
                 data-swiper-parallax="300"
               >
