@@ -12,6 +12,7 @@ import partner4 from "@/assets/images/partners/growcial-bull.png";
 import partner5 from "@/assets/images/partners/UPSC Logo.png";
 import partner6 from "@/assets/images/partners/the-aroggo.png";
 import partner7 from "@/assets/images/partners/shree-gourango-bostraloy.png";
+import partner8 from "@/assets/images/partners/IMG_8747.JPG.jpeg";
 
 const partners = [
   partner1,
@@ -21,6 +22,7 @@ const partners = [
   partner5,
   partner6,
   partner7,
+  partner8,
 ];
 
 const Clients = () => {
