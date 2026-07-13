@@ -9,10 +9,19 @@ import partner1 from "@/assets/images/partners/damro.png";
 import partner2 from "@/assets/images/partners/the-chocolate-company.png";
 import partner3 from "@/assets/images/partners/jb.png";
 import partner4 from "@/assets/images/partners/growcial-bull.png";
+import partner5 from "@/assets/images/partners/UPSC Logo.png";
 import partner6 from "@/assets/images/partners/the-aroggo.png";
 import partner7 from "@/assets/images/partners/shree-gourango-bostraloy.png";
 
-const partners = [partner1, partner2, partner3, partner4, partner6, partner7];
+const partners = [
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  partner6,
+  partner7,
+];
 
 const Clients = () => {
   return (
